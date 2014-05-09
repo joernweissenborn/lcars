@@ -2,10 +2,6 @@
   "name": "LCARS",
   "version": "0.0.0",
   "description": "LCARS website framework",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Garrett-/lcars.git"
@@ -24,6 +20,7 @@
     "nib": "^1.0.2",
     "gulp-stylus": "^1.0.0",
     "gulp-concat": "^2.2.0",
-    "gulp-uglify": "^0.2.1"
+    "gulp-uglify": "^0.2.1",
+    "gulp-load-plugins": "^0.5.0"
   }
 }
