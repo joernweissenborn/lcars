@@ -1,0 +1,24 @@
+// LCARS layout and grid systems
+
+.{prefix}container
+  background black
+  padding 2%
+  width 100%
+  height 100%
+
+
+.{prefix}row
+  width 100%
+  margin 0
+  padding 0
+  *zoom 1
+  clearfix()
+
+.{prefix}column
+  display block
+  float left
+  width 100%
+
+// Build out the grid classes
+// change base number in lcars_variables
+build-grid(grid-base)

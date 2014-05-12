@@ -13,7 +13,6 @@
   },
   "homepage": "https://github.com/Garrett-/lcars",
   "dependencies": {
-    "typographic": "0.0.4",
     "rupture": "^0.1.0",
     "gulp": "^3.6.2",
     "stylus": "^0.44.0",
@@ -21,6 +20,7 @@
     "gulp-stylus": "^1.0.0",
     "gulp-concat": "^2.2.0",
     "gulp-load-plugins": "^0.5.0",
-    "gulp-minify-css": "^0.3.4"
+    "gulp-minify-css": "^0.3.4",
+    "gulp-rename": "^1.2.0"
   }
 }

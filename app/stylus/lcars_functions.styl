@@ -1,0 +1,24 @@
+// LCARS global functions
+
+// Creates a % based grid provided a base number
+build-grid(baseNum)
+  for i in 1..baseNum
+    base = i
+    for k in 1..base
+      num = k
+      .{prefix}column.u-{num}-{base}
+        width ( (100/base) * num )%
+
+
+// Creates dynamic color classes for the LCARS buttons
+color-options(colors)
+  for c, v in colors
+    .{prefix}button.{prefix}{c}
+      background-color v
+
+// Defines border radius sides for the LCARS buttons
+create-sides(sides)
+  for side in sides
+    .{prefix}button.{side}
+      border-radius side radius-size
+

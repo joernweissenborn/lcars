@@ -1,0 +1,47 @@
+// LCARS - Buttons
+
+// Define base button styles
+.{prefix}button
+a.{prefix}button
+  position relative
+  display inline-block
+  vertical-align middle
+  padding button-padding--tb button-padding--lr
+  font-size base-font-size
+  font-weight bold
+  color black
+  text-decoration none
+  text-align center
+  background default-color
+
+  .{prefix}button-addition
+    btn-offset = ( (button-padding--tb * 2) - 2 )
+    display inline-block
+    vertical-align middle
+    background black
+    color white
+    width auto
+    font-size 125%
+    padding button-padding--tb 3px
+    margin ~btn-offset 0
+
+// Define color options
+color-options(colors)
+
+// Define button style types
+sides = bottom top left right
+create-sides(sides)
+
+.{prefix}button.tl
+  border-radius sides[1] sides[2] radius-size
+.{prefix}button.tr
+  border-radius sides[1] sides[3] radius-size
+
+.{prefix}button.bl
+  border-radius sides[0] sides[2] radius-size
+.{prefix}button.br
+  border-radius sides[0] sides[3] radius-size
+
+.{prefix}button.radius
+  border-radius radius-size
+
