@@ -13,6 +13,11 @@ a.{prefix}button
   text-decoration none
   text-align center
   background default-color
+  border none
+  cursor pointer
+
+  &:focus
+    outline none
 
   .{prefix}button-addition
     btn-offset = ( (button-padding--tb * 2) - 2 )
@@ -24,9 +29,6 @@ a.{prefix}button
     font-size 125%
     padding button-padding--tb 3px
     margin ~btn-offset 0
-
-// Define color options
-color-options(colors)
 
 // Define button style types
 sides = bottom top left right

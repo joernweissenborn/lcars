@@ -10,15 +10,14 @@ build-grid(baseNum)
         width ( (100/base) * num )%
 
 
-// Creates dynamic color classes for the LCARS buttons
-color-options(colors)
+// Creates dynamic color classes
+create-colors(prop, suffix, colors)
   for c, v in colors
-    .{prefix}button.{prefix}{c}
-      background-color v
+    .{prefix}{c}-{suffix}
+      {prop} v
 
 // Defines border radius sides for the LCARS buttons
 create-sides(sides)
   for side in sides
     .{prefix}button.{side}
       border-radius side radius-size
-
