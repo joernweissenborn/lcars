@@ -21,3 +21,11 @@ create-sides(sides)
   for side in sides
     .{prefix}button.{side}
       border-radius side radius-size
+
+// Creates dynamic color divider classes
+create-divider-colors(colors)
+  for colorName, colorValue in colors
+    for colorName2, colorValue2 in colors
+      .{prefix}{colorName}-{colorName2}-divide
+        if colorName != colorName2
+          background-image linear-gradient(90deg, transparent far-spacer, black far-spacer), linear-gradient(90deg, colorValue near-color-size, transparent near-color-size), linear-gradient(90deg, transparent far-color-size, colorValue2 far-color-size)

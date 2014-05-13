@@ -25,7 +25,7 @@ ul.{prefix}menu
     padding base-spacing
     margin-bottom base-spacing
     &.large-gap
-      margin-bottom base-spacing*3
+      margin-bottom base-spacing*2
     &.tall
       height menu-height*3
     & a
@@ -54,15 +54,18 @@ far-color-size = near-color-size + base-spacing
     padding-top 0
     background-position bottom left
 
+// Color combo clases
+create-divider-colors(colors)
+
 .{prefix}elbow
   position relative
   width 100%
   height divider-height*4
-  min-height divider-height*4
+  min-height @height
   background white
   & a
     display inline-block
-    margin-top (divider-height*3) - base-spacing
+    margin-top @height - (20px + base-spacing)
     padding base-spacing
   &:after
     content ''
