@@ -4,10 +4,25 @@
   <meta charset="UTF-8">
   <title>Testing LCARS Stylesheet</title>
   <link rel="stylesheet" href="css/lcars.css">
+  <style>
+  html, body { background: black }
+  </style>
 </head>
 <body>
 
   <div class="lcars-container">
+
+    <div class="lcars-row spaced">
+      <div class="lcars-column u-1-5 lcars-elbow left bottom lcars-blue-bg">
+        <a href="#">Side Button</a>
+      </div>
+      <div class="lcars-column u-2-5 lcars-divider">
+        <a href="#" class="lcars-button radius">Button 1</a>
+      </div>
+      <div class="lcars-column u-2-5 lcars-divider">
+        <a href="#" class="lcars-button radius">Button 1B</a>
+      </div>
+    </div>
 
     <div class="lcars-row">
 
@@ -27,6 +42,15 @@
       </div>
       <div class="lcars-column u-2-5">
         <button class="lcars-button radius">Button 3</button>
+      </div>
+    </div>
+
+    <div class="lcars-row">
+      <div class="lcars-column u-1-5 lcars-elbow left top lcars-tan-bg">
+        <a href="#">Side Button</a>
+      </div>
+      <div class="lcars-column u-4-5 lcars-divider bottom">
+        <a href="#" class="lcars-button radius">Button 4</a>
       </div>
     </div>
 

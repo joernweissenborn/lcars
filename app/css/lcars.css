@@ -92,7 +92,6 @@ a img {
 html,
 body {
   font-family: sans-serif;
-  font-weight: 200;
   color: #000;
 }
 *,
@@ -101,6 +100,14 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+a,
+a:link,
+a:visited,
+a:hover {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
 }
 .lcars-container {
   background: #000;
@@ -111,12 +118,12 @@ body {
 .lcars-menu,
 ol.lcars-menu,
 ul.lcars-menu {
-  margin-right: 1em;
+  margin-right: 1.5em;
 }
 .lcars-menu.right,
 ol.lcars-menu.right,
 ul.lcars-menu.right {
-  margin-right: 1em;
+  margin-right: 1.5em;
 }
 .lcars-menu.left,
 ol.lcars-menu.left,
@@ -131,9 +138,9 @@ ul.lcars-menu li {
   color: #000;
   font-weight: bold;
   width: 100%;
+  height: 25px;
   padding: 5px;
   margin-bottom: 5px;
-  height: 25px;
 }
 .lcars-menu li.large-gap,
 ol.lcars-menu li.large-gap,
@@ -152,10 +159,73 @@ ul.lcars-menu li a {
   text-decoration: none;
   color: inherit;
 }
-.lcars-menu li a:hover,
-ol.lcars-menu li a:hover,
-ul.lcars-menu li a:hover {
-  text-decoration: underline;
+.lcars-divider {
+  padding-top: 25px;
+  border-right: 5px solid #000;
+  background-repeat: repeat-x;
+  -webkit-background-size: 500px 20px;
+  -moz-background-size: 500px 20px;
+  background-size: 500px 20px;
+  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99f 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f90 130px);
+  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99f 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f90 130px);
+  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99f 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f90 130px);
+  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99f 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f90 130px);
+  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99f 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f90 130px);
+}
+.lcars-divider.bottom {
+  padding-bottom: 25px;
+  padding-top: 0;
+  background-position: bottom left;
+}
+.lcars-elbow {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  min-height: 80px;
+  background: #fff;
+}
+.lcars-elbow a {
+  display: inline-block;
+  margin-top: 55px;
+  padding: 5px;
+}
+.lcars-elbow:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1.5em;
+  height: 60px;
+  background: #000;
+}
+.lcars-elbow.left.bottom {
+  -webkit-border-top-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.lcars-elbow.left.bottom:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-border-top-left-radius: 60px;
+  border-top-left-radius: 60px;
+}
+.lcars-elbow.left.top {
+  -webkit-border-bottom-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+.lcars-elbow.left.top + .lcars-column {
+  min-height: 80px;
+}
+.lcars-elbow.left.top a {
+  display: inline-block;
+  margin-top: 0;
+  padding: 5px;
+}
+.lcars-elbow.left.top:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-border-bottom-left-radius: 60px;
+  border-bottom-left-radius: 60px;
 }
 .lcars-orange-bg {
   background-color: #f90;
@@ -219,7 +289,6 @@ ul.lcars-menu li a:hover {
 }
 .lcars-row {
   width: 100%;
-  margin: 0;
   padding: 0;
   *zoom: 1;
   zoom: 1;
@@ -231,6 +300,9 @@ ul.lcars-menu li a:hover {
 }
 .lcars-row:after {
   clear: both;
+}
+.lcars-row.spaced {
+  margin-bottom: 5px;
 }
 .lcars-column {
   display: block;
@@ -496,8 +568,7 @@ a.lcars-button .lcars-button-addition {
   vertical-align: middle;
   background: #000;
   color: #fff;
-  width: auto;
-  font-size: 125%;
+  font-size: 28px;
   padding: 10px 3px;
   margin: -19px 0;
 }

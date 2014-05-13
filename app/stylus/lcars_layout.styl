@@ -1,19 +1,17 @@
-// LCARS layout and grid systems
+// LCARS Layout (Menus, Dividers, Elbows)
 
 .{prefix}container
   background black
   padding container-padding
-  width 100%
-  height 100%
+  size 100% 100%
 
 // Side Menu
 menu-height = 25px
-menu-spacing = 5px
 
 .{prefix}menu,
 ol.{prefix}menu,
 ul.{prefix}menu
-  margin-right 1em
+  margin-right menu-column-spacing
   &.right
     margin-right @margin-right
   &.left
@@ -23,18 +21,68 @@ ul.{prefix}menu
     vertical-align top
     color black
     font-weight bold
-    width 100%
-    padding 5px
-    margin-bottom menu-spacing
-    height menu-height
+    size 100% menu-height
+    padding base-spacing
+    margin-bottom base-spacing
     &.large-gap
-      margin-bottom menu-spacing*3
+      margin-bottom base-spacing*3
     &.tall
       height menu-height*3
     & a
       display block
       text-decoration none
       color inherit
-      &:hover
-        text-decoration underline
 
+/*
+LCARS Dividers and Elbows
+*/
+
+lcars-orange = colors.orange
+lcars-blue = colors.blue
+far-spacer = divider-pattern-size - 3px
+near-color-size = divider-pattern-size / 4
+far-color-size = near-color-size + base-spacing
+
+.{prefix}divider
+  padding-top divider-height + base-spacing
+  border-right 5px solid black
+  background-repeat repeat-x
+  background-size divider-pattern-size divider-height
+  background-image linear-gradient(90deg, transparent far-spacer, black far-spacer), linear-gradient(90deg, lcars-blue near-color-size, transparent near-color-size), linear-gradient(90deg, transparent far-color-size, lcars-orange far-color-size)
+  &.bottom
+    padding-bottom @padding-top
+    padding-top 0
+    background-position bottom left
+
+.{prefix}elbow
+  position relative
+  width 100%
+  height divider-height*4
+  min-height divider-height*4
+  background white
+  & a
+    display inline-block
+    margin-top (divider-height*3) - base-spacing
+    padding base-spacing
+  &:after
+    content ''
+    display block
+    position absolute
+    size menu-column-spacing divider-height*3
+    background black
+  &.left.bottom
+    border-radius top left radius-size*3
+    &:after
+      absolute bottom right
+      border-radius top left radius-size*3
+  &.left.top
+    border-radius bottom left radius-size*3
+    & + .{prefix}column
+      min-height divider-height*4
+    & a
+      display inline-block
+      margin-top 0
+      padding base-spacing
+    &:after
+      absolute top right
+      border-radius bottom left radius-size*3
