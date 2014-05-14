@@ -1,6 +1,6 @@
 {
   "name": "LCARS",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "LCARS website framework",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
     "url": "https://github.com/Garrett-/lcars/issues"
   },
   "homepage": "https://github.com/Garrett-/lcars",
-  "dependencies": {
+  "devDependencies": {
     "rupture": "^0.1.0",
     "gulp": "^3.6.2",
     "stylus": "^0.44.0",
