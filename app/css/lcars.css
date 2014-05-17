@@ -1,3 +1,69 @@
+.lcars-orange-bg {
+  background-color: #f90;
+}
+.lcars-grayBlue-bg {
+  background-color: #99c;
+}
+.lcars-salmon-bg {
+  background-color: #c66;
+}
+.lcars-tan-bg {
+  background-color: #fc8;
+}
+.lcars-blue-bg {
+  background-color: #99f;
+}
+.lcars-peach-bg {
+  background-color: #f96;
+}
+.lcars-purple-bg {
+  background-color: #c69;
+}
+.lcars-pink-bg {
+  background-color: #c9c;
+}
+.lcars-white-bg {
+  background-color: #fff;
+}
+.lcars-red-bg {
+  background-color: #f55;
+}
+.lcars-orange-color {
+  color: #f90;
+}
+.lcars-grayBlue-color {
+  color: #99c;
+}
+.lcars-salmon-color {
+  color: #c66;
+}
+.lcars-tan-color {
+  color: #fc8;
+}
+.lcars-blue-color {
+  color: #99f;
+}
+.lcars-peach-color {
+  color: #f96;
+}
+.lcars-purple-color {
+  color: #c69;
+}
+.lcars-pink-color {
+  color: #c9c;
+}
+.lcars-white-color {
+  color: #fff;
+}
+.lcars-red-color {
+  color: #f55;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
 html,
 body,
 div,
@@ -110,6 +176,30 @@ a:hover {
   text-decoration: none;
   font-weight: bold;
 }
+h1 {
+  font-size: 270%;
+  font-weight: bold;
+}
+h2 {
+  font-size: 240%;
+  font-weight: bold;
+}
+h3 {
+  font-size: 200%;
+  font-weight: bold;
+}
+h4 {
+  font-size: 180%;
+  font-weight: bold;
+}
+h5 {
+  font-size: 160%;
+  font-weight: bold;
+}
+h6 {
+  font-size: 140%;
+  font-weight: bold;
+}
 .lcars-container {
   background: #000;
   padding: 1.5%;
@@ -121,15 +211,17 @@ ol.lcars-menu,
 ul.lcars-menu {
   margin-right: 1.5em;
 }
-.lcars-menu.right,
-ol.lcars-menu.right,
-ul.lcars-menu.right {
-  margin-right: 1.5em;
-}
 .lcars-menu.left,
 ol.lcars-menu.left,
 ul.lcars-menu.left {
-  margin-left: 1em;
+  margin-right: 1.5em;
+  margin-left: 0;
+}
+.lcars-menu.right,
+ol.lcars-menu.right,
+ul.lcars-menu.right {
+  margin-left: 1.5em;
+  margin-right: 0;
 }
 .lcars-menu li,
 ol.lcars-menu li,
@@ -177,6 +269,7 @@ ul.lcars-menu li a {
   padding-bottom: 25px;
   padding-top: 0;
   background-position: bottom left;
+  min-height: 80px;
 }
 .lcars-orange-grayBlue-divide {
   background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f90 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99c 130px);
@@ -843,9 +936,6 @@ ul.lcars-menu li a {
   -webkit-border-bottom-left-radius: 60px;
   border-bottom-left-radius: 60px;
 }
-.lcars-elbow.left.top + .lcars-column {
-  min-height: 80px;
-}
 .lcars-elbow.left.top a {
   display: inline-block;
   margin-top: 0;
@@ -858,65 +948,39 @@ ul.lcars-menu li a {
   -webkit-border-bottom-left-radius: 60px;
   border-bottom-left-radius: 60px;
 }
-.lcars-orange-bg {
-  background-color: #f90;
+.lcars-elbow.right.bottom {
+  -webkit-border-top-right-radius: 60px;
+  border-top-right-radius: 60px;
 }
-.lcars-grayBlue-bg {
-  background-color: #99c;
+.lcars-elbow.right.bottom:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-border-top-right-radius: 60px;
+  border-top-right-radius: 60px;
 }
-.lcars-salmon-bg {
-  background-color: #c66;
+.lcars-elbow.right.bottom a {
+  display: inline-block;
+  margin-top: 55px;
+  margin-left: 1.5em;
+  padding: 5px;
 }
-.lcars-tan-bg {
-  background-color: #fc8;
+.lcars-elbow.right.top {
+  -webkit-border-bottom-right-radius: 60px;
+  border-bottom-right-radius: 60px;
 }
-.lcars-blue-bg {
-  background-color: #99f;
+.lcars-elbow.right.top a {
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 1.5em;
+  padding: 5px;
 }
-.lcars-peach-bg {
-  background-color: #f96;
-}
-.lcars-purple-bg {
-  background-color: #c69;
-}
-.lcars-pink-bg {
-  background-color: #c9c;
-}
-.lcars-white-bg {
-  background-color: #fff;
-}
-.lcars-red-bg {
-  background-color: #f55;
-}
-.lcars-orange-color {
-  color: #f90;
-}
-.lcars-grayBlue-color {
-  color: #99c;
-}
-.lcars-salmon-color {
-  color: #c66;
-}
-.lcars-tan-color {
-  color: #fc8;
-}
-.lcars-blue-color {
-  color: #99f;
-}
-.lcars-peach-color {
-  color: #f96;
-}
-.lcars-purple-color {
-  color: #c69;
-}
-.lcars-pink-color {
-  color: #c9c;
-}
-.lcars-white-color {
-  color: #fff;
-}
-.lcars-red-color {
-  color: #f55;
+.lcars-elbow.right.top:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-border-bottom-right-radius: 60px;
+  border-bottom-right-radius: 60px;
 }
 .lcars-row {
   width: 100%;
@@ -1200,7 +1264,7 @@ a.lcars-button .lcars-button-addition {
   background: #000;
   color: #fff;
   font-size: 28px;
-  padding: 10px 3px;
+  padding: 5px 3px;
   margin: -19px 0;
 }
 .lcars-button.bottom {
