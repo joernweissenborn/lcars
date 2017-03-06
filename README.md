@@ -1,6 +1,8 @@
 LCARS
 =====
 
+**Creator Note** I no longer have the time to work on this. If anyone would like to take over, please let me know and I'll transfer ownership to you.
+
 LCARS (Library Computer Access Retrieval System)
 
 I'm recreating a LCARS website system that I created many years ago. It was a very large jQuery plugin. I think I'm just going to create a CSS system. Something much like that of [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Topcoat](http://topcoat.io/), [Brick](http://mozilla.github.io/brick/index.html), or [Pure](http://purecss.io/).
