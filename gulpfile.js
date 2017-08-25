@@ -50,3 +50,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('compile', ['compile-dev', 'compile-build']);
+gulp.task('default', ['compile-dev', 'compile-build']);
