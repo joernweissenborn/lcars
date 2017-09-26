@@ -1,17 +1,19 @@
-LCARS
-=====
-
-**Creator Note** I no longer have the time to work on this. If anyone would like to take over, please let me know and I'll transfer ownership to you.
-
 LCARS (Library Computer Access Retrieval System)
+================================================
 
-I'm recreating a LCARS website system that I created many years ago. It was a very large jQuery plugin. I think I'm just going to create a CSS system. Something much like that of [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Topcoat](http://topcoat.io/), [Brick](http://mozilla.github.io/brick/index.html), or [Pure](http://purecss.io/).
+LCARS is a CSS framework like [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Topcoat](http://topcoat.io/), [Brick](http://mozilla.github.io/brick/index.html), or [Pure](http://purecss.io/).
 
-I'm not exactly sure what tech I'll be building this off of. Right now I'm looking hard at [Stylus](http://learnboost.github.io/stylus/) with [Nib](https://github.com/visionmedia/nib), ~~[Jeet](https://github.com/mojotech/jeet),~~ [Rupture](https://github.com/jenius/rupture), and ~~[Typographic](https://github.com/corysimmons/typographic)~~.
+It's purpose is to create website inspired by the user interface of a popular sci-fi franchise.
+
+Lcars is build on [Stylus](http://learnboost.github.io/stylus/) with [Nib](https://github.com/visionmedia/nib) and [Rupture](https://github.com/jenius/rupture).
+
+# Demo
+
+[See](http://joernweissenborn.github.io/lcars/)
+
+# Usage
 
 ## Buttons
-
-Finished the inital button classes. *Example mark up*
 
 ```html
 <a href="#" class="lcars-button radius">Rounded Button</a>
@@ -31,7 +33,7 @@ Finished the inital button classes. *Example mark up*
 
 ## Grid System
 
-Every CSS framework needs to have its own grid system. I've based mine off of fractions.
+Every CSS framework needs to have its own grid system. Ours is based on fractions.
 
 ```html
 <div class="lcars-row">
@@ -77,7 +79,7 @@ Grid prefix's and suffix's can be used to create spacing before and after a grid
 
 ## Menus
 
-To give you page that classic LCARS look you'll want to add vertical menus.
+To give your page the classic LCARS look, you'll want to add vertical menus.
 
 ```html
 <ul class="lcars-menu">
@@ -89,7 +91,9 @@ To give you page that classic LCARS look you'll want to add vertical menus.
 </ul>
 ```
 
-The defining style for a LCARS interface is the rounded *elbows* that connect horizontal dividers and the vertical menus.
+## Elbows
+
+The defining style element of LCARS interfaces are rounded *elbows* that connect horizontal dividers and vertical menus.
 
 ![LCARS Elbow](app/img/Elbow1.png)
 
@@ -106,4 +110,6 @@ You can create these using the `lcars-elbow` class. You define the width of thes
 </div>
 ```
 
-Here is a [demo](http://garrett-.github.io/lcars/) showing how to use all these things together.
+## Thanks
+
+Thanks to @garrett- for initial development!

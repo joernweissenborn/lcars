@@ -1,0 +1,32 @@
+// LCARS Grid System
+
+
+// Creates a % based grid provided a base number
+build-grid(baseNum)
+  for i in 1..baseNum
+    base = i
+    for k in 1..base
+      num = k
+      .{prefix}column.u-{num}-{base}
+        width ( (100/base) * num )%
+      .{prefix}column.prefix-{num}-{base}
+        margin-left ( (100/base) * num )%
+      .{prefix}column.suffix-{num}-{base}
+        margin-right ( (100/base) * num )%
+
+.{prefix}row
+  width 100%
+  padding 0
+  *zoom 1
+  clearfix()
+  &.spaced
+    margin-bottom base-spacing
+
+.{prefix}column
+  display block
+  float left
+  width 100%
+
+// Build out the grid classes
+// change base number in lcars_variables
+build-grid(grid-base)

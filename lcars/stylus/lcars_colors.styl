@@ -1,0 +1,48 @@
+// LCARS Colors
+
+// Colors
+colors = {
+  orange: #FF9900,
+  grayBlue: #9999CC,
+  salmon: #CC6666,
+  tan: #FFCC88,
+  blue: #9999FF,
+  peach: #FF9966,
+  purple: #CC6699,
+  pink: #CC99CC,
+  white: #FFFFFF,
+  red: #FF5555
+}
+
+// Colors Modern
+colors-modern = {
+  gray: #2379,
+  white: #CCDDFF,
+  light-blue: #5599FF,
+  blue: #3366FF,
+  bright-blue: #0011EE,
+  dark-blue: #000088,
+  yellow: #BBAA55,
+  orange: #BB4411,
+  red: #882211
+}
+
+default-color = colors.orange
+
+// Creates dynamic color classes
+create-colors(prop, suffix, colors)
+  for c, v in colors
+    .{prefix}{c}-{suffix}
+      {prop} v!important
+
+// LCARS colors (background-color)
+create-colors('background-color', 'bg', colors)
+
+// LCARS colors (font color)
+create-colors('color', 'color', colors)
+
+// LCARS colors modern (background-color)
+create-colors('background-color', 'bg-modern', colors)
+
+// LCARS colors modern (font color)
+create-colors('color', 'color-modern', colors-modern)
