@@ -6,7 +6,7 @@ a.{prefix}button
   position relative
   display inline-block
   vertical-align middle
-  padding button-padding--tb button-padding--lr
+  margin base-spacing
   font-size base-font-size
   font-weight bold
   color black
@@ -15,34 +15,36 @@ a.{prefix}button
   background default-color
   border none
   cursor pointer
+  height base-height * 2
+  width base-width * 2
+  line-height @height
 
   &:focus
     outline none
 
   .{prefix}button-addition
-    btn-offset = ( (button-padding--tb * 2) - 2 )
     display inline-block
-    vertical-align middle
+    height base-height
     background black
     color white
-    font-size base-font-size*2
-    padding button-padding--tb - 5px 3px
-    margin ~btn-offset 0
+    font-size base-font-size * 2
+    padding base-spacing base-spacing
+    margin-right base-spacing * 2
 
 // Define button style types
 sides = bottom top left right
 create-sides(sides)
 
 .{prefix}button.tl
-  border-radius sides[1] sides[2] radius-size
+  border-radius sides[1] sides[2] base-height
 .{prefix}button.tr
-  border-radius sides[1] sides[3] radius-size
+  border-radius sides[1] sides[3] base-height
 
 .{prefix}button.bl
-  border-radius sides[0] sides[2] radius-size
+  border-radius sides[0] sides[2] base-height
 .{prefix}button.br
-  border-radius sides[0] sides[3] radius-size
+  border-radius sides[0] sides[3] base-height
 
 .{prefix}button.radius
-  border-radius radius-size
+  border-radius base-height
 
