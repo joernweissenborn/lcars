@@ -91,7 +91,7 @@ a img {
 }
 html,
 body {
-  font-size: 14px;
+  font-size: 1em;
   font-family: sans-serif;
   color: #fff;
 }
@@ -109,6 +109,12 @@ a:hover {
   color: #000;
   text-decoration: none;
   font-weight: bold;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
 }
 .lcars-orange-bg {
   background-color: #f90 !important;
@@ -170,11 +176,62 @@ a:hover {
 .lcars-red-color {
   color: #f55 !important;
 }
-.right {
-  float: right;
+.lcars-orange-bg-modern {
+  background-color: #f90 !important;
 }
-.left {
-  float: left;
+.lcars-grayBlue-bg-modern {
+  background-color: #99c !important;
+}
+.lcars-salmon-bg-modern {
+  background-color: #c66 !important;
+}
+.lcars-tan-bg-modern {
+  background-color: #fc8 !important;
+}
+.lcars-blue-bg-modern {
+  background-color: #99f !important;
+}
+.lcars-peach-bg-modern {
+  background-color: #f96 !important;
+}
+.lcars-purple-bg-modern {
+  background-color: #c69 !important;
+}
+.lcars-pink-bg-modern {
+  background-color: #c9c !important;
+}
+.lcars-white-bg-modern {
+  background-color: #fff !important;
+}
+.lcars-red-bg-modern {
+  background-color: #f55 !important;
+}
+.lcars-gray-color-modern {
+  color: rgba(34,51,119,0.6) !important;
+}
+.lcars-white-color-modern {
+  color: #cdf !important;
+}
+.lcars-light-blue-color-modern {
+  color: #59f !important;
+}
+.lcars-blue-color-modern {
+  color: #36f !important;
+}
+.lcars-bright-blue-color-modern {
+  color: #01e !important;
+}
+.lcars-dark-blue-color-modern {
+  color: #008 !important;
+}
+.lcars-yellow-color-modern {
+  color: #ba5 !important;
+}
+.lcars-orange-color-modern {
+  color: #b41 !important;
+}
+.lcars-red-color-modern {
+  color: #821 !important;
 }
 h1 {
   font-size: 270%;
@@ -206,6 +263,655 @@ h6 {
   width: 100%;
   height: 100%;
 }
+.lcars-divider {
+  padding-top: 2.2em;
+  border-right: 0.2em solid #000;
+  background-repeat: repeat-x;
+  -webkit-background-size: 50em 2em;
+  -moz-background-size: 50em 2em;
+  background-size: 50em 2em;
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99f 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f90 12.7em);
+}
+.lcars-divider.bottom {
+  padding-bottom: 2.2em;
+  padding-top: 0;
+  background-position: bottom left;
+  min-height: 8em;
+}
+.lcars-orange-grayBlue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f90 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99c 12.7em);
+}
+.lcars-orange-salmon-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f90 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c66 12.7em);
+}
+.lcars-orange-tan-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f90 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fc8 12.7em);
+}
+.lcars-orange-blue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f90 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99f 12.7em);
+}
+.lcars-orange-peach-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f90 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f96 12.7em);
+}
+.lcars-orange-purple-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f90 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c69 12.7em);
+}
+.lcars-orange-pink-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f90 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c9c 12.7em);
+}
+.lcars-orange-white-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f90 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fff 12.7em);
+}
+.lcars-orange-red-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f90 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f90 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f55 12.7em);
+}
+.lcars-grayBlue-orange-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f90 12.7em);
+}
+.lcars-grayBlue-salmon-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c66 12.7em);
+}
+.lcars-grayBlue-tan-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fc8 12.7em);
+}
+.lcars-grayBlue-blue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99f 12.7em);
+}
+.lcars-grayBlue-peach-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f96 12.7em);
+}
+.lcars-grayBlue-purple-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c69 12.7em);
+}
+.lcars-grayBlue-pink-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c9c 12.7em);
+}
+.lcars-grayBlue-white-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fff 12.7em);
+}
+.lcars-grayBlue-red-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f55 12.7em);
+}
+.lcars-salmon-orange-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c66 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f90 12.7em);
+}
+.lcars-salmon-grayBlue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c66 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99c 12.7em);
+}
+.lcars-salmon-tan-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c66 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fc8 12.7em);
+}
+.lcars-salmon-blue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c66 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99f 12.7em);
+}
+.lcars-salmon-peach-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c66 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f96 12.7em);
+}
+.lcars-salmon-purple-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c66 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c69 12.7em);
+}
+.lcars-salmon-pink-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c66 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c9c 12.7em);
+}
+.lcars-salmon-white-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c66 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fff 12.7em);
+}
+.lcars-salmon-red-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c66 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c66 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f55 12.7em);
+}
+.lcars-tan-orange-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fc8 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f90 12.7em);
+}
+.lcars-tan-grayBlue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fc8 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99c 12.7em);
+}
+.lcars-tan-salmon-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fc8 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c66 12.7em);
+}
+.lcars-tan-blue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fc8 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99f 12.7em);
+}
+.lcars-tan-peach-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fc8 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f96 12.7em);
+}
+.lcars-tan-purple-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fc8 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c69 12.7em);
+}
+.lcars-tan-pink-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fc8 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c9c 12.7em);
+}
+.lcars-tan-white-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fc8 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fff 12.7em);
+}
+.lcars-tan-red-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fc8 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fc8 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f55 12.7em);
+}
+.lcars-blue-orange-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99f 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f90 12.7em);
+}
+.lcars-blue-grayBlue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99f 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99c 12.7em);
+}
+.lcars-blue-salmon-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99f 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c66 12.7em);
+}
+.lcars-blue-tan-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99f 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fc8 12.7em);
+}
+.lcars-blue-peach-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99f 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f96 12.7em);
+}
+.lcars-blue-purple-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99f 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c69 12.7em);
+}
+.lcars-blue-pink-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99f 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c9c 12.7em);
+}
+.lcars-blue-white-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99f 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fff 12.7em);
+}
+.lcars-blue-red-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #99f 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #99f 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f55 12.7em);
+}
+.lcars-peach-orange-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f96 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f90 12.7em);
+}
+.lcars-peach-grayBlue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f96 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99c 12.7em);
+}
+.lcars-peach-salmon-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f96 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c66 12.7em);
+}
+.lcars-peach-tan-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f96 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fc8 12.7em);
+}
+.lcars-peach-blue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f96 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99f 12.7em);
+}
+.lcars-peach-purple-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f96 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c69 12.7em);
+}
+.lcars-peach-pink-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f96 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c9c 12.7em);
+}
+.lcars-peach-white-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f96 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fff 12.7em);
+}
+.lcars-peach-red-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f96 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f96 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f55 12.7em);
+}
+.lcars-purple-orange-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c69 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f90 12.7em);
+}
+.lcars-purple-grayBlue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c69 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99c 12.7em);
+}
+.lcars-purple-salmon-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c69 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c66 12.7em);
+}
+.lcars-purple-tan-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c69 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fc8 12.7em);
+}
+.lcars-purple-blue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c69 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99f 12.7em);
+}
+.lcars-purple-peach-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c69 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f96 12.7em);
+}
+.lcars-purple-pink-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c69 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c9c 12.7em);
+}
+.lcars-purple-white-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c69 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fff 12.7em);
+}
+.lcars-purple-red-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c69 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c69 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f55 12.7em);
+}
+.lcars-pink-orange-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c9c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f90 12.7em);
+}
+.lcars-pink-grayBlue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c9c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99c 12.7em);
+}
+.lcars-pink-salmon-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c9c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c66 12.7em);
+}
+.lcars-pink-tan-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c9c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fc8 12.7em);
+}
+.lcars-pink-blue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c9c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99f 12.7em);
+}
+.lcars-pink-peach-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c9c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f96 12.7em);
+}
+.lcars-pink-purple-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c9c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c69 12.7em);
+}
+.lcars-pink-white-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c9c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fff 12.7em);
+}
+.lcars-pink-red-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #c9c 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #c9c 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f55 12.7em);
+}
+.lcars-white-orange-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fff 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f90 12.7em);
+}
+.lcars-white-grayBlue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fff 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99c 12.7em);
+}
+.lcars-white-salmon-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fff 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c66 12.7em);
+}
+.lcars-white-tan-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fff 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fc8 12.7em);
+}
+.lcars-white-blue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fff 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99f 12.7em);
+}
+.lcars-white-peach-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fff 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f96 12.7em);
+}
+.lcars-white-purple-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fff 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c69 12.7em);
+}
+.lcars-white-pink-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fff 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c9c 12.7em);
+}
+.lcars-white-red-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #fff 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f55 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #fff 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f55 12.7em);
+}
+.lcars-red-orange-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f90 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f55 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f90 12.7em);
+}
+.lcars-red-grayBlue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f55 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99c 12.7em);
+}
+.lcars-red-salmon-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c66 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f55 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c66 12.7em);
+}
+.lcars-red-tan-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fc8 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f55 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fc8 12.7em);
+}
+.lcars-red-blue-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #99f 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f55 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #99f 12.7em);
+}
+.lcars-red-peach-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #f96 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f55 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #f96 12.7em);
+}
+.lcars-red-purple-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c69 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f55 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c69 12.7em);
+}
+.lcars-red-pink-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #c9c 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f55 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #c9c 12.7em);
+}
+.lcars-red-white-divide {
+  background-image: -webkit-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -webkit-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -webkit-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -moz-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -moz-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -moz-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -o-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -o-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -o-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: -ms-linear-gradient(0deg, transparent 49.8em, #000 49.8em), -ms-linear-gradient(0deg, #f55 12.5em, transparent 12.5em), -ms-linear-gradient(0deg, transparent 12.7em, #fff 12.7em);
+  background-image: linear-gradient(90deg, transparent 49.8em, #000 49.8em), linear-gradient(90deg, #f55 12.5em, transparent 12.5em), linear-gradient(90deg, transparent 12.7em, #fff 12.7em);
+}
 .lcars-menu,
 ol.lcars-menu,
 ul.lcars-menu {
@@ -231,19 +937,19 @@ ul.lcars-menu li {
   color: #000;
   font-weight: bold;
   width: 100%;
-  height: 25px;
-  padding: 5px;
-  margin-bottom: 5px;
+  height: 2em;
+  padding: 0.2em;
+  margin-bottom: 0.2em;
 }
 .lcars-menu li.large-gap,
 ol.lcars-menu li.large-gap,
 ul.lcars-menu li.large-gap {
-  margin-bottom: 10px;
+  margin-bottom: 0.4em;
 }
 .lcars-menu li.tall,
 ol.lcars-menu li.tall,
 ul.lcars-menu li.tall {
-  height: 75px;
+  height: 6em;
 }
 .lcars-menu li a,
 ol.lcars-menu li a,
@@ -252,735 +958,79 @@ ul.lcars-menu li a {
   text-decoration: none;
   color: inherit;
 }
-.lcars-divider {
-  padding-top: 25px;
-  border-right: 5px solid #000;
-  background-repeat: repeat-x;
-  -webkit-background-size: 500px 20px;
-  -moz-background-size: 500px 20px;
-  background-size: 500px 20px;
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99f 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99f 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99f 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99f 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99f 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f90 130px);
-}
-.lcars-divider.bottom {
-  padding-bottom: 25px;
-  padding-top: 0;
-  background-position: bottom left;
-  min-height: 80px;
-}
-.lcars-orange-grayBlue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f90 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f90 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f90 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f90 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f90 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99c 130px);
-}
-.lcars-orange-salmon-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f90 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f90 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f90 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f90 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f90 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c66 130px);
-}
-.lcars-orange-tan-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f90 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f90 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f90 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f90 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f90 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fc8 130px);
-}
-.lcars-orange-blue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f90 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f90 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f90 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f90 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f90 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99f 130px);
-}
-.lcars-orange-peach-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f90 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f90 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f90 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f90 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f90 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f96 130px);
-}
-.lcars-orange-purple-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f90 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f90 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f90 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f90 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f90 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c69 130px);
-}
-.lcars-orange-pink-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f90 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f90 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f90 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f90 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f90 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c9c 130px);
-}
-.lcars-orange-white-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f90 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f90 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f90 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f90 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f90 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fff 130px);
-}
-.lcars-orange-red-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f90 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f90 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f90 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f90 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f90 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f55 130px);
-}
-.lcars-grayBlue-orange-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f90 130px);
-}
-.lcars-grayBlue-salmon-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c66 130px);
-}
-.lcars-grayBlue-tan-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fc8 130px);
-}
-.lcars-grayBlue-blue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99f 130px);
-}
-.lcars-grayBlue-peach-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f96 130px);
-}
-.lcars-grayBlue-purple-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c69 130px);
-}
-.lcars-grayBlue-pink-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c9c 130px);
-}
-.lcars-grayBlue-white-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fff 130px);
-}
-.lcars-grayBlue-red-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f55 130px);
-}
-.lcars-salmon-orange-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c66 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c66 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c66 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c66 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c66 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f90 130px);
-}
-.lcars-salmon-grayBlue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c66 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c66 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c66 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c66 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c66 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99c 130px);
-}
-.lcars-salmon-tan-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c66 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c66 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c66 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c66 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c66 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fc8 130px);
-}
-.lcars-salmon-blue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c66 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c66 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c66 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c66 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c66 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99f 130px);
-}
-.lcars-salmon-peach-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c66 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c66 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c66 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c66 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c66 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f96 130px);
-}
-.lcars-salmon-purple-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c66 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c66 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c66 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c66 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c66 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c69 130px);
-}
-.lcars-salmon-pink-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c66 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c66 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c66 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c66 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c66 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c9c 130px);
-}
-.lcars-salmon-white-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c66 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c66 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c66 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c66 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c66 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fff 130px);
-}
-.lcars-salmon-red-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c66 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c66 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c66 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c66 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c66 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f55 130px);
-}
-.lcars-tan-orange-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fc8 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fc8 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fc8 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fc8 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fc8 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f90 130px);
-}
-.lcars-tan-grayBlue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fc8 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fc8 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fc8 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fc8 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fc8 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99c 130px);
-}
-.lcars-tan-salmon-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fc8 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fc8 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fc8 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fc8 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fc8 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c66 130px);
-}
-.lcars-tan-blue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fc8 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fc8 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fc8 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fc8 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fc8 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99f 130px);
-}
-.lcars-tan-peach-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fc8 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fc8 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fc8 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fc8 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fc8 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f96 130px);
-}
-.lcars-tan-purple-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fc8 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fc8 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fc8 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fc8 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fc8 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c69 130px);
-}
-.lcars-tan-pink-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fc8 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fc8 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fc8 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fc8 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fc8 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c9c 130px);
-}
-.lcars-tan-white-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fc8 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fc8 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fc8 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fc8 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fc8 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fff 130px);
-}
-.lcars-tan-red-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fc8 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fc8 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fc8 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fc8 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fc8 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f55 130px);
-}
-.lcars-blue-orange-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99f 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99f 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99f 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99f 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99f 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f90 130px);
-}
-.lcars-blue-grayBlue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99f 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99f 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99f 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99f 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99f 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99c 130px);
-}
-.lcars-blue-salmon-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99f 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99f 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99f 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99f 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99f 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c66 130px);
-}
-.lcars-blue-tan-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99f 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99f 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99f 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99f 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99f 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fc8 130px);
-}
-.lcars-blue-peach-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99f 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99f 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99f 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99f 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99f 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f96 130px);
-}
-.lcars-blue-purple-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99f 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99f 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99f 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99f 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99f 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c69 130px);
-}
-.lcars-blue-pink-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99f 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99f 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99f 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99f 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99f 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c9c 130px);
-}
-.lcars-blue-white-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99f 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99f 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99f 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99f 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99f 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fff 130px);
-}
-.lcars-blue-red-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #99f 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #99f 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #99f 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #99f 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #99f 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f55 130px);
-}
-.lcars-peach-orange-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f96 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f96 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f96 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f96 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f96 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f90 130px);
-}
-.lcars-peach-grayBlue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f96 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f96 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f96 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f96 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f96 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99c 130px);
-}
-.lcars-peach-salmon-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f96 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f96 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f96 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f96 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f96 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c66 130px);
-}
-.lcars-peach-tan-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f96 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f96 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f96 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f96 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f96 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fc8 130px);
-}
-.lcars-peach-blue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f96 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f96 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f96 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f96 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f96 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99f 130px);
-}
-.lcars-peach-purple-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f96 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f96 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f96 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f96 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f96 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c69 130px);
-}
-.lcars-peach-pink-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f96 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f96 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f96 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f96 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f96 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c9c 130px);
-}
-.lcars-peach-white-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f96 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f96 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f96 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f96 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f96 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fff 130px);
-}
-.lcars-peach-red-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f96 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f96 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f96 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f96 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f96 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f55 130px);
-}
-.lcars-purple-orange-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c69 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c69 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c69 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c69 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c69 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f90 130px);
-}
-.lcars-purple-grayBlue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c69 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c69 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c69 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c69 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c69 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99c 130px);
-}
-.lcars-purple-salmon-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c69 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c69 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c69 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c69 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c69 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c66 130px);
-}
-.lcars-purple-tan-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c69 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c69 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c69 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c69 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c69 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fc8 130px);
-}
-.lcars-purple-blue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c69 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c69 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c69 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c69 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c69 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99f 130px);
-}
-.lcars-purple-peach-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c69 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c69 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c69 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c69 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c69 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f96 130px);
-}
-.lcars-purple-pink-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c69 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c69 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c69 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c69 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c69 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c9c 130px);
-}
-.lcars-purple-white-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c69 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c69 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c69 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c69 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c69 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fff 130px);
-}
-.lcars-purple-red-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c69 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c69 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c69 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c69 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c69 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f55 130px);
-}
-.lcars-pink-orange-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c9c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c9c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c9c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c9c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c9c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f90 130px);
-}
-.lcars-pink-grayBlue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c9c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c9c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c9c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c9c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c9c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99c 130px);
-}
-.lcars-pink-salmon-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c9c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c9c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c9c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c9c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c9c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c66 130px);
-}
-.lcars-pink-tan-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c9c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c9c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c9c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c9c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c9c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fc8 130px);
-}
-.lcars-pink-blue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c9c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c9c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c9c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c9c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c9c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99f 130px);
-}
-.lcars-pink-peach-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c9c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c9c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c9c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c9c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c9c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f96 130px);
-}
-.lcars-pink-purple-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c9c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c9c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c9c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c9c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c9c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c69 130px);
-}
-.lcars-pink-white-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c9c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c9c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c9c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c9c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c9c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fff 130px);
-}
-.lcars-pink-red-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #c9c 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #c9c 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #c9c 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #c9c 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #c9c 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f55 130px);
-}
-.lcars-white-orange-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fff 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fff 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fff 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fff 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fff 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f90 130px);
-}
-.lcars-white-grayBlue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fff 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fff 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fff 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fff 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fff 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99c 130px);
-}
-.lcars-white-salmon-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fff 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fff 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fff 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fff 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fff 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c66 130px);
-}
-.lcars-white-tan-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fff 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fff 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fff 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fff 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fff 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fc8 130px);
-}
-.lcars-white-blue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fff 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fff 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fff 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fff 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fff 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99f 130px);
-}
-.lcars-white-peach-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fff 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fff 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fff 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fff 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fff 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f96 130px);
-}
-.lcars-white-purple-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fff 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fff 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fff 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fff 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fff 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c69 130px);
-}
-.lcars-white-pink-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fff 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fff 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fff 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fff 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fff 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c9c 130px);
-}
-.lcars-white-red-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #fff 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #fff 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #fff 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #fff 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f55 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #fff 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f55 130px);
-}
-.lcars-red-orange-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f55 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f55 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f55 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f55 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f90 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f55 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f90 130px);
-}
-.lcars-red-grayBlue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f55 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f55 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f55 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f55 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f55 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99c 130px);
-}
-.lcars-red-salmon-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f55 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f55 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f55 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f55 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c66 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f55 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c66 130px);
-}
-.lcars-red-tan-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f55 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f55 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f55 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f55 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fc8 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f55 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fc8 130px);
-}
-.lcars-red-blue-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f55 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f55 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f55 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f55 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #99f 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f55 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #99f 130px);
-}
-.lcars-red-peach-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f55 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f55 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f55 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f55 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #f96 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f55 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #f96 130px);
-}
-.lcars-red-purple-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f55 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f55 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f55 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f55 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c69 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f55 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c69 130px);
-}
-.lcars-red-pink-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f55 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f55 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f55 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f55 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #c9c 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f55 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #c9c 130px);
-}
-.lcars-red-white-divide {
-  background-image: -webkit-linear-gradient(0deg, transparent 497px, #000 497px), -webkit-linear-gradient(0deg, #f55 125px, transparent 125px), -webkit-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -moz-linear-gradient(0deg, transparent 497px, #000 497px), -moz-linear-gradient(0deg, #f55 125px, transparent 125px), -moz-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -o-linear-gradient(0deg, transparent 497px, #000 497px), -o-linear-gradient(0deg, #f55 125px, transparent 125px), -o-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: -ms-linear-gradient(0deg, transparent 497px, #000 497px), -ms-linear-gradient(0deg, #f55 125px, transparent 125px), -ms-linear-gradient(0deg, transparent 130px, #fff 130px);
-  background-image: linear-gradient(90deg, transparent 497px, #000 497px), linear-gradient(90deg, #f55 125px, transparent 125px), linear-gradient(90deg, transparent 130px, #fff 130px);
-}
 .lcars-elbow {
   position: relative;
   width: 100%;
-  height: 80px;
-  min-height: 80px;
+  height: 8em;
+  min-height: 8em;
   background: #fff;
 }
 .lcars-elbow a {
   display: inline-block;
-  margin-top: 55px;
-  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  padding: 0.2em;
 }
 .lcars-elbow:after {
   content: '';
   display: block;
   position: absolute;
   width: 1.5em;
-  height: 60px;
+  height: 6em;
   background: #000;
 }
 .lcars-elbow.left.bottom {
-  -webkit-border-top-left-radius: 60px;
-  border-top-left-radius: 60px;
+  border-top-left-radius: 5em;
 }
 .lcars-elbow.left.bottom:after {
   position: absolute;
   bottom: 0;
   right: 0;
-  -webkit-border-top-left-radius: 60px;
-  border-top-left-radius: 60px;
+  border-top-left-radius: 5em;
 }
 .lcars-elbow.left.top {
-  -webkit-border-bottom-left-radius: 60px;
-  border-bottom-left-radius: 60px;
+  border-bottom-left-radius: 5em;
 }
 .lcars-elbow.left.top a {
   display: inline-block;
-  margin-top: 0;
-  padding: 5px;
+  top: 0;
+  padding: 0.2em;
 }
 .lcars-elbow.left.top:after {
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-border-bottom-left-radius: 60px;
-  border-bottom-left-radius: 60px;
+  border-bottom-left-radius: 5em;
 }
 .lcars-elbow.right.bottom {
-  -webkit-border-top-right-radius: 60px;
-  border-top-right-radius: 60px;
+  border-top-right-radius: 5em;
 }
 .lcars-elbow.right.bottom:after {
   position: absolute;
   bottom: 0;
   left: 0;
-  -webkit-border-top-right-radius: 60px;
-  border-top-right-radius: 60px;
+  border-top-right-radius: 5em;
 }
 .lcars-elbow.right.bottom a {
   display: inline-block;
-  margin-top: 55px;
+  margin-top: 7.8em;
   margin-left: 1.5em;
-  padding: 5px;
+  padding: 0.2em;
 }
 .lcars-elbow.right.top {
-  -webkit-border-bottom-right-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-bottom-right-radius: 5em;
 }
 .lcars-elbow.right.top a {
   display: inline-block;
-  margin-top: 0;
+  top: 0;
   margin-left: 1.5em;
-  padding: 5px;
+  padding: 0.2em;
 }
 .lcars-elbow.right.top:after {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-border-bottom-right-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-bottom-right-radius: 5em;
 }
 .lcars-row {
   width: 100%;
@@ -997,7 +1047,7 @@ ul.lcars-menu li a {
   clear: both;
 }
 .lcars-row.spaced {
-  margin-bottom: 5px;
+  margin-bottom: 0.2em;
 }
 .lcars-column {
   display: block;
@@ -1711,8 +1761,8 @@ a.lcars-button {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  padding: 10px 15px;
-  font-size: 14px;
+  margin: 0.2em;
+  font-size: 1em;
   font-weight: bold;
   color: #000;
   text-decoration: none;
@@ -1720,6 +1770,9 @@ a.lcars-button {
   background: #f90;
   border: none;
   cursor: pointer;
+  height: 4em;
+  width: 10em;
+  line-height: 4em;
 }
 .lcars-button:focus,
 a.lcars-button:focus {
@@ -1728,54 +1781,26 @@ a.lcars-button:focus {
 .lcars-button .lcars-button-addition,
 a.lcars-button .lcars-button-addition {
   display: inline-block;
+  float: right;
   vertical-align: middle;
   background: #000;
   color: #fff;
-  font-size: 28px;
-  padding: 5px 3px;
-  margin: -19px 0;
-}
-.lcars-button.bottom {
-  -webkit-border-bottom-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  -webkit-border-bottom-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-.lcars-button.top {
-  -webkit-border-top-left-radius: 20px;
-  border-top-left-radius: 20px;
-  -webkit-border-top-right-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.lcars-button.left {
-  -webkit-border-top-left-radius: 20px;
-  border-top-left-radius: 20px;
-  -webkit-border-bottom-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-.lcars-button.right {
-  -webkit-border-top-right-radius: 20px;
-  border-top-right-radius: 20px;
-  -webkit-border-bottom-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  font-size: 2em;
+  padding: 0 0.2em;
+  margin-right: 1em;
 }
 .lcars-button.tl {
-  -webkit-border-top-left-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-left-radius: 2em;
 }
 .lcars-button.tr {
-  -webkit-border-top-right-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-right-radius: 2em;
 }
 .lcars-button.bl {
-  -webkit-border-bottom-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 2em;
 }
 .lcars-button.br {
-  -webkit-border-bottom-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 2em;
 }
 .lcars-button.radius {
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
+  border-radius: 2em;
 }
