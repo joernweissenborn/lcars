@@ -12,11 +12,11 @@ var ENVIRONMENT = 'development' // 'production'
 , rupture = require('rupture')
 
 , paths = {
-  coreFiles: './app/stylus/*.styl'
+  coreFiles: './lcars/stylus/*.styl'
 };
 
 gulp.task('compile-dev', function() {
-  gulp.src('./app/stylus/lcars.styl')
+  gulp.src('./lcars/stylus/lcars.styl')
     .pipe(
       stylus({
           errors: (ENVIRONMENT==='development'),
@@ -30,7 +30,7 @@ gulp.task('compile-dev', function() {
 });
 
 gulp.task('compile-build', function() {
-  gulp.src('./app/stylus/lcars.styl')
+  gulp.src('./lcars/stylus/lcars.styl')
     .pipe(
       stylus({
           errors: (ENVIRONMENT==='development'),
@@ -42,7 +42,7 @@ gulp.task('compile-build', function() {
     )
     .pipe( minify() )
     .pipe( rename('lcars.min.css') )
-    .pipe( gulp.dest('./app/css') );
+    .pipe( gulp.dest('./lcars/css') );
 });
 
 gulp.task('watch', function() {
