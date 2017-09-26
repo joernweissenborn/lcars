@@ -95,7 +95,7 @@ To give your page the classic LCARS look, you'll want to add vertical menus.
 
 The defining style element of LCARS interfaces are rounded *elbows* that connect horizontal dividers and vertical menus.
 
-![LCARS Elbow](app/img/Elbow1.png)
+![LCARS Elbow](lcars/img/Elbow1.png)
 
 You can create these using the `lcars-elbow` class. You define the width of these elbows by adding them onto a column.
 
@@ -110,6 +110,6 @@ You can create these using the `lcars-elbow` class. You define the width of thes
 </div>
 ```
 
-## Thanks
+# Thanks
 
 Thanks to @garrett- for initial development!
