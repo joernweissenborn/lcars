@@ -26,7 +26,7 @@ gulp.task('compile-dev', function() {
           ]
       })
     )
-    .pipe( gulp.dest('./app/css') );
+    .pipe( gulp.dest('./lcars/css') );
 });
 
 gulp.task('compile-build', function() {
@@ -49,4 +49,4 @@ gulp.task('watch', function() {
   gulp.watch(paths.coreFiles, ['compile-dev']);
 });
 
-gulp.task('compile', ['compile-dev', 'compile-build']);
+gulp.task('default', ['compile-dev', 'compile-build']);

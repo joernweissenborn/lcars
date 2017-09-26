@@ -946,6 +946,11 @@ ol.lcars-menu li.large-gap,
 ul.lcars-menu li.large-gap {
   margin-bottom: 0.4em;
 }
+.lcars-menu li.fill,
+ol.lcars-menu li.fill,
+ul.lcars-menu li.fill {
+  height: 100%;
+}
 .lcars-menu li.tall,
 ol.lcars-menu li.tall,
 ul.lcars-menu li.tall {
