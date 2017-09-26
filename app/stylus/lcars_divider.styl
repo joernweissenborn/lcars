@@ -1,0 +1,31 @@
+// LCARS Divider
+
+// Creates dynamic color divider classes
+create-divider-colors(colors)
+  for colorName, colorValue in colors
+    for colorName2, colorValue2 in colors
+      .{prefix}{colorName}-{colorName2}-divide
+        if colorName != colorName2
+          background-image linear-gradient(90deg, transparent far-spacer, black far-spacer), linear-gradient(90deg, colorValue near-color-size, transparent near-color-size), linear-gradient(90deg, transparent far-color-size, colorValue2 far-color-size)
+
+divider-pattern-size = 10 * base-width
+lcars-orange = colors.orange
+lcars-blue = colors.blue
+far-spacer = divider-pattern-size - base-spacing
+near-color-size = divider-pattern-size / 4
+far-color-size = near-color-size + base-spacing
+
+.{prefix}divider
+  padding-top base-height + base-spacing
+  border-right base-spacing solid black
+  background-repeat repeat-x
+  background-size divider-pattern-size base-height
+  background-image linear-gradient(90deg, transparent far-spacer, black far-spacer), linear-gradient(90deg, lcars-blue near-color-size, transparent near-color-size), linear-gradient(90deg, transparent far-color-size, lcars-orange far-color-size)
+  &.bottom
+    padding-bottom @padding-top
+    padding-top 0
+    background-position bottom left
+    min-height base-height*4
+
+// Color combo clases
+create-divider-colors(colors)

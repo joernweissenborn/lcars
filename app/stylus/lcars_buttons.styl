@@ -1,5 +1,8 @@
 // LCARS - Buttons
 
+button-padding--tb = base-spacing
+button-padding--lr = base-spacing
+
 // Define base button styles
 .{prefix}button
 a.{prefix}button
@@ -24,12 +27,21 @@ a.{prefix}button
 
   .{prefix}button-addition
     display inline-block
-    height base-height
+    // position absolute
+    // right: base-height/2
+    float right
+    vertical-align middle
     background black
     color white
     font-size base-font-size * 2
-    padding base-spacing base-spacing
-    margin-right base-spacing * 2
+    padding 0 base-spacing
+    margin-right (base-height/2)
+
+// Defines border radius sides for the LCARS buttons
+create-sides(sides)
+  for side in sides
+    .{prefix}button.{side}
+      border-radius side radius-size
 
 // Define button style types
 sides = bottom top left right

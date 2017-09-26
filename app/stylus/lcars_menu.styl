@@ -1,0 +1,30 @@
+// LCARS Menu
+menu-height = base-height
+menu-column-spacing = 1.5em
+
+.{prefix}menu,
+ol.{prefix}menu,
+ul.{prefix}menu
+  margin-right menu-column-spacing
+  &.left
+    margin-right @margin-right
+    margin-left 0
+  &.right
+    margin-left @margin-right
+    margin-right 0
+  & li
+    display inline-block
+    vertical-align top
+    color black
+    font-weight bold
+    size 100% menu-height
+    padding base-spacing
+    margin-bottom base-spacing
+    &.large-gap
+      margin-bottom base-spacing*2
+    &.tall
+      height menu-height*3
+    & a
+      display block
+      text-decoration none
+      color inherit
