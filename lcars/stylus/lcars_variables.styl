@@ -4,13 +4,26 @@
 
 prefix = 'lcars-'
 
-// Fonts
-base-font-size = 1em
+
+to_em(multiplier)
+  unit(multiplier/base-font-size, rem)
 
 // Sizes
-base-spacing = 0.2em
-base-height = 2em
-base-width = 5em
+
+// abstract unit, everything is related to the base spacing, which is defined as quarter of font
+base-font-size = 4
+
+base-spacing = to_em(1)
+double-spacing = base-spacing * 2
+
+base-height = to_em(12)
+half-height = base-height/2
+base-width = to_em(30)
+half-width = base-width/2
+
+bar-height = half-height
+elbow-radius-size = half-width
+elbow-column-spacing = elbow-radius-size/2 + base-spacing/2
 
 // Grid base
 grid-base = 12

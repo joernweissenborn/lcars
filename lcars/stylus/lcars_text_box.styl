@@ -1,0 +1,58 @@
+// LCARS - Textbox
+
+.{prefix}text-box
+a.{prefix}text-box
+  background-color black
+  color white
+  font-weight bold
+
+  width base-width
+  height base-height
+  padding-left base-spacing
+  padding-right base-spacing
+  box-sizing border-box
+
+  display inline-flex
+  flex-direction row
+
+  &.big
+    font-size 150%
+
+  &.large
+    font-size 200%
+
+  &.huge
+    font-size 400%
+    height @height*2
+
+  &.centered
+    justify-content center
+
+  &.right
+    justify-content flex-end
+
+  &.full-centered
+    justify-content center
+    align-items center
+
+  &.centered-right
+    justify-content flex-end
+    align-items center
+
+  &.bottom
+    align-items flex-end
+
+  &.bottom-centered
+    justify-content center
+    align-items flex-end
+
+  &.bottom-right
+    justify-content flex-end
+    align-items flex-end
+
+  &.blink
+    animation blinker 1s linear infinite
+
+@keyframes blinker
+  50%
+    opacity 0.4

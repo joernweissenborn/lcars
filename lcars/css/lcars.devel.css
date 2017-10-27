@@ -1,3 +1,8 @@
+body {
+  background: linear-gradient(45deg, rgba(34,51,85,0.467) 25%, transparent 25%), linear-gradient(-45deg, rgba(34,51,85,0.467) 25%, transparent 25%), linear-gradient(45deg, transparent 75%, rgba(34,51,85,0.467) 75%), linear-gradient(-45deg, transparent 75%, rgba(34,51,85,0.467) 75%);
+  background-size: 0.5rem 0.5rem;
+  background-position: 0 0, 0.25rem 0, 0.25rem -0.25rem, 0 -0.25rem;
+}
 .lcars-gray-bg {
   background-color: rgba(34,51,85,0.467) !important;
 }
@@ -686,88 +691,6 @@ h6 {
 .lcars-element .lcars-element-decorator.right:after {
   left: 0.25rem;
   right: unset;
-}
-.lcars-text-box,
-a.lcars-text-box {
-  background-color: #000;
-  color: #fff;
-  font-weight: bold;
-  width: 7.5rem;
-  height: 3rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  box-sizing: border-box;
-  display: inline-flex;
-  flex-direction: row;
-}
-.lcars-text-box.big,
-a.lcars-text-box.big {
-  font-size: 150%;
-}
-.lcars-text-box.large,
-a.lcars-text-box.large {
-  font-size: 200%;
-}
-.lcars-text-box.huge,
-a.lcars-text-box.huge {
-  font-size: 400%;
-  height: 6rem;
-}
-.lcars-text-box.centered,
-a.lcars-text-box.centered {
-  justify-content: center;
-}
-.lcars-text-box.right,
-a.lcars-text-box.right {
-  justify-content: flex-end;
-}
-.lcars-text-box.full-centered,
-a.lcars-text-box.full-centered {
-  justify-content: center;
-  align-items: center;
-}
-.lcars-text-box.centered-right,
-a.lcars-text-box.centered-right {
-  justify-content: flex-end;
-  align-items: center;
-}
-.lcars-text-box.bottom,
-a.lcars-text-box.bottom {
-  align-items: flex-end;
-}
-.lcars-text-box.bottom-centered,
-a.lcars-text-box.bottom-centered {
-  justify-content: center;
-  align-items: flex-end;
-}
-.lcars-text-box.bottom-right,
-a.lcars-text-box.bottom-right {
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.lcars-text-box.blink,
-a.lcars-text-box.blink {
-  animation: blinker 1s linear infinite;
-}
-@-moz-keyframes blinker {
-  50% {
-    opacity: 0.4;
-  }
-}
-@-webkit-keyframes blinker {
-  50% {
-    opacity: 0.4;
-  }
-}
-@-o-keyframes blinker {
-  50% {
-    opacity: 0.4;
-  }
-}
-@keyframes blinker {
-  50% {
-    opacity: 0.4;
-  }
 }
 .lcars-bracket {
   background-color: #fc6;

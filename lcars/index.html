@@ -5,117 +5,394 @@
   <title>LCARS</title>
   <link rel="stylesheet" href="css/lcars.css">
   <style>
+
   html, body { background: black }
+  p, h1, h2, h3 {
+    margin-top: 1em;
+  }
+
+	pre {
+		display: inline;
+				white-space: pre-line;
+				word-wrap: break-word;
+	}
   </style>
 </head>
 <body>
+	<div class="lcars-app-container">
 
-  <div class="lcars-container">
+		<!-- HEADER ==================================================== -->
 
-    <!-- TOP ROW
-    =========================================================== -->
-    <div class="lcars-row spaced">
+		<div id="header" class="lcars-row header">
 
-      <!-- TOP LEFT ELBOW
-      =========================================================== -->
-      <div class="lcars-column u-1-8 lcars-elbow left bottom lcars-blue-bg">
-        <a href="#">Side Button 1</a>
-      </div>
+			<!-- ELBOW -->
+			<div class="lcars-elbow left-bottom lcars-tan-bg"></div>
 
-      <!-- TOP DIVIDER AND BUTTONS
-      =========================================================== -->
-      <div class="lcars-column u-6-8 lcars-divider lcars-blue-tan-divide">
-        <div class="lcars-row">
-          <div class="lcars-column u-1-2">
-            <a href="#" class="lcars-button radius">
-              Button 1
-              <span class="lcars-button-addition">B4</span>
-            </a>
-          </div>
-          <div class="lcars-column u-1-2">
-            <h1 class="right">LCARS</h1>
-          </div>
-        </div>
-      </div>
+			<!-- BAR WITH TITLE -->
+			<div class="lcars-bar horizontal">
+				<div class="lcars-title right">LCARS</div>
+			</div>
 
-      <!-- TOP RIGHT ELBOW
-      =========================================================== -->
-      <div class="lcars-column u-1-8 lcars-elbow right bottom lcars-tan-bg">
-        <a href="#">Side Button 2</a>
-      </div>
-    </div>
+			<!-- ROUNDED EDGE DECORATED -->
+			<div class="lcars-bar horizontal right-end decorated"></div>
+		</div>
 
-    <div class="lcars-row">
+		<!-- SIDE MENU ================================================= -->
 
-      <!-- LEFT MENU
-      =========================================================== -->
-      <div class="lcars-column u-1-8">
-        <ul class="lcars-menu">
-          <li class="lcars-blue-bg"><a href="#">Testing</a></li>
-          <li class="lcars-blue-bg tall large-gap">Testing Large</li>
-          <li class="lcars-tan-bg">Testing 2</li>
-          <li class="lcars-tan-bg tall">Testing Large 2</li>
-          <li class="lcars-tan-bg">Testing 3</li>
-        </ul>
-      </div>
+		<div id="left-menu" class="lcars-column start-space lcars-u-1">
 
-      <!-- CENTER SECTION
-      =========================================================== -->
-      <div class="lcars-column u-6-8">
-        <div class="lcars-row">
-          <div class="lcars-column u-1-2">
-            <a href="#" class="lcars-button radius">Button 1</a>
-          </div>
-          <div class="lcars-column u-1-2">
-            <a href="#" class="lcars-button radius">Button 2</a>
-          </div>
-        </div>
-      </div>
+			<!-- FILLER -->
+			<div class="lcars-bar lcars-u-1"></div>
+		</div>
 
-      <!-- RIGHT MENU
-      =========================================================== -->
-      <div class="lcars-column u-1-8">
-        <ul class="lcars-menu right">
-          <li class="lcars-tan-bg"><a href="#">Testing</a></li>
-          <li class="lcars-tan-bg tall large-gap">Testing Large</li>
-          <li class="lcars-blue-bg">Testing 2</li>
-          <li class="lcars-blue-bg tall">Testing Large 2</li>
-          <li class="lcars-blue-bg">Testing 3</li>
-        </ul>
-      </div>
-    </div>
+		<!-- FOOTER ==================================================== -->
 
-    <!-- BOTTOM ROW
-    =========================================================== -->
-    <div class="lcars-row spaced">
+		<div id="footer" class="lcars-row ">
+			<!-- ELBOW -->
+			<div class="lcars-elbow left-top lcars-tan-bg"></div>
+			<!-- BAR -->
+			<div class="lcars-bar horizontal both-divider bottom"></div>
+			<!-- ROUNDED EDGE -->
+			<div class="lcars-bar horizontal right-end left-divider bottom"></div>
+		</div>
 
-      <!-- BOTTOM LEFT ELBOW
-      =========================================================== -->
-      <div class="lcars-column u-1-8 lcars-elbow left top lcars-tan-bg">
-        <a href="#">Side Button 3</a>
-      </div>
+		<!-- MAIN CONTAINER -->
+		<div id="container">
+			<!-- COLUMN LAYOUT -->
+			<div class="lcars-column lcars-u-5">
 
-      <!-- BOTTOM DIVIDER AND BUTTONS
-      =========================================================== -->
-      <div class="lcars-column u-6-8 lcars-divider bottom lcars-tan-blue-divide">
-        <div class="lcars-row">
-          <div class="lcars-column u-1-2">
-            <a href="#" class="lcars-button radius">Button 1</a>
-          </div>
-          <div class="lcars-column u-1-2">
-            <a href="#" class="lcars-button radius">Button 2</a>
-          </div>
-        </div>
-      </div>
+				<h1>LCARS</h1>
 
-      <!-- BOTTOM RIGHT ELBOW
-      =========================================================== -->
-      <div class="lcars-column u-1-8 lcars-elbow right top lcars-blue-bg">
-        <a href="#">Side Button 4</a>
-      </div>
-    </div>
+				<p>
+					LCARS is a CCS framework like Bootstrap to create user interfaces similiar as in a popular sci-fi franchise. Enjoy!
+				</p>
 
-  </div>
+				<!-- LAYOUT -->
+				<h2>Layout</h2>
+
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-row</pre></span>
+				<p>
+				<a>Creates a row layout.</a>
+
+				<ul>
+					<li><span><pre class="lcars-rust-color">fill</pre>: fill available space in column or row</span></li>
+					<li><span><pre class="lcars-rust-color">centered</pre>: center content horizontally</span></li>
+					<li><span><pre class="lcars-rust-color">full-centered</pre>: center content horizontally and vertically</span></li>
+					<li><span><pre class="lcars-rust-color">right</pre>: align content to the right</span></li>
+					<li><span><pre class="lcars-rust-color">right-centered</pre>: align content to the right and center vertically</span></li>
+					<li><span><pre class="lcars-rust-color">right-bottom</pre>: align content to the bottom and to the right</span></li>
+				</ul>
+				</p>
+
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-column</pre></span>
+				<p>
+				<a>Creates a column layout.</a>
+
+				<ul>
+					<li><span><pre class="lcars-rust-color">fill</pre>: fill available space in column or row</span></li>
+					<li><span><pre class="lcars-rust-color">centered</pre>: center content vertically</span></li>
+					<li><span><pre class="lcars-rust-color">full-centered</pre>: center content horizontally and vertically</span></li>
+					<li><span><pre class="lcars-rust-color">centered-right</pre>: align content to the right and center vertically</span></li>
+					<li><span><pre class="lcars-rust-color">bottom</pre>: align content to the bottom</span></li>
+					<li><span><pre class="lcars-rust-color">bottom-centered</pre>: align content to the bottom and center horizontally</span></li>
+					<li><span><pre class="lcars-rust-color">left-menu</pre>: add margin to right to align in left elbow</span></li>
+					<li><span><pre class="lcars-rust-color">right-menu</pre>: add margin to left to align in right elbow</span></li>
+				</ul>
+				</p>
+
+				<!-- GRID -->
+				<h2>Grid</h2>
+
+				<p>
+				<a>LCARS has strict grid system. item sizes are set in multiples of unit size. </a>
+				<ul>
+					<li>The <pre class="lcars-dodger-blue-color">lcars-u-X</pre> class sets the width to X * unit size (X = 0..16) </li>
+					<li>The <pre class="lcars-dodger-blue-color">lcars-vu-X</pre> class sets the height to X * unit size (X = 0..16)</li>
+					<li>The <pre class="lcars-dodger-blue-color">lcars-u-X-Y</pre> class sets the width to X * unit size and the height to Y times the unit size (X,Y = 0..16)</li>
+				</ul>
+				</p>
+
+				<!-- COLORS  -->
+				<h2 id="colors">Colors</h2>
+
+				<a>LCARS has strict grid system. item sizes are set in multiples of unit size. </a>
+				The following colors can be used be adding the classes:
+				<li><pre class="lcars-dodger-blue-color">lcars-COLORNAME-color</pre>: Sets the text color to COLORNAME</li>
+				<li><pre class="lcars-dodger-blue-color">lcars-COLORNAME-bg</pre>: Sets the background color to COLORNAME</li>
+
+				</p>
+				<a>This are the available colors:</a>
+
+				<p>
+				<div class="lcars-row">
+					<div class="lcars-column">
+						<div class="lcars-element lcars-pale-canary-bg">pale-canary</div>
+						<div class="lcars-element lcars-golden-tanoi-bg">golden-tanoi</div>
+						<div class="lcars-element lcars-neon-carrot-bg">neon-carrot</div>
+						<div class="lcars-element lcars-eggplant-bg">eggplant</div>
+						<div class="lcars-element lcars-lilac-bg">lilac</div>
+						<div class="lcars-element lcars-anakiwa-bg">anakiwa</div>
+						<div class="lcars-element lcars-mariner-bg">mariner</div>
+						<div class="lcars-element lcars-bahama-blue-bg">bahama-blue</div>
+					</div>
+
+					<div class="lcars-column">
+						<div class="lcars-element lcars-blue-bell-bg">blue-bell</div>
+						<div class="lcars-element lcars-melrose-bg">melrose</div>
+						<div class="lcars-element lcars-lilac-bg">lilac</div>
+						<div class="lcars-element lcars-hopbush-bg">hopbush</div>
+						<div class="lcars-element lcars-chestnut-rose-bg">chestnut-rose</div>
+						<div class="lcars-element lcars-orange-peel-bg">orange-peel</div>
+						<div class="lcars-element lcars-atomic-tangerine-bg">atomic-tangerine</div>
+						<div class="lcars-element lcars-pale-canary-bg">pale-canary</div>
+					</div>
+
+					<div class="lcars-column">
+						<div class="lcars-element lcars-danub-bg">danub</div>
+						<div class="lcars-element lcars-indigo-bg">indigo</div>
+						<div class="lcars-element lcars-lavender-purple-bg">lavender-purple</div>
+						<div class="lcars-element lcars-cosmic-bg">cosmic</div>
+						<div class="lcars-element lcars-red-damask-bg">red-damask</div>
+						<div class="lcars-element lcars-medium-carmine-bg">medium-carmine</div>
+						<div class="lcars-element lcars-bourbon-bg">bourbon</div>
+						<div class="lcars-element lcars-sandy-brown-bg">sandy-brown</div>
+					</div>
+
+					<div class="lcars-column">
+						<div class="lcars-element lcars-periwinkle-bg">periwinkle</div>
+						<div class="lcars-element lcars-dodger-blue-bg">dodger-blue</div>
+						<div class="lcars-element lcars-dodger-blue-alt-bg">dodger-blue-alt</div>
+						<div class="lcars-element lcars-blue-bg">blue</div>
+						<div class="lcars-element lcars-navy-blue-bg">navy-blue</div>
+						<div class="lcars-element lcars-husk-bg">husk</div>
+						<div class="lcars-element lcars-rust-bg">rust</div>
+						<div class="lcars-element lcars-tamarillo-bg">tamarillo</div>
+					</div>
+				</div>
+				</p>
+
+				<!-- Bar -->
+				<h2>Bar</h2>
+
+
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-bar</pre></span>
+				<p>
+				<a>Used to fill spaces and to create top or bottom horizontal bars.</a>
+
+				<ul>
+					<li><span><pre class="lcars-rust-color">spacer</pre>: sets the width and height to base-spacing and background transparent. Use to create custom spacing eg between bars</span></li>
+					<li><span><pre class="lcars-rust-color">double-spacer</pre>: sames as spacer, but double the size</span></li>
+					<li><span><pre class="lcars-rust-color">left-space</pre>: add extra margin of base spacing to the left</span></li>
+					<li><span><pre class="lcars-rust-color">left-double-space</pre>: add extra margin of double the base spacing to the left</span></li>
+					<li><span><pre class="lcars-rust-color">right-space</pre>: add extra margin of base spacing to the right</span></li>
+					<li><span><pre class="lcars-rust-color">right-double-space</pre>: add extra margin of double the base spacing to the right</span></li>
+					<li><span><pre class="lcars-rust-color">horizontal</pre>: set the height to 1/3 of unitsize. Use it as top or bottom bars and with elbows.</span></li>
+					<li>
+						<span><pre class="lcars-rust-color">left-end</pre>: sets the height and the width to 1/3 of the unit height and rounds the left edges. Use ate the edges of horizontal bars.</span>
+						<ul><li><span><pre class="lcars-rust-color">decorated</pre>: adds a decorative stripe.</span></li></ul>
+					</li>
+						<span><pre class="lcars-rust-color">right-end</pre>: sets the height and the width to 1/3 of the unit height and rounds the left right. Use ate the edges of horizontal bars.</span>
+						<ul><li><span><pre class="lcars-rust-color">decorated</pre>: adds a decorative stripe.</span></li></ul>
+					</li>
+					<li><span><pre class="lcars-rust-color">fill</pre>: fill available space in column or row</span></li>
+					<li><span><pre class="lcars-rust-color">bottom</pre>: align self to the bottom</span></li>
+				</ul>
+				</p>
+
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-title</pre></span>
+				<p>
+				<a>A title to use within a horizontal bar.</a>
+
+				<ul>
+					<li><span><pre class="lcars-rust-color">right</pre>: align self to the right.</span></li>
+				</ul>
+				</p>
+
+				<!-- TEXT BOX -->
+				<h2>Text Box</h2>
+
+
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-text-box</pre></span>
+				<p>
+				<a>A text box with pre-defined font sizes. Use to fit headers and indicators, but not for large texts.</a>
+
+				<ul>
+					<li><span><pre class="lcars-rust-color">big</pre>: font-size 150%</span></li>
+					<li><span><pre class="lcars-rust-color">large</pre>: font-size 200%</span></li>
+					<li><span><pre class="lcars-rust-color">huge</pre>: font-size 400%</span></li>
+					<li><span><pre class="lcars-rust-color">huge</pre>: font-size 400%</span></li>
+					<li><span><pre class="lcars-rust-color">centered</pre>: center content horizontally</span></li>
+					<li><span><pre class="lcars-rust-color">full-centered</pre>: center content horizontally and vertically</span></li>
+					<li><span><pre class="lcars-rust-color">right</pre>: align content to the right</span></li>
+					<li><span><pre class="lcars-rust-color">centered-right</pre>: align content to the right and center vertically</span></li>
+					<li><span><pre class="lcars-rust-color">bottom</pre>: align content to the bottom</span></li>
+					<li><span><pre class="lcars-rust-color">bottom-centered</pre>: align content to the bottom and center horizontally</span></li>
+					<li><span><pre class="lcars-rust-color">bottom-right</pre>: align content to the bottom and to the right</span></li>
+				</ul>
+				</p>
+
+				<!-- ELEMENT -->
+				<h2>Element</h2>
+
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-element</pre></span>
+				<p>
+				<a>Elements are the basic blocks of LCARS. They can be used as buttons and indicators. Use the grid classes to set the size.</a>
+
+				<ul>
+					<li><span><pre class="lcars-rust-color">left-rounded</pre>: rounds the left edge</span></li>
+					<li><span><pre class="lcars-rust-color">right-rounded</pre>: rounds the right edge</span></li>
+					<li><span><pre class="lcars-rust-color">rounded</pre>: rounds the all edges</span></li>
+					<li><span><pre class="lcars-rust-color">button</pre>: Add button behaviour</span></li>
+				</ul>
+				</p>
+
+
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-element-addition</pre></span>
+				<p>
+				<a>Use within element. Adds an indicator to the element.</a>
+
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-element-decorator</pre></span>
+				<a>Use within element. Adds a decorator to the left of the element.</a>
+
+				<ul>
+					<li><span><pre class="lcars-rust-color">right</pre>: adds the decorator to the right </span></li>
+				</ul>
+				</p>
+
+
+				<h3>Example</h3>
+
+				<p>
+					<div class="lcars-column">
+						<div class="lcars-row">
+							<div class="lcars-column">
+								<div class="lcars-row">
+									<div class="lcars-element">Simple</div>
+									<div class="lcars-element button">Button</div>
+									<div class="lcars-element lcars-red-bg">Coloured</div>
+								</div>
+								<div class="lcars-row">
+									<div class="lcars-element left-rounded">left round</div>
+									<div class="lcars-element right-rounded">right round</div>
+									<div class="lcars-element rounded">round</div>
+								</div>
+							</div>
+							<div class="lcars-element lcars-u-1-2">tall</div>
+						</div>
+						<div class="lcars-row">
+							<div class="lcars-element lcars-u-2-1">double</div>
+							<div class="lcars-element lcars-u-2-1 lcars-red-bg">
+								<div> with </div>
+								<div class="lcars-element-addition ">addition</div>
+							</div>
+						</div>
+					</div>
+				</p>
+
+				<h2>Elbow</h2>
+
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-elbow</pre></span>
+				<p>
+					<a>The iconic elbow.</a>
+
+					<ul>
+						<li><span><pre class="lcars-rust-color">right-top</pre>: elbows faces to the top right. </span></li>
+						<li><span><pre class="lcars-rust-color">left-top</pre>: elbows faces to the top left. </span></li>
+						<li><span><pre class="lcars-rust-color">right-bottom</pre>: elbows faces to the bottom right. </span></li>
+						<li><span><pre class="lcars-rust-color">left-bottom</pre>: elbows faces to the bottom left. </span></li>
+					</ul>
+				</p>
+
+				<h3>Example</h3>
+
+				<p>
+					<div class="lcars-row">
+						<div class="lcars-elbow right-top lcars-tan-bg">
+							<a>right-top</a>
+						</div>
+						<div class="lcars-bar double-spacer"></div>
+						<div class="lcars-elbow left-top lcars-tan-bg">
+							<a>left-top</a>
+						</div>
+						<div class="lcars-bar spacer"></div>
+							<div class="lcars-bar horizontal-grayBlue bottom both-divider"></div>
+						<div class="lcars-bar spacer"></div>
+						<div class="lcars-bar horizontal-purple right-end bottom"></div>
+				</div>
+				</p>
+				<p>
+					<div class="lcars-row">
+						<div class="lcars-elbow right-bottom lcars-tan-bg">
+							<a>right-bottom</a>
+						</div>
+						<div class="lcars-bar double-spacer"></div>
+						<div class="lcars-elbow left-bottom lcars-tan-bg">
+							<a>left-bottom</a>
+						</div>
+						<div class="lcars-bar spacer"></div>
+						<div class="lcars-bar horizontal-blue right-divider"></div>
+						<div class="lcars-bar spacer"></div>
+						<div class="lcars-bar horizontal-tan right-end"></div>
+					</div>
+				</p>
+
+				<h2>BRACKETS</h2>
+
+				<p>
+					<span>Class: <pre class="lcars-dodger-blue-color">lcars-bracket</pre></span>
+					<a>Decorative Brackets. Use to group elements.</a>
+
+					<ul>
+						<li><span><pre class="lcars-rust-color">right</pre>: right bracket </span></li>
+						<li><span><pre class="lcars-rust-color">left</pre>: left bracket </span></li>
+						<li><span><pre class="lcars-rust-color">top</pre>: top bracket </span></li>
+						<li><span><pre class="lcars-rust-color">bottom</pre>: bottom bracket </span></li>
+					</ul>
+				</p>
+				<h3>Example</h3>
+				<p>
+
+				<div class="lcars-row">
+					<div class="lcars-bracket left"></div>
+					<div class="lcars-column">
+						<div class="lcars-element"></div>
+						<div class="lcars-element"></div>
+					</div>
+					<div class="lcars-bracket right"></div>
+				</div>
+
+				<div class="lcars-row">
+					<div class="lcars-bracket left hollow"></div>
+					<div class="lcars-column">
+						<div class="lcars-element"></div>
+						<div class="lcars-element"></div>
+					</div>
+					<div class="lcars-bracket right hollow"></div>
+				</div>
+
+				<div class="lcars-column lcars-u-2">
+					<div class="lcars-bracket top "></div>
+					<div class="lcars-row">
+						<div class="lcars-element"></div>
+						<div class="lcars-element"></div>
+					</div>
+					<div class="lcars-bracket bottom "></div>
+				</div>
+
+				<div class="lcars-column lcars-u-2">
+					<div class="lcars-bracket top hollow"></div>
+					<div class="lcars-row">
+						<div class="lcars-element"></div>
+						<div class="lcars-element"></div>
+					</div>
+					<div class="lcars-bracket bottom hollow"></div>
+				</div>
+
+				</p>
+			</div>
+
+	</div>
+</div>
 
 </body>
 </html>

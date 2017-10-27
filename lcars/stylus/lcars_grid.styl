@@ -1,32 +1,31 @@
 // LCARS Grid System
 
+// Creates a % based grid provided a base number
+build-sizes-classes(max-x, max-y)
+  for x in 1..max-x
+    for y in 1..max-y
+      .{prefix}u-{x}-{y}
+        width ( base-width * x + base-spacing * (x - 1) )
+        min-width ( base-width * x + base-spacing * (x - 1) )
+        height ( base-height * y + base-spacing * (y - 1) )
+        min-height ( base-height * y + base-spacing * (y - 1) )
+
+build-sizes-classes(16, 8)
 
 // Creates a % based grid provided a base number
-build-grid(baseNum)
-  for i in 1..baseNum
-    base = i
-    for k in 1..base
-      num = k
-      .{prefix}column.u-{num}-{base}
-        width ( (100/base) * num )%
-      .{prefix}column.prefix-{num}-{base}
-        margin-left ( (100/base) * num )%
-      .{prefix}column.suffix-{num}-{base}
-        margin-right ( (100/base) * num )%
+build-height-classes(max-y)
+  for y in 1..max-y
+    .{prefix}vu-{y}
+      height ( base-height * y + base-spacing * (y - 1) )
 
-.{prefix}row
-  width 100%
-  padding 0
-  *zoom 1
-  clearfix()
-  &.spaced
-    margin-bottom base-spacing
+build-height-classes(16)
 
-.{prefix}column
-  display block
-  float left
-  width 100%
+// Creates a % based grid provided a base number
+build-width-classes(max-x)
+  for x in 1..max-x
+    .{prefix}u-{x}
+      width ( base-width * x + base-spacing * (x - 1) )
+      &.half
+        width @width - half-width - (base-spacing/2)
 
-// Build out the grid classes
-// change base number in lcars_variables
-build-grid(grid-base)
+build-width-classes(16)

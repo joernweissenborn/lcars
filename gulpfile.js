@@ -16,6 +16,21 @@ var ENVIRONMENT = 'development' // 'production'
 };
 
 gulp.task('compile-dev', function() {
+  gulp.src('./lcars/stylus/lcars_devel.styl')
+    .pipe(
+      stylus({
+          errors: (ENVIRONMENT==='development'),
+          use: [
+            nib(),
+            rupture()
+          ]
+      })
+    )
+    .pipe( rename('lcars.devel.css') )
+    .pipe( gulp.dest('./lcars/css') );
+});
+
+gulp.task('compile', function() {
   gulp.src('./lcars/stylus/lcars.styl')
     .pipe(
       stylus({
@@ -49,4 +64,4 @@ gulp.task('watch', function() {
   gulp.watch(paths.coreFiles, ['compile-dev']);
 });
 
-gulp.task('default', ['compile-dev', 'compile-build']);
+gulp.task('default', ['compile-dev', 'compile','compile-build']);

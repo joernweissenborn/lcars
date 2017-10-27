@@ -1,0 +1,82 @@
+// LCARS - Elements
+
+.{prefix}element
+  position relative
+  font-weight bold
+  color black
+  text-align right
+  background default-color
+  height base-height
+  width base-width
+  box-sizing border-box
+  padding-left base-spacing * 3
+  padding-right @padding-left
+  display inline-flex
+  flex-direction row
+  justify-content flex-end
+  align-items flex-end
+
+  *
+    margin 0
+
+  &.left-rounded
+    border-radius top left (base-height/2)
+    border-radius bottom left (base-height/2)
+    padding-left (base-height/2)
+
+  &.right-rounded
+    border-radius top right (base-height/2)
+    border-radius bottom right (base-height/2)
+    padding-right (base-height/2)
+
+  &.rounded
+    border-radius (base-height/2)
+    padding-left (base-height/2)
+    padding-right (base-height/2)
+
+  &.button
+    cursor pointer
+
+    &:active
+      background-color default-color-highlight
+
+  .{prefix}element-addition
+    display flex
+    flex-direction column
+    justify-content flex-end
+    height 100%
+    background-color black
+    color white
+    font-size (2/3 * base-height)
+    margin-left base-spacing
+    padding-left base-spacing
+    padding-right base-spacing
+
+  .{prefix}element-decorator
+    display inline-block
+    position absolute
+    top 0
+    width (base-height/2) + double-spacing
+    left 0 - @width - base-spacing
+    height 100%
+    background-color default-color
+    border-top-left-radius half-height
+    border-bottom-left-radius half-height
+    &:after
+      content ''
+      display block
+      position absolute
+      right base-spacing
+      width base-spacing
+      height 100%
+      background-color black
+    &.right
+      right 0 - @width - base-spacing
+      left unset
+      border-top-right-radius half-height
+      border-bottom-right-radius half-height
+      border-top-left-radius 0
+      border-bottom-left-radius 0
+      &:after
+        left base-spacing
+        right unset

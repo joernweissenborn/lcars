@@ -1,7 +1,46 @@
 // LCARS Container
 
-container-padding = 1.5%
-.{prefix}container
-  background black
-  padding container-padding
-  size 100% 100%
+.{prefix}app-container
+  // background black
+  // margin base-spacing
+  display flex
+  width 'calc(100% - %s)' % (double-spacing * 2)
+  height 'calc(100% - %s)' % (double-spacing * 2)
+  overflow hidden
+  margin double-spacing
+
+  #left-menu
+    position fixed
+    // padding double-spacing
+    padding-top (base-height * 3/2)
+    height 100%
+    left double-spacing
+
+  #header
+    position fixed
+    background-color black
+    width 'calc(100% - %s)' % (double-spacing * 2)
+    top 0
+    left double-spacing
+    padding-top double-spacing
+    margin-bottom base-spacing
+    z-index 1
+
+  #footer
+    position fixed
+    background-color black
+    bottom 0
+    left double-spacing
+    padding-bottom double-spacing
+    width 'calc(100% - %s)' % (double-spacing * 2)
+    z-index 1
+
+  #container
+    margin-top base-spacing
+    margin-left base-spacing
+    padding-left elbow-column-spacing + base-width
+    padding-top (base-height * 3/2)
+    padding-bottom (base-height * 3/2)
+    width 100%
+    height 100%
+    overflow auto

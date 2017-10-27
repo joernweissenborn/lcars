@@ -1,55 +1,56 @@
 // LCARS Elbow
 
-elbow-radius-size = base-width
-
 .{prefix}elbow
   position relative
-  width 100%
-  height base-height*4
+  width base-width + elbow-column-spacing
+  min-width @width
+  height (base-height * 1.5)
   min-height @height
-  background white
+  background default-color
+  margin 0
   & a
     display inline-block
     position absolute
+    color black
     bottom 0
     padding base-spacing
   &:after
     content ''
     display block
     position absolute
-    size menu-column-spacing base-height*3
+    width elbow-column-spacing
+    height @height - (base-height/2)
     background black
-  &.left.bottom
-    border-radius top left elbow-radius-size
+  &.left-bottom
+    border-top-left-radius elbow-radius-size
+    & a
+      right elbow-column-spacing + base-spacing
     &:after
-      absolute bottom right
-      border-radius top left elbow-radius-size/2
-  &.left.top
-    border-radius bottom left elbow-radius-size
+      right 0
+      top (base-height/2)
+      border-top-left-radius (elbow-radius-size/2)
+  &.left-top
+    border-bottom-left-radius elbow-radius-size
+    & a
+      top 0
+      right elbow-column-spacing + base-spacing
+    &:after
+      right 0
+      bottom (base-height/2)
+      border-bottom-left-radius elbow-radius-size
+  &.right-bottom
+    border-top-right-radius elbow-radius-size
+    &:after
+      top (base-height/2)
+      border-top-right-radius (elbow-radius-size/2)
+    & a
+      left elbow-column-spacing + base-spacing
+  &.right-top
+    border-bottom-right-radius elbow-radius-size
     & a
       display inline-block
       top 0
-      padding base-spacing
+      left elbow-column-spacing + base-spacing
     &:after
-      absolute top right
-      border-radius bottom left elbow-radius-size/2
-  &.right.bottom
-    border-radius top right elbow-radius-size
-    &:after
-      absolute bottom left
-      border-radius top right elbow-radius-size/2
-    & a
-      display inline-block
-      margin-top @height - base-spacing
-      margin-left menu-column-spacing
-      padding base-spacing
-  &.right.top
-    border-radius bottom right elbow-radius-size
-    & a
-      display inline-block
-      top 0
-      margin-left menu-column-spacing
-      padding base-spacing
-    &:after
-      absolute top left
-      border-radius bottom right elbow-radius-size/2
+      bottom (base-height/2)
+      border-bottom-right-radius (elbow-radius-size/2)

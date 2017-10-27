@@ -2,47 +2,59 @@
 
 // Colors
 colors = {
-  orange: #FF9900,
-  grayBlue: #9999CC,
-  salmon: #CC6666,
-  tan: #FFCC88,
-  blue: #9999FF,
-  peach: #FF9966,
-  purple: #CC6699,
-  pink: #CC99CC,
-  white: #FFFFFF,
-  red: #FF5555
+	gray: #2357,
+	white: white,
+	black: black,
+
+	pale-canary: #FFFF99,
+	golden-tanoi: #FFCC66,
+	neon-carrot: #FF9933,
+	eggplant: #664466,
+  lilac: #cc99cc,
+	anakiwa: #99ccff,
+	mariner: #3366cc,
+	bahama-blue: #006699,
+
+	blue-bell: #9999cc,
+	melrose: #9999ff,
+	hopbush: #cc6699,
+	chestnut-rose: #cc6666,
+	orange-peel: #FF9966,
+	atomic-tangerine: #ff9900,
+
+	danub: #6688cc,
+	indigo: #4455bb,
+	lavender-purple: #9977aa,
+	cosmic: #774466,
+	red-damask: #dd6644,
+	medium-carmine: #AA5533,
+	bourbon: #bb6622,
+	sandy-brown: #ee9955,
+
+  periwinkle: #ccddff,
+	dodger-blue: #5599ff,
+	dodger-blue-alt: #3366ff,
+  blue: #0011ee,
+	navy-blue: #000088,
+	husk: #bbaa55,
+	rust: #bb4411,
+	tamarillo: #882211
 }
 
-// Colors Modern
-colors-modern = {
-  gray: #2379,
-  white: #CCDDFF,
-  light-blue: #5599FF,
-  blue: #3366FF,
-  bright-blue: #0011EE,
-  dark-blue: #000088,
-  yellow: #BBAA55,
-  orange: #BB4411,
-  red: #882211
-}
-
-default-color = colors.orange
+default-color = colors.golden-tanoi
+default-color-highlight = colors.hopbush
 
 // Creates dynamic color classes
 create-colors(prop, suffix, colors)
-  for c, v in colors
-    .{prefix}{c}-{suffix}
-      {prop} v!important
+	for c, v in colors
+		.{prefix}{c}-{suffix}
+			{prop} v!important
 
 // LCARS colors (background-color)
 create-colors('background-color', 'bg', colors)
 
+// LCARS colors (border-color)
+create-colors('border-color', 'border', colors)
+
 // LCARS colors (font color)
 create-colors('color', 'color', colors)
-
-// LCARS colors modern (background-color)
-create-colors('background-color', 'bg-modern', colors)
-
-// LCARS colors modern (font color)
-create-colors('color', 'color-modern', colors-modern)

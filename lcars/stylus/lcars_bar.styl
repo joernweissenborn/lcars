@@ -1,0 +1,98 @@
+// LCARS bar
+
+.{prefix}bar
+  position relative
+  color black
+  height 100%
+  width 100%
+  margin 0
+  display inline-block
+  background-color default-color
+
+  &:after
+    content ''
+    display block
+    position absolute
+    background black
+
+  &.spacer
+    margin 0
+    padding 0
+    background-color transparent
+    width base-spacing
+    min-width base-spacing
+    height base-spacing
+    min-height base-spacing
+
+  &.double-spacer
+    background-color transparent
+    width double-spacing
+    min-width double-spacing
+    height double-spacing
+    min-height double-spacing
+
+  &.left-space
+    margin-left base-spacing
+
+  &.left-double-space
+    margin-left double-spacing
+
+  &.right-space
+    margin-right base-spacing
+
+  &.right-double-space
+    margin-right double-spacing
+
+  &.horizontal
+    height bar-height
+
+  &.left-end
+    width bar-height
+    max-width bar-height
+    min-width bar-height
+    border-top-left-radius (bar-height/2)
+    border-bottom-left-radius (bar-height/2)
+    &.decorated
+      &:after
+        right base-spacing
+        width base-spacing
+        height 100%
+        background-color black
+
+  &.right-end
+    width bar-height
+    max-width bar-height
+    min-width bar-height
+    border-top-right-radius (bar-height/2)
+    border-bottom-right-radius (bar-height/2)
+    &.decorated
+      &:after
+        left base-spacing
+        width base-spacing
+        height 100%
+        background-color black
+        background-color black
+
+  &.fill
+    flex 1
+
+  &.bottom
+    align-self: flex-end
+
+  .{prefix}title
+    scaled-base-spacing = (base-spacing*2/3)
+    color white
+    background-color black
+    text-transform uppercase
+    margin 0
+    margin-left 5 * scaled-base-spacing
+    padding-left scaled-base-spacing
+    padding-right scaled-base-spacing
+    padding-bottom scaled-base-spacing
+    display inline-block
+    font-size 150%
+    height 100%
+
+    &.right
+      float right
+      margin-right 5 * scaled-base-spacing
