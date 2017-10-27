@@ -628,13 +628,13 @@ h6 {
   margin: 0;
 }
 .lcars-element.left-rounded {
-  border-radius: top left 1.5rem;
-  border-radius: bottom left 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
   padding-left: 1.5rem;
 }
 .lcars-element.right-rounded {
-  border-radius: top right 1.5rem;
-  border-radius: bottom right 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
   padding-right: 1.5rem;
 }
 .lcars-element.rounded {
