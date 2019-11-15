@@ -26,3 +26,5 @@ The library has been completly rewritten, dropping things like dividers and menu
 ## Thanks
 
 Thanks to @garrett- for initial development!
+
+Thanks to @jrwarwick for audio support!
