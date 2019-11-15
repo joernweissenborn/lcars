@@ -58,11 +58,20 @@ function audioReady() {
 }
 
 
+//"Normal" buttons
 var button_list = document.querySelectorAll("#container div.lcars-element.button");
 for (var button of button_list) {
 	console.log("Audio-enabling button " + button.id + " " + button.innerText);
 	button.addEventListener("click", function(){ audioAcknowledge(); }); 
 }
+
+//"SVG sub-document" buttons
+button_list = document.querySelectorAll("svg .button");
+for (var button of button_list) {
+	console.log("Audio-enabling button " + button.id + " " + button.innerText);
+	button.addEventListener("click", function(){ audioAcknowledge(); }); 
+}
+
 
 
 //All "booted" up. Many browsers won't play this next sound because the user hasn't "blessed" the action with a UI click yet.
