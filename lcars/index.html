@@ -64,7 +64,7 @@
 				<h1>LCARS</h1>
 
 				<p>
-					LCARS is a CCS framework like Bootstrap to create user interfaces similiar as in a popular sci-fi franchise. Enjoy!
+					LCARS is a CSS framework like Bootstrap to create user interfaces similiar as in a popular sci-fi franchise. Enjoy!
 				</p>
 
 				<!-- LAYOUT -->
@@ -242,7 +242,7 @@
 					<li><span><pre class="lcars-rust-color">left-rounded</pre>: rounds the left edge</span></li>
 					<li><span><pre class="lcars-rust-color">right-rounded</pre>: rounds the right edge</span></li>
 					<li><span><pre class="lcars-rust-color">rounded</pre>: rounds the all edges</span></li>
-					<li><span><pre class="lcars-rust-color">button</pre>: Add button behaviour</span></li>
+					<li><span><pre class="lcars-rust-color">button</pre>: Add button behaviour. Optionally can include automatic <a href="#audio_section">Audible effect</a>.</span></li>
 				</ul>
 				</p>
 
@@ -392,10 +392,28 @@
 				</div>
 
 				</p>
+
+				<h2 id="audio_section">Audio</h2>
+
+				<span>Class: <pre class="lcars-dodger-blue-color">button</pre></span>
+				<p>
+					Will also automatically receive a sound-effect event if you include the following at the bottom of the page:
+					<ul>
+						<li>special dummy audio element</li>
+						<li>js/lcars_audio.js script</li>
+					</ul>
+<pre class="lcars-dodger-blue-color">
+&lt;audio id="audUmmy"/&gt;&lt;!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types --&gt;
+&lt;script src="js/lcars_audio.js"&gt;&lt;/script&gt;
+</pre>
+				</p>
 			</div>
 
 	</div>
 </div>
+
+<audio id="audUmmy"/><!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types -->
+<script src="js/lcars_audio.js"></script>
 
 </body>
 </html>
