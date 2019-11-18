@@ -33,7 +33,7 @@ for (var key in audioExtensions) {
 	}
 }
 audAck   = new Audio("audio/input_ack." + audioType);
-audNak   = new Audio("audio/input_neg_ack." + audioType);
+audNak   = new Audio("audio/input_nak." + audioType);
 audAlert = new Audio("audio/output_bel." + audioType);
 audReady = new Audio("audio/output_soh." + audioType);
 
@@ -57,19 +57,26 @@ function audioReady() {
 	audReady.play();
 }
 
+function enableAudio(el) {
+	if (el.classList.contains("disabled")) {
+		el.addEventListener("click", function(){ audioNegativeAcknowledge(); }); 
+	} else {
+		el.addEventListener("click", function(){ audioAcknowledge(); }); 
+	}
+}
 
 //"Normal" buttons
 var button_list = document.querySelectorAll("#container div.lcars-element.button");
 for (var button of button_list) {
-	console.log("Audio-enabling button " + button.id + " " + button.innerText);
-	button.addEventListener("click", function(){ audioAcknowledge(); }); 
+	console.log("Audio-enabling standard button " + button.id + " " + button.innerText);
+	enableAudio(button);
 }
 
 //"SVG sub-document" buttons
 button_list = document.querySelectorAll("svg .button");
 for (var button of button_list) {
-	console.log("Audio-enabling button " + button.id + " " + button.innerText);
-	button.addEventListener("click", function(){ audioAcknowledge(); }); 
+	console.log("Audio-enabling SVG button " + button.id + " " + button.innerText);
+	enableAudio(button);
 }
 
 

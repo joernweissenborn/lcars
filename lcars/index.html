@@ -411,182 +411,91 @@
 				<h2 id="svg_section">SVG Special Elements</h2>
 
 				<p>
-					Some particularly complex geometry such as the classic circular x/y control can be more easily achieved with special prepackaged SVG images.
-					<a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_In_HTML_Introduction">Inline SVG</a> can be used</a> for increased interactivity and customization. 
+					Some particularly complex geometry such as the classic circular x/y control can be more easily achieved with special prepackaged SVG images. A limited number of particularly recognizable special elements are included. They are totally optional and may be deleted if your project will not utilize them. 
+				</p>
+				<p>
+					These special elements may be inserted with traditional <span class="lcars-dodger-blue-color">img</span>  tags:
+
 <pre class="lcars-dodger-blue-color">
 &lt;img id="xy_control" src="img/lcars_xy_circle_widget_optimized.svg" /&gt;
 </pre>
-					<img id="xy_control" src="img/lcars_xy_circle_widget_optimized.svg" />
+					<img id="xy_control_element" src="img/lcars_xy_circle_widget_optimized.svg" />
+				</p>
+				<p>
 					
+					Or, <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_In_HTML_Introduction">Inline SVG</a> can be used for increased interactivity and customization within the element. SVG embedded like this can make use of standard element id and class attributes for css and DOM node selectors. This method is currently necessary for audio support to apply to the SVG element.
+				</p>
+				<p>
+				
 					<!--  Fully inline svg style -->
-					<!-- <img id="xy_control_id" src="img/lcars_xy_circle_widget_semi_optimized_id.svg" /> -->
 
-
-<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="80mm"
-   height="80mm"
-   version="1.1"
-   viewBox="0 0 80 80"
-   id="svg41"
-   sodipodi:docname="lcars_xy_circle_widget_optimized.svg"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
-  <defs
-     id="defs45" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1057"
-     id="namedview43"
-     showgrid="false"
-     inkscape:zoom="1.5610417"
-     inkscape:cx="180.13622"
-     inkscape:cy="158.90867"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg41" />
-  <metadata
-     id="metadata2">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <path
-     inkscape:connector-curvature="0"
-     style="fill:#ffcc66"
-     d="M 33,33 V 0.65 C 17.008,3.0974 3.023,17.067 0.576,33 Z"
-     id="xy_ctl_NW" />
-  <use
-     y="0"
-     x="0"
-     id="xy_ctl_NE"
-     xlink:href="#xy_ctl_NW"
-     height="100%"
-     width="100%"
-     transform="matrix(-1,0,0,1,80,0)" />
-  <use
-     y="0"
-     x="0"
-     id="xy_ctl_SW"
-     xlink:href="#xy_ctl_NW"
-     height="100%"
-     width="100%"
-     transform="matrix(1,0,0,-1,-8.2089e-8,80)"
-     inkscape:label="#xy_ctl_SW" />
-  <use
-     y="0"
-     x="0"
-     id="xy_ctl_SE"
-     xlink:href="#xy_ctl_NW"
-     height="100%"
-     width="100%"
-     transform="rotate(180,40,40)" />
-  <path
-     inkscape:connector-curvature="0"
-     id="xy_ctl_up"
-     style="fill:#9999cc"
-     class="button"
-     d="M 34,10 H 46 V 0.5 C 42.1215,0.02563 37.956,0.0176 34,0.5 Z" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path13"
-     style="fill:none;stroke:#000000;stroke-width:1.20000005"
-     d="M 44.2,2.2 V 7.2271" />
-  <path
-     inkscape:connector-curvature="0"
-     id="xy_ctl_left"
-     style="fill:#9999cc"
-     class="button"
-     d="M 10,46 V 34 H 0.5 c -0.47437,3.8785 -0.4824,8.044 0,12 z" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path17"
-     style="opacity:0.88899997;fill:none;stroke:#000000;stroke-width:1.20000005"
-     d="M 2.199,35.8 H 7.2261" />
-  <path
-     inkscape:connector-curvature="0"
-     id="xy_ctl_right"
-     style="fill:#9999cc"
-     class="button"
-     d="m 70,34 v 12 h 9.5 c 0.47437,-3.8785 0.4824,-8.044 0,-12 z" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path21"
-     style="fill:none;stroke:#000000;stroke-width:1.20000005"
-     d="M 77.801,44.2 H 72.7739" />
-  <path
-     inkscape:connector-curvature="0"
-     id="xy_ctl_down"
-     style="fill:#9999cc"
-     class="button"
-     d="M 46,70 H 34 v 9.5 c 3.8785,0.47437 8.044,0.4824 12,0 z" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path25"
-     style="fill:none;stroke:#000000;stroke-width:1.20000005"
-     d="M 35.8,77.8 V 72.7729" />
-  <g
-     id="g4565">
-    <path
-       d="M 11,34 V 46 H 34 V 69 H 46 V 46 H 69 V 34 H 46 V 11 H 34 v 23 z"
-       style="fill:#9999cc"
-       id="path27"
-       inkscape:connector-curvature="0" />
-    <path
-       d="M 34,13.49 H 46"
-       style="fill:none;stroke:#000000;stroke-width:0.75"
-       id="path29"
-       inkscape:connector-curvature="0" />
-    <path
-       d="M 34,16.2 H 46"
-       style="fill:none;stroke:#000000;stroke-width:0.75"
-       id="path31"
-       inkscape:connector-curvature="0" />
-    <path
-       d="M 34,19.48 H 46"
-       style="fill:none;stroke:#000000;stroke-width:0.75"
-       id="path33"
-       inkscape:connector-curvature="0" />
-    <path
-       d="M 34,27.9 H 46"
-       style="fill:none;stroke:#000000;stroke-width:0.75"
-       id="path35"
-       inkscape:connector-curvature="0" />
-    <path
-       d="M 34,59 H 46"
-       style="fill:none;stroke:#000000;stroke-width:0.75"
-       id="path37"
-       inkscape:connector-curvature="0" />
-  </g>
+<svg width="80mm" height="80mm" version="1.1" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<metadata>
+		<rdf:RDF>
+			<cc:Work rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+				<dc:title/>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<path id="xy_ctl_NE" class="button" d="m47 33v-32.35c15.992 2.4474 29.977 16.417 32.424 32.35z" style="fill:#ffcc66"/>
+	<path id="xy_ctl_SW" class="button" d="m33 47v32.35c-15.992-2.4474-29.977-16.417-32.424-32.35z" style="fill:#ffcc66"/>
+	<path id="xy_ctl_SE" class="button" d="m47 47v32.35c15.992-2.4474 29.977-16.417 32.424-32.35z" style="fill:#ffcc66"/>
+	<path id="xy_ctl_up" class="button" d="m34 10h12v-9.5c-3.8785-0.47437-8.044-0.4824-12 0z" style="fill:#9999cc"/>
+	<path d="m44.2 2.2v5.0271" style="fill:none;stroke-width:1.2;stroke:#000000"/>
+	<path id="xy_ctl_left" class="button" d="m10 46v-12h-9.5c-0.47437 3.8785-0.4824 8.044 0 12z" style="fill:#9999cc"/>
+	<path d="m2.199 35.8h5.0271" style="fill:none;opacity:.889;stroke-width:1.2;stroke:#000000"/>
+	<path id="xy_ctl_right" class="button" d="m70 34v12h9.5c0.47437-3.8785 0.4824-8.044 0-12z" style="fill:#9999cc"/>
+	<path d="m77.801 44.2h-5.0271" style="fill:none;stroke-width:1.2;stroke:#000000"/>
+	<path id="xy_ctl_down" class="button" d="m46 70h-12v9.5c3.8785 0.47437 8.044 0.4824 12 0z" style="fill:#9999cc"/>
+	<path d="m35.8 77.8v-5.0271" style="fill:none;stroke-width:1.2;stroke:#000000"/>
+	<path id="xy_ctl_center_cross" class="button disabled" d="m11 34v12h23v23h12v-23h23v-12h-23v-23h-12v23z" style="fill:#9999cc"/>
+	<path d="m34 13.49h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path d="m34 16.2h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path d="m34 19.48h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path d="m34 27.9h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path d="m34 59h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path id="xy_ctl_NW" class="button" d="m32.977 33v-32.35c-15.992 2.4474-29.977 16.417-32.424 32.35z" style="fill:#ffcc66"/>
 </svg>
 
 
 					<!--  END Fully inline svg style -->
 
+				</p>
+				<p>
+					There are several features built-in to <a href="https://inkscape.org/">Inkscape</a>, the opensource SVG editor, that could be helpful in building some web-browser based behavior. While that should work fine, to keep this framework simple and consistent, a more basic process used to create the special elements was used:
+					<ol>
+						<li>Create master edition of the "special element" as a new SVG drawing file, with document sizing to match real world dimensions. This edition is filled with guides and references, and saved in Inkscape extended svg.</li>
+						<li>Create an intermediate "publishing" copy of the the SVG drawing:
+							<ul>
+								<li>delete all guides.</li>
+								<li>break up any groups where any sub-shape needs to be individually clickable. </li>
+								<li>unlink all object clones (which may require some re-transformation and translation). </li>
+								<li>Assign IDs and matching labels in the "Object Properties" palette (these will translate to Selector-compatible html element IDs), but do not end IDs with digits, padd with some kind of letter if necessary.</li>
+							</ul>
+						</li>
+						<li>Save as "Optimized SVG" with these options:
+							<ul>
+								<li>uncheck shorten color values.</li>
+								<li>uncheck convert css attributes toxml attibutes</li>
+								<li>enable pretty printing format with line breaks, but use tab indentation</li>
+								<li>enable remove unused IDs, but preserve mannually created IDs not ending with digits</li>
+							</ul>
+						</li>
+						<li>Finally, manually edit the XML code of the SVG file to apply class="button" to each important shape/path element that needs to be clickable. These should be easily identifiable as the elements with custom id attribute values that you populated in Inkscape.</li>
+						<li>When inserting the SVG XML code directly into an html5 document, exclude the XML doctype declaration from the SVG file.</li>
+					</ol>
+				</p>
+				<p>
+					To add custom behavior, just use element IDs in selector expressions like any other html5 element; e.g.,
+<pre class="lcars-dodger-blue-color">
+document.querySelector("#xy_ctl_up").addEventListener("click", function(){ 
+	yourCustomFunctionHere();
+	console.log("part of the svg element was clicked!"); 
+});
+</pre>
 				</p>
 			</div>
 
