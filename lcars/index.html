@@ -397,16 +397,88 @@
 
 				<span>Class: <pre class="lcars-dodger-blue-color">button</pre></span>
 				<p>
-					Will also automatically receive a sound-effect event if you include the following at the bottom of the page:
+					The button class will also automatically receive a sound-effect event if you include the following at the bottom of the page:
 					<ul>
-						<li>special dummy audio element</li>
-						<li>js/lcars_audio.js script</li>
+						<li>special dummy audio element for automatic file format support detection</li>
+						<li>js/lcars_audio.js script reference</li>
 					</ul>
-<pre class="lcars-dodger-blue-color">
-&lt;audio id="audUmmy"/&gt;&lt;!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types --&gt;
-&lt;script src="js/lcars_audio.js"&gt;&lt;/script&gt;
-</pre>
+					<pre class="lcars-dodger-blue-color">
+  &lt;audio id="audUmmy"/&gt;&lt;!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types --&gt;
+  &lt;script src="js/lcars_audio.js"&gt;&lt;/script&gt;
+					</pre>
 				</p>
+				<p>
+					To arbitrarily assign sound effects, use your preferred element selector method and call these simple functions:
+					<pre class="lcars-dodger-blue-color">
+  audioAcknowledge();
+  audioNegativeAcknowledge();
+  audioAlert();
+  audioReady();
+					</pre>
+					For quick and dirty specific assignments, you can also just assign directly to the onClick attribute of any html element like so:
+					<pre class="lcars-dodger-blue-color">
+  &lt;dev id="special_button" onclick="audioAcknowledge();"&gt;SPECIAL FUNCTION&lt;/div&gt;
+					</pre>
+
+					<h3>Example</h3>
+					<div id="special_button" class="lcars-element rounded" onclick="audioAcknowledge();">SP FN</div>
+				</p>
+				<p>
+					One possible interpretation for the presumed semantic scheme for the LCARS audible signals is summarized in the following table 
+					with a mapping to semantically similar ASCII control codes. 
+					A couple of simple place-holder sound effects are included for demonstration purposes. 
+					To gain the full benefit of an authentic sounding LCARS interface, 
+					audio samples that match each of the semantic descriptions could be downloaded from elsewhere
+					on the web (<a href="http://www.stdimension.org/int/index.htm">STdimension media library</a> is an excellent resource) and renamed to match 
+					the Audio Filename column shown below, then transcoded to other audio file formats.
+
+					<table >
+					<thead>
+					    <tr><th colspan="2">Code Number</th><th colspan="2"></th><th colspan="3">LCARS</th> 
+					    <tr><th>Dec.</th> <th>Hex.</th> <th>Abbrev.</th> <th>Name</th><th>Description</th> <th>Semantic Description</th><th>Audio Filename</th><th>Element Subclass</th>
+					<thead>
+					<tbody>
+					    <tr><td align="right">1</td><td align="right">1</td><td>SOH</td><td>START OF HEADING</td>
+						<td>Transmission control first character in header.  </td>
+						<td>Initialized, ready for input from user.</td><td>output_soh</td><td>output_initialized</td>
+					    <tr><td align="right">2</td><td align="right">2</td><td>STX</td><td>START OF TEXT</td>
+						<td>Transmission control character before text.</td>
+						<td title="[tlrbL]">Communications transmission or file transfer started, normally. Content part rather than handshakes or queues.</td>
+						<td>output_stx</td><td>output_start_transmission</td>
+					    <tr><td align="right">3</td><td align="right">3</td><td>ETX</td><td>END OF TEXT</td>
+						<td>Transmission control character which terminates a text.</td>
+						<td title="[Tlrbl]">Communications transmission or file transfer ended, normally.</td><td>output_etx</td><td>output_end_transmission</td>
+					    <tr><td align="right">5</td><td align="right">5</td><td>ENQ</td><td>ENQUIRY</td>
+						<td>Transmission control character used as a request for a response from other end of connection</td>
+						<td title="[solfege:dodoso]">question, please answer, please confirm.</td><td>output_enq</td><td>output_enquiry</td>
+					    <tr><td align="right">6</td><td align="right">6</td><td>ACK</td><td>ACKNOWLEDGE</td>
+						<td>Transmission control character transmitted by a receiver as an affirmative response to the sender.</td>
+						<td title="[solfege:DOsoDO]">input acknowledgement.</td><td>input_ack</td><td>input_acknowledge</td>
+					    <tr><td align="right">7</td><td align="right">7</td><td>BEL</td><td>BELL</td>
+						<td>There is a need to call for attention; it may control alarm or attention devices.</td>
+						<td title="[TeeErrErrr]">hard failure/access denied/warning level 1.</td><td>output_bel</td><td>output_error</td>
+					    <tr><td align="right">10</td><td align="right">A</td><td>LF</td><td>LINE FEED</td>
+						<td>Advances the active position		to the same character position                                of the next line.</td>
+						<td title="[drdrdrddddrrdddrdrdrdr]">scrolling sound.</td><td>output_lf</td><td>output_line_feed</td>
+					    <tr><td align="right">21</td><td align="right">15</td><td>NAK</td><td>NEGATIVE ACKNOWLEDGE</td>
+						<td>Transmission control character transmitted by a receiver as a negative response to the sender.</td>
+						<td>keypress failure/low-level access denied/nonresponse. tinkTinkTink</td><td>input_nak</td><td>input_neg_acknowledge</td>
+					    <tr><td align="right">24</td><td align="right">18</td><td>CAN</td><td>CANCEL</td>
+						<td>A character indicating that the data preceding it is in error.
+						As a result, this data is to be ignored. </td>
+						<td>Alarm/warning. maybe yellow alert? </td><td>output_can</td><td>output_alarm</td>
+					    <tr><td align="right">30</td><td align="right">1E</td><td>RS</td><td>RECORD SEPARATOR</td>
+						<td>Separate and qualify data logically. Delimits a data item called a record.</td>
+						<td>small input acknowledgement. Basic Button Beep 2, lower tone.</td><td>input_rs</td><td>input_accept_record</td>
+					    <tr><td align="right">31</td><td align="right">1F</td><td>US</td><td>UNIT SEPARATOR</td>
+						<td>Separate and qualify data logically; delimits a data item called a <i>unit</i>.</td>
+						<td>smallest input acknowledgement. Basic Button Beep.</td><td>input_us</td><td>input_accept_unit</td>
+					    <tr><td align="right">127</td><td align="right">7F</td><td>DEL</td><td>DELETE</td><td><i><small>(not defined)</small></i></td>
+						<td>red alert</td><td>output_red_alert</td><td>output_red_alert</td>
+					</tbody>
+					</table>
+				</p>
+
 			</div>
 
 	</div>
