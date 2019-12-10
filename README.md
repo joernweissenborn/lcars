@@ -21,7 +21,7 @@ Pull requests are very welcome, but please relate it to an issue.
 
 ## Collaborating
 
-We have a public chat channel here https://gitter.im/LCARSCSS/community
+We have a public chat channel here https://gitter.im/LCARSCSS/community . Join us!
 
 ## Note for users of the original version
 
