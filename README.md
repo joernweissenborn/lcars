@@ -19,6 +19,10 @@ Please file an issue, I am happy to help!
 
 Pull requests are very welcome, but please relate it to an issue.
 
+## Collaborating
+
+We have a public chat channel here https://gitter.im/LCARSCSS/community
+
 ## Note for users of the original version
 
 The library has been completly rewritten, dropping things like dividers and menu. If you want to use the old version, checkout the [legacy release](https://github.com/joernweissenborn/lcars/releases/tag/0.1).
