@@ -36,6 +36,9 @@ body {
 .lcars-bahama-blue-bg {
   background-color: #069 !important;
 }
+.lcars-red-alert-bg {
+  background-color: #e10 !important;
+}
 .lcars-blue-bell-bg {
   background-color: #99c !important;
 }
@@ -135,6 +138,9 @@ body {
 .lcars-bahama-blue-border {
   border-color: #069 !important;
 }
+.lcars-red-alert-border {
+  border-color: #e10 !important;
+}
 .lcars-blue-bell-border {
   border-color: #99c !important;
 }
@@ -233,6 +239,9 @@ body {
 }
 .lcars-bahama-blue-color {
   color: #069 !important;
+}
+.lcars-red-alert-color {
+  color: #e10 !important;
 }
 .lcars-blue-bell-color {
   color: #99c !important;
