@@ -641,7 +641,7 @@ h6 {
   cursor: pointer;
 }
 .lcars-element.button:active {
-  background-color: #c69;
+  background-color: #c69 !important;
 }
 .lcars-element .lcars-element-addition {
   display: flex;
