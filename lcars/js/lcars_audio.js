@@ -58,7 +58,7 @@ function audioReady() {
 }
 
 
-var button_list = document.querySelectorAll("#container div.lcars-element.button");
+var button_list = document.querySelectorAll("#container div.lcars-element.button, div.lcars-app-container div.lcars-element.button");
 for (var button of button_list) {
 	console.log("Audio-enabling button " + button.id + " " + button.innerText);
 	button.addEventListener("click", function(){ audioAcknowledge(); }); 
