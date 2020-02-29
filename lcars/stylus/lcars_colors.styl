@@ -47,7 +47,7 @@ default-color-highlight = colors.hopbush
 // Creates dynamic color classes
 create-colors(prop, suffix, colors)
 	for c, v in colors
-		.{prefix}{c}-{suffix}
+		.{prefix}{c}-{suffix}.{prefix}{c}-{suffix}
 			{prop} v!important
 
 // LCARS colors (background-color)
