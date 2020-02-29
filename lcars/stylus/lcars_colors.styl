@@ -48,7 +48,7 @@ default-color-highlight = colors.hopbush
 create-colors(prop, suffix, colors)
 	for c, v in colors
 		.{prefix}{c}-{suffix}.{prefix}{c}-{suffix}
-			{prop} v!important
+			{prop} v
 
 // LCARS colors (background-color)
 create-colors('background-color', 'bg', colors)
