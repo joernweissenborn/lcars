@@ -49,6 +49,8 @@ create-colors(prop, suffix, colors)
 	for c, v in colors
 		.{prefix}{c}-{suffix}
 			{prop} v!important
+			if suffix == 'bg'
+				fill v
 
 // LCARS colors (background-color)
 create-colors('background-color', 'bg', colors)

@@ -5,102 +5,135 @@ body {
 }
 .lcars-gray-bg {
   background-color: rgba(34,51,85,0.467) !important;
+  fill: rgba(34,51,85,0.467);
 }
 .lcars-white-bg {
   background-color: #fff !important;
+  fill: #fff;
 }
 .lcars-black-bg {
   background-color: #000 !important;
+  fill: #000;
 }
 .lcars-pale-canary-bg {
   background-color: #ff9 !important;
+  fill: #ff9;
 }
 .lcars-golden-tanoi-bg {
   background-color: #fc6 !important;
+  fill: #fc6;
 }
 .lcars-neon-carrot-bg {
   background-color: #f93 !important;
+  fill: #f93;
 }
 .lcars-eggplant-bg {
   background-color: #646 !important;
+  fill: #646;
 }
 .lcars-lilac-bg {
   background-color: #c9c !important;
+  fill: #c9c;
 }
 .lcars-anakiwa-bg {
   background-color: #9cf !important;
+  fill: #9cf;
 }
 .lcars-mariner-bg {
   background-color: #36c !important;
+  fill: #36c;
 }
 .lcars-bahama-blue-bg {
   background-color: #069 !important;
+  fill: #069;
 }
 .lcars-blue-bell-bg {
   background-color: #99c !important;
+  fill: #99c;
 }
 .lcars-melrose-bg {
   background-color: #99f !important;
+  fill: #99f;
 }
 .lcars-hopbush-bg {
   background-color: #c69 !important;
+  fill: #c69;
 }
 .lcars-chestnut-rose-bg {
   background-color: #c66 !important;
+  fill: #c66;
 }
 .lcars-orange-peel-bg {
   background-color: #f96 !important;
+  fill: #f96;
 }
 .lcars-atomic-tangerine-bg {
   background-color: #f90 !important;
+  fill: #f90;
 }
 .lcars-danub-bg {
   background-color: #68c !important;
+  fill: #68c;
 }
 .lcars-indigo-bg {
   background-color: #45b !important;
+  fill: #45b;
 }
 .lcars-lavender-purple-bg {
   background-color: #97a !important;
+  fill: #97a;
 }
 .lcars-cosmic-bg {
   background-color: #746 !important;
+  fill: #746;
 }
 .lcars-red-damask-bg {
   background-color: #d64 !important;
+  fill: #d64;
 }
 .lcars-medium-carmine-bg {
   background-color: #a53 !important;
+  fill: #a53;
 }
 .lcars-bourbon-bg {
   background-color: #b62 !important;
+  fill: #b62;
 }
 .lcars-sandy-brown-bg {
   background-color: #e95 !important;
+  fill: #e95;
 }
 .lcars-periwinkle-bg {
   background-color: #cdf !important;
+  fill: #cdf;
 }
 .lcars-dodger-blue-bg {
   background-color: #59f !important;
+  fill: #59f;
 }
 .lcars-dodger-blue-alt-bg {
   background-color: #36f !important;
+  fill: #36f;
 }
 .lcars-blue-bg {
   background-color: #01e !important;
+  fill: #01e;
 }
 .lcars-navy-blue-bg {
   background-color: #008 !important;
+  fill: #008;
 }
 .lcars-husk-bg {
   background-color: #ba5 !important;
+  fill: #ba5;
 }
 .lcars-rust-bg {
   background-color: #b41 !important;
+  fill: #b41;
 }
 .lcars-tamarillo-bg {
   background-color: #821 !important;
+  fill: #821;
 }
 .lcars-gray-border {
   border-color: rgba(34,51,85,0.467) !important;
