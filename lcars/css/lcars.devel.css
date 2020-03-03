@@ -49,6 +49,7 @@ body {
 }
 .lcars-red-alert-bg {
   background-color: #e10 !important;
+  fill: #e10;
 }
 .lcars-blue-bell-bg {
   background-color: #99c !important;
@@ -733,6 +734,9 @@ h6 {
 .lcars-element .lcars-element-decorator.right:after {
   left: 0.25rem;
   right: unset;
+}
+path.button:active {
+  fill: #c69;
 }
 .lcars-bracket {
   background-color: #fc6;
