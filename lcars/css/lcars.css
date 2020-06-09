@@ -1,342 +1,342 @@
-.lcars-gray-bg {
-  background-color: rgba(34,51,85,0.467) !important;
+.lcars-gray-bg.lcars-gray-bg {
+  background-color: rgba(34,51,85,0.467);
   fill: rgba(34,51,85,0.467);
 }
-.lcars-white-bg {
-  background-color: #fff !important;
+.lcars-white-bg.lcars-white-bg {
+  background-color: #fff;
   fill: #fff;
 }
-.lcars-black-bg {
-  background-color: #000 !important;
+.lcars-black-bg.lcars-black-bg {
+  background-color: #000;
   fill: #000;
 }
-.lcars-pale-canary-bg {
-  background-color: #ff9 !important;
+.lcars-pale-canary-bg.lcars-pale-canary-bg {
+  background-color: #ff9;
   fill: #ff9;
 }
-.lcars-golden-tanoi-bg {
-  background-color: #fc6 !important;
+.lcars-golden-tanoi-bg.lcars-golden-tanoi-bg {
+  background-color: #fc6;
   fill: #fc6;
 }
-.lcars-neon-carrot-bg {
-  background-color: #f93 !important;
+.lcars-neon-carrot-bg.lcars-neon-carrot-bg {
+  background-color: #f93;
   fill: #f93;
 }
-.lcars-eggplant-bg {
-  background-color: #646 !important;
+.lcars-eggplant-bg.lcars-eggplant-bg {
+  background-color: #646;
   fill: #646;
 }
-.lcars-lilac-bg {
-  background-color: #c9c !important;
+.lcars-lilac-bg.lcars-lilac-bg {
+  background-color: #c9c;
   fill: #c9c;
 }
-.lcars-anakiwa-bg {
-  background-color: #9cf !important;
+.lcars-anakiwa-bg.lcars-anakiwa-bg {
+  background-color: #9cf;
   fill: #9cf;
 }
-.lcars-mariner-bg {
-  background-color: #36c !important;
+.lcars-mariner-bg.lcars-mariner-bg {
+  background-color: #36c;
   fill: #36c;
 }
-.lcars-bahama-blue-bg {
-  background-color: #069 !important;
+.lcars-bahama-blue-bg.lcars-bahama-blue-bg {
+  background-color: #069;
   fill: #069;
 }
-.lcars-red-alert-bg {
-  background-color: #e10 !important;
+.lcars-red-alert-bg.lcars-red-alert-bg {
+  background-color: #e10;
   fill: #e10;
 }
-.lcars-blue-bell-bg {
-  background-color: #99c !important;
+.lcars-blue-bell-bg.lcars-blue-bell-bg {
+  background-color: #99c;
   fill: #99c;
 }
-.lcars-melrose-bg {
-  background-color: #99f !important;
+.lcars-melrose-bg.lcars-melrose-bg {
+  background-color: #99f;
   fill: #99f;
 }
-.lcars-hopbush-bg {
-  background-color: #c69 !important;
+.lcars-hopbush-bg.lcars-hopbush-bg {
+  background-color: #c69;
   fill: #c69;
 }
-.lcars-chestnut-rose-bg {
-  background-color: #c66 !important;
+.lcars-chestnut-rose-bg.lcars-chestnut-rose-bg {
+  background-color: #c66;
   fill: #c66;
 }
-.lcars-orange-peel-bg {
-  background-color: #f96 !important;
+.lcars-orange-peel-bg.lcars-orange-peel-bg {
+  background-color: #f96;
   fill: #f96;
 }
-.lcars-atomic-tangerine-bg {
-  background-color: #f90 !important;
+.lcars-atomic-tangerine-bg.lcars-atomic-tangerine-bg {
+  background-color: #f90;
   fill: #f90;
 }
-.lcars-danub-bg {
-  background-color: #68c !important;
+.lcars-danub-bg.lcars-danub-bg {
+  background-color: #68c;
   fill: #68c;
 }
-.lcars-indigo-bg {
-  background-color: #45b !important;
+.lcars-indigo-bg.lcars-indigo-bg {
+  background-color: #45b;
   fill: #45b;
 }
-.lcars-lavender-purple-bg {
-  background-color: #97a !important;
+.lcars-lavender-purple-bg.lcars-lavender-purple-bg {
+  background-color: #97a;
   fill: #97a;
 }
-.lcars-cosmic-bg {
-  background-color: #746 !important;
+.lcars-cosmic-bg.lcars-cosmic-bg {
+  background-color: #746;
   fill: #746;
 }
-.lcars-red-damask-bg {
-  background-color: #d64 !important;
+.lcars-red-damask-bg.lcars-red-damask-bg {
+  background-color: #d64;
   fill: #d64;
 }
-.lcars-medium-carmine-bg {
-  background-color: #a53 !important;
+.lcars-medium-carmine-bg.lcars-medium-carmine-bg {
+  background-color: #a53;
   fill: #a53;
 }
-.lcars-bourbon-bg {
-  background-color: #b62 !important;
+.lcars-bourbon-bg.lcars-bourbon-bg {
+  background-color: #b62;
   fill: #b62;
 }
-.lcars-sandy-brown-bg {
-  background-color: #e95 !important;
+.lcars-sandy-brown-bg.lcars-sandy-brown-bg {
+  background-color: #e95;
   fill: #e95;
 }
-.lcars-periwinkle-bg {
-  background-color: #cdf !important;
+.lcars-periwinkle-bg.lcars-periwinkle-bg {
+  background-color: #cdf;
   fill: #cdf;
 }
-.lcars-dodger-blue-bg {
-  background-color: #59f !important;
+.lcars-dodger-blue-bg.lcars-dodger-blue-bg {
+  background-color: #59f;
   fill: #59f;
 }
-.lcars-dodger-blue-alt-bg {
-  background-color: #36f !important;
+.lcars-dodger-blue-alt-bg.lcars-dodger-blue-alt-bg {
+  background-color: #36f;
   fill: #36f;
 }
-.lcars-blue-bg {
-  background-color: #01e !important;
+.lcars-blue-bg.lcars-blue-bg {
+  background-color: #01e;
   fill: #01e;
 }
-.lcars-navy-blue-bg {
-  background-color: #008 !important;
+.lcars-navy-blue-bg.lcars-navy-blue-bg {
+  background-color: #008;
   fill: #008;
 }
-.lcars-husk-bg {
-  background-color: #ba5 !important;
+.lcars-husk-bg.lcars-husk-bg {
+  background-color: #ba5;
   fill: #ba5;
 }
-.lcars-rust-bg {
-  background-color: #b41 !important;
+.lcars-rust-bg.lcars-rust-bg {
+  background-color: #b41;
   fill: #b41;
 }
-.lcars-tamarillo-bg {
-  background-color: #821 !important;
+.lcars-tamarillo-bg.lcars-tamarillo-bg {
+  background-color: #821;
   fill: #821;
 }
-.lcars-gray-border {
-  border-color: rgba(34,51,85,0.467) !important;
+.lcars-gray-border.lcars-gray-border {
+  border-color: rgba(34,51,85,0.467);
 }
-.lcars-white-border {
-  border-color: #fff !important;
+.lcars-white-border.lcars-white-border {
+  border-color: #fff;
 }
-.lcars-black-border {
-  border-color: #000 !important;
+.lcars-black-border.lcars-black-border {
+  border-color: #000;
 }
-.lcars-pale-canary-border {
-  border-color: #ff9 !important;
+.lcars-pale-canary-border.lcars-pale-canary-border {
+  border-color: #ff9;
 }
-.lcars-golden-tanoi-border {
-  border-color: #fc6 !important;
+.lcars-golden-tanoi-border.lcars-golden-tanoi-border {
+  border-color: #fc6;
 }
-.lcars-neon-carrot-border {
-  border-color: #f93 !important;
+.lcars-neon-carrot-border.lcars-neon-carrot-border {
+  border-color: #f93;
 }
-.lcars-eggplant-border {
-  border-color: #646 !important;
+.lcars-eggplant-border.lcars-eggplant-border {
+  border-color: #646;
 }
-.lcars-lilac-border {
-  border-color: #c9c !important;
+.lcars-lilac-border.lcars-lilac-border {
+  border-color: #c9c;
 }
-.lcars-anakiwa-border {
-  border-color: #9cf !important;
+.lcars-anakiwa-border.lcars-anakiwa-border {
+  border-color: #9cf;
 }
-.lcars-mariner-border {
-  border-color: #36c !important;
+.lcars-mariner-border.lcars-mariner-border {
+  border-color: #36c;
 }
-.lcars-bahama-blue-border {
-  border-color: #069 !important;
+.lcars-bahama-blue-border.lcars-bahama-blue-border {
+  border-color: #069;
 }
-.lcars-red-alert-border {
-  border-color: #e10 !important;
+.lcars-red-alert-border.lcars-red-alert-border {
+  border-color: #e10;
 }
-.lcars-blue-bell-border {
-  border-color: #99c !important;
+.lcars-blue-bell-border.lcars-blue-bell-border {
+  border-color: #99c;
 }
-.lcars-melrose-border {
-  border-color: #99f !important;
+.lcars-melrose-border.lcars-melrose-border {
+  border-color: #99f;
 }
-.lcars-hopbush-border {
-  border-color: #c69 !important;
+.lcars-hopbush-border.lcars-hopbush-border {
+  border-color: #c69;
 }
-.lcars-chestnut-rose-border {
-  border-color: #c66 !important;
+.lcars-chestnut-rose-border.lcars-chestnut-rose-border {
+  border-color: #c66;
 }
-.lcars-orange-peel-border {
-  border-color: #f96 !important;
+.lcars-orange-peel-border.lcars-orange-peel-border {
+  border-color: #f96;
 }
-.lcars-atomic-tangerine-border {
-  border-color: #f90 !important;
+.lcars-atomic-tangerine-border.lcars-atomic-tangerine-border {
+  border-color: #f90;
 }
-.lcars-danub-border {
-  border-color: #68c !important;
+.lcars-danub-border.lcars-danub-border {
+  border-color: #68c;
 }
-.lcars-indigo-border {
-  border-color: #45b !important;
+.lcars-indigo-border.lcars-indigo-border {
+  border-color: #45b;
 }
-.lcars-lavender-purple-border {
-  border-color: #97a !important;
+.lcars-lavender-purple-border.lcars-lavender-purple-border {
+  border-color: #97a;
 }
-.lcars-cosmic-border {
-  border-color: #746 !important;
+.lcars-cosmic-border.lcars-cosmic-border {
+  border-color: #746;
 }
-.lcars-red-damask-border {
-  border-color: #d64 !important;
+.lcars-red-damask-border.lcars-red-damask-border {
+  border-color: #d64;
 }
-.lcars-medium-carmine-border {
-  border-color: #a53 !important;
+.lcars-medium-carmine-border.lcars-medium-carmine-border {
+  border-color: #a53;
 }
-.lcars-bourbon-border {
-  border-color: #b62 !important;
+.lcars-bourbon-border.lcars-bourbon-border {
+  border-color: #b62;
 }
-.lcars-sandy-brown-border {
-  border-color: #e95 !important;
+.lcars-sandy-brown-border.lcars-sandy-brown-border {
+  border-color: #e95;
 }
-.lcars-periwinkle-border {
-  border-color: #cdf !important;
+.lcars-periwinkle-border.lcars-periwinkle-border {
+  border-color: #cdf;
 }
-.lcars-dodger-blue-border {
-  border-color: #59f !important;
+.lcars-dodger-blue-border.lcars-dodger-blue-border {
+  border-color: #59f;
 }
-.lcars-dodger-blue-alt-border {
-  border-color: #36f !important;
+.lcars-dodger-blue-alt-border.lcars-dodger-blue-alt-border {
+  border-color: #36f;
 }
-.lcars-blue-border {
-  border-color: #01e !important;
+.lcars-blue-border.lcars-blue-border {
+  border-color: #01e;
 }
-.lcars-navy-blue-border {
-  border-color: #008 !important;
+.lcars-navy-blue-border.lcars-navy-blue-border {
+  border-color: #008;
 }
-.lcars-husk-border {
-  border-color: #ba5 !important;
+.lcars-husk-border.lcars-husk-border {
+  border-color: #ba5;
 }
-.lcars-rust-border {
-  border-color: #b41 !important;
+.lcars-rust-border.lcars-rust-border {
+  border-color: #b41;
 }
-.lcars-tamarillo-border {
-  border-color: #821 !important;
+.lcars-tamarillo-border.lcars-tamarillo-border {
+  border-color: #821;
 }
-.lcars-gray-color {
-  color: rgba(34,51,85,0.467) !important;
+.lcars-gray-color.lcars-gray-color {
+  color: rgba(34,51,85,0.467);
 }
-.lcars-white-color {
-  color: #fff !important;
+.lcars-white-color.lcars-white-color {
+  color: #fff;
 }
-.lcars-black-color {
-  color: #000 !important;
+.lcars-black-color.lcars-black-color {
+  color: #000;
 }
-.lcars-pale-canary-color {
-  color: #ff9 !important;
+.lcars-pale-canary-color.lcars-pale-canary-color {
+  color: #ff9;
 }
-.lcars-golden-tanoi-color {
-  color: #fc6 !important;
+.lcars-golden-tanoi-color.lcars-golden-tanoi-color {
+  color: #fc6;
 }
-.lcars-neon-carrot-color {
-  color: #f93 !important;
+.lcars-neon-carrot-color.lcars-neon-carrot-color {
+  color: #f93;
 }
-.lcars-eggplant-color {
-  color: #646 !important;
+.lcars-eggplant-color.lcars-eggplant-color {
+  color: #646;
 }
-.lcars-lilac-color {
-  color: #c9c !important;
+.lcars-lilac-color.lcars-lilac-color {
+  color: #c9c;
 }
-.lcars-anakiwa-color {
-  color: #9cf !important;
+.lcars-anakiwa-color.lcars-anakiwa-color {
+  color: #9cf;
 }
-.lcars-mariner-color {
-  color: #36c !important;
+.lcars-mariner-color.lcars-mariner-color {
+  color: #36c;
 }
-.lcars-bahama-blue-color {
-  color: #069 !important;
+.lcars-bahama-blue-color.lcars-bahama-blue-color {
+  color: #069;
 }
-.lcars-red-alert-color {
-  color: #e10 !important;
+.lcars-red-alert-color.lcars-red-alert-color {
+  color: #e10;
 }
-.lcars-blue-bell-color {
-  color: #99c !important;
+.lcars-blue-bell-color.lcars-blue-bell-color {
+  color: #99c;
 }
-.lcars-melrose-color {
-  color: #99f !important;
+.lcars-melrose-color.lcars-melrose-color {
+  color: #99f;
 }
-.lcars-hopbush-color {
-  color: #c69 !important;
+.lcars-hopbush-color.lcars-hopbush-color {
+  color: #c69;
 }
-.lcars-chestnut-rose-color {
-  color: #c66 !important;
+.lcars-chestnut-rose-color.lcars-chestnut-rose-color {
+  color: #c66;
 }
-.lcars-orange-peel-color {
-  color: #f96 !important;
+.lcars-orange-peel-color.lcars-orange-peel-color {
+  color: #f96;
 }
-.lcars-atomic-tangerine-color {
-  color: #f90 !important;
+.lcars-atomic-tangerine-color.lcars-atomic-tangerine-color {
+  color: #f90;
 }
-.lcars-danub-color {
-  color: #68c !important;
+.lcars-danub-color.lcars-danub-color {
+  color: #68c;
 }
-.lcars-indigo-color {
-  color: #45b !important;
+.lcars-indigo-color.lcars-indigo-color {
+  color: #45b;
 }
-.lcars-lavender-purple-color {
-  color: #97a !important;
+.lcars-lavender-purple-color.lcars-lavender-purple-color {
+  color: #97a;
 }
-.lcars-cosmic-color {
-  color: #746 !important;
+.lcars-cosmic-color.lcars-cosmic-color {
+  color: #746;
 }
-.lcars-red-damask-color {
-  color: #d64 !important;
+.lcars-red-damask-color.lcars-red-damask-color {
+  color: #d64;
 }
-.lcars-medium-carmine-color {
-  color: #a53 !important;
+.lcars-medium-carmine-color.lcars-medium-carmine-color {
+  color: #a53;
 }
-.lcars-bourbon-color {
-  color: #b62 !important;
+.lcars-bourbon-color.lcars-bourbon-color {
+  color: #b62;
 }
-.lcars-sandy-brown-color {
-  color: #e95 !important;
+.lcars-sandy-brown-color.lcars-sandy-brown-color {
+  color: #e95;
 }
-.lcars-periwinkle-color {
-  color: #cdf !important;
+.lcars-periwinkle-color.lcars-periwinkle-color {
+  color: #cdf;
 }
-.lcars-dodger-blue-color {
-  color: #59f !important;
+.lcars-dodger-blue-color.lcars-dodger-blue-color {
+  color: #59f;
 }
-.lcars-dodger-blue-alt-color {
-  color: #36f !important;
+.lcars-dodger-blue-alt-color.lcars-dodger-blue-alt-color {
+  color: #36f;
 }
-.lcars-blue-color {
-  color: #01e !important;
+.lcars-blue-color.lcars-blue-color {
+  color: #01e;
 }
-.lcars-navy-blue-color {
-  color: #008 !important;
+.lcars-navy-blue-color.lcars-navy-blue-color {
+  color: #008;
 }
-.lcars-husk-color {
-  color: #ba5 !important;
+.lcars-husk-color.lcars-husk-color {
+  color: #ba5;
 }
-.lcars-rust-color {
-  color: #b41 !important;
+.lcars-rust-color.lcars-rust-color {
+  color: #b41;
 }
-.lcars-tamarillo-color {
-  color: #821 !important;
+.lcars-tamarillo-color.lcars-tamarillo-color {
+  color: #821;
 }
 html,
 body {
@@ -683,7 +683,7 @@ h6 {
 .lcars-element.button {
   cursor: pointer;
 }
-.lcars-element.button:active {
+.lcars-element.button.button:active {
   background-color: #c69;
 }
 .lcars-element .lcars-element-addition {
