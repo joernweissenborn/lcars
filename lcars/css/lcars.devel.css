@@ -4,8 +4,8 @@ body {
   background-position: 0 0, 0.25rem 0, 0.25rem -0.25rem, 0 -0.25rem;
 }
 .lcars-gray-bg.lcars-gray-bg {
-  background-color: rgba(34,51,85,0.467);
-  fill: rgba(34,51,85,0.467);
+  background-color: #234;
+  fill: #234;
 }
 .lcars-white-bg.lcars-white-bg {
   background-color: #fff;
@@ -140,7 +140,7 @@ body {
   fill: #821;
 }
 .lcars-gray-border.lcars-gray-border {
-  border-color: rgba(34,51,85,0.467);
+  border-color: #234;
 }
 .lcars-white-border.lcars-white-border {
   border-color: #fff;
@@ -242,7 +242,7 @@ body {
   border-color: #821;
 }
 .lcars-gray-color.lcars-gray-color {
-  color: rgba(34,51,85,0.467);
+  color: #234;
 }
 .lcars-white-color.lcars-white-color {
   color: #fff;
