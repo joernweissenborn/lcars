@@ -46,10 +46,11 @@ default-color = colors.golden-tanoi
 default-color-highlight = colors.hopbush
 
 // Creates dynamic color classes
+// class name repeated for emphasis, increased specificity
 create-colors(prop, suffix, colors)
 	for c, v in colors
-		.{prefix}{c}-{suffix}
-			{prop} v!important
+		.{prefix}{c}-{suffix}.{prefix}{c}-{suffix}
+			{prop} v
 
 // LCARS colors (background-color)
 create-colors('background-color', 'bg', colors)
