@@ -15,7 +15,7 @@ var ENVIRONMENT = 'development' // 'production'
   coreFiles: './lcars/stylus/*.styl'
 };
 
-gulp.task('compile-dev', function() {
+gulp.task('compile-dev', function(done) {
   gulp.src('./lcars/stylus/lcars_devel.styl')
     .pipe(
       stylus({
@@ -28,9 +28,10 @@ gulp.task('compile-dev', function() {
     )
     .pipe( rename('lcars.devel.css') )
     .pipe( gulp.dest('./lcars/css') );
+  done();
 });
 
-gulp.task('compile', function() {
+gulp.task('compile', function(done) {
   gulp.src('./lcars/stylus/lcars.styl')
     .pipe(
       stylus({
@@ -42,9 +43,10 @@ gulp.task('compile', function() {
       })
     )
     .pipe( gulp.dest('./lcars/css') );
+  done();
 });
 
-gulp.task('compile-build', function() {
+gulp.task('compile-build', function(done) {
   gulp.src('./lcars/stylus/lcars.styl')
     .pipe(
       stylus({
@@ -58,10 +60,11 @@ gulp.task('compile-build', function() {
     .pipe( minify() )
     .pipe( rename('lcars.min.css') )
     .pipe( gulp.dest('./lcars/css') );
+  done();
 });
 
 gulp.task('watch', function() {
-  gulp.watch(paths.coreFiles, ['compile-dev']);
+  gulp.watch(paths.coreFiles, gulp.parallel(['compile-dev']));
 });
 
-gulp.task('default', ['compile-dev', 'compile','compile-build']);
+gulp.task('default', gulp.parallel(['compile-dev', 'compile','compile-build']));

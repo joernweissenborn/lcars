@@ -14,7 +14,7 @@
   "homepage": "https://github.com/Garrett-/lcars",
   "devDependencies": {
     "rupture": "^0.1.0",
-    "gulp": "^3.6.2",
+    "gulp": "^4.0.2",
     "stylus": "^0.44.0",
     "nib": "^1.0.2",
     "gulp-stylus": "^1.0.0",
