@@ -43,7 +43,13 @@ var lcarsAudio = {
 		//Actual Standard Wire-up steps
 		var button_list = document.querySelectorAll("#container div.lcars-element.button, div.lcars-app-container div.lcars-element.button");
 		for (var button of button_list) {
-			console.log("Audio-enabling button " + button.id + " " + button.innerText);
+			console.log("Audio-enabling container-contained button " + button.id + " " + button.innerText);
+			button.addEventListener("click", function(){ lcarsAudio.TactileInputAcknowledge(); }); 
+		}
+
+		button_list = document.querySelectorAll("path.button");
+		for (var button of button_list) {
+			console.log("Audio-enabling SVG button " + button.id + " " + button.innerText);
 			button.addEventListener("click", function(){ lcarsAudio.TactileInputAcknowledge(); }); 
 		}
 
@@ -100,6 +106,13 @@ var lcarsAudio = {
 	}
 }
 
+function enableAudio(el) {
+	if (el.classList.contains("disabled")) {
+		el.addEventListener("click", function(){ audioNegativeAcknowledge(); }); 
+	} else {
+		el.addEventListener("click", function(){ audioAcknowledge(); }); 
+	}
+}
 
 //=\\ Standard Wire-up
 var audDummy = document.getElementById("audDummy").appendChild(document.createElement("audio"));

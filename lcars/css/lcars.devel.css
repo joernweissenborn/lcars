@@ -4,106 +4,143 @@ body {
   background-position: 0 0, 0.25rem 0, 0.25rem -0.25rem, 0 -0.25rem;
 }
 .lcars-gray-bg.lcars-gray-bg {
-  background-color: rgba(34,51,85,0.467);
+  background-color: #234;
+  fill: #234;
 }
 .lcars-white-bg.lcars-white-bg {
   background-color: #fff;
+  fill: #fff;
 }
 .lcars-black-bg.lcars-black-bg {
   background-color: #000;
+  fill: #000;
 }
 .lcars-pale-canary-bg.lcars-pale-canary-bg {
   background-color: #ff9;
+  fill: #ff9;
 }
 .lcars-golden-tanoi-bg.lcars-golden-tanoi-bg {
   background-color: #fc6;
+  fill: #fc6;
 }
 .lcars-neon-carrot-bg.lcars-neon-carrot-bg {
   background-color: #f93;
+  fill: #f93;
 }
 .lcars-eggplant-bg.lcars-eggplant-bg {
   background-color: #646;
+  fill: #646;
 }
 .lcars-lilac-bg.lcars-lilac-bg {
   background-color: #c9c;
+  fill: #c9c;
 }
 .lcars-anakiwa-bg.lcars-anakiwa-bg {
   background-color: #9cf;
+  fill: #9cf;
 }
 .lcars-mariner-bg.lcars-mariner-bg {
   background-color: #36c;
+  fill: #36c;
 }
 .lcars-bahama-blue-bg.lcars-bahama-blue-bg {
   background-color: #069;
+  fill: #069;
+}
+.lcars-red-alert-bg.lcars-red-alert-bg {
+  background-color: #e10;
+  fill: #e10;
 }
 .lcars-blue-bell-bg.lcars-blue-bell-bg {
   background-color: #99c;
+  fill: #99c;
 }
 .lcars-melrose-bg.lcars-melrose-bg {
   background-color: #99f;
+  fill: #99f;
 }
 .lcars-hopbush-bg.lcars-hopbush-bg {
   background-color: #c69;
+  fill: #c69;
 }
 .lcars-chestnut-rose-bg.lcars-chestnut-rose-bg {
   background-color: #c66;
+  fill: #c66;
 }
 .lcars-orange-peel-bg.lcars-orange-peel-bg {
   background-color: #f96;
+  fill: #f96;
 }
 .lcars-atomic-tangerine-bg.lcars-atomic-tangerine-bg {
   background-color: #f90;
+  fill: #f90;
 }
 .lcars-danub-bg.lcars-danub-bg {
   background-color: #68c;
+  fill: #68c;
 }
 .lcars-indigo-bg.lcars-indigo-bg {
   background-color: #45b;
+  fill: #45b;
 }
 .lcars-lavender-purple-bg.lcars-lavender-purple-bg {
   background-color: #97a;
+  fill: #97a;
 }
 .lcars-cosmic-bg.lcars-cosmic-bg {
   background-color: #746;
+  fill: #746;
 }
 .lcars-red-damask-bg.lcars-red-damask-bg {
   background-color: #d64;
+  fill: #d64;
 }
 .lcars-medium-carmine-bg.lcars-medium-carmine-bg {
   background-color: #a53;
+  fill: #a53;
 }
 .lcars-bourbon-bg.lcars-bourbon-bg {
   background-color: #b62;
+  fill: #b62;
 }
 .lcars-sandy-brown-bg.lcars-sandy-brown-bg {
   background-color: #e95;
+  fill: #e95;
 }
 .lcars-periwinkle-bg.lcars-periwinkle-bg {
   background-color: #cdf;
+  fill: #cdf;
 }
 .lcars-dodger-blue-bg.lcars-dodger-blue-bg {
   background-color: #59f;
+  fill: #59f;
 }
 .lcars-dodger-blue-alt-bg.lcars-dodger-blue-alt-bg {
   background-color: #36f;
+  fill: #36f;
 }
 .lcars-blue-bg.lcars-blue-bg {
   background-color: #01e;
+  fill: #01e;
 }
 .lcars-navy-blue-bg.lcars-navy-blue-bg {
   background-color: #008;
+  fill: #008;
 }
 .lcars-husk-bg.lcars-husk-bg {
   background-color: #ba5;
+  fill: #ba5;
 }
 .lcars-rust-bg.lcars-rust-bg {
   background-color: #b41;
+  fill: #b41;
 }
 .lcars-tamarillo-bg.lcars-tamarillo-bg {
   background-color: #821;
+  fill: #821;
 }
 .lcars-gray-border.lcars-gray-border {
-  border-color: rgba(34,51,85,0.467);
+  border-color: #234;
 }
 .lcars-white-border.lcars-white-border {
   border-color: #fff;
@@ -134,6 +171,9 @@ body {
 }
 .lcars-bahama-blue-border.lcars-bahama-blue-border {
   border-color: #069;
+}
+.lcars-red-alert-border.lcars-red-alert-border {
+  border-color: #e10;
 }
 .lcars-blue-bell-border.lcars-blue-bell-border {
   border-color: #99c;
@@ -202,7 +242,7 @@ body {
   border-color: #821;
 }
 .lcars-gray-color.lcars-gray-color {
-  color: rgba(34,51,85,0.467);
+  color: #234;
 }
 .lcars-white-color.lcars-white-color {
   color: #fff;
@@ -233,6 +273,9 @@ body {
 }
 .lcars-bahama-blue-color.lcars-bahama-blue-color {
   color: #069;
+}
+.lcars-red-alert-color.lcars-red-alert-color {
+  color: #e10;
 }
 .lcars-blue-bell-color.lcars-blue-bell-color {
   color: #99c;
@@ -691,6 +734,9 @@ h6 {
 .lcars-element .lcars-element-decorator.right:after {
   left: 0.25rem;
   right: unset;
+}
+path.button:active {
+  fill: #c69;
 }
 .lcars-bracket {
   background-color: #fc6;
