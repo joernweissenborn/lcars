@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="80mm" height="80mm" version="1.1" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<metadata>
+		<rdf:RDF>
+			<cc:Work rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+				<dc:title/>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<path id="xy_ctl_NE" class="button" d="m47 33v-32.35c15.992 2.4474 29.977 16.417 32.424 32.35z" style="fill:#bbaa55"/>
+	<path id="xy_ctl_SW" class="button" d="m33 47v32.35c-15.992-2.4474-29.977-16.417-32.424-32.35z" style="fill:#bbaa55"/>
+	<path id="xy_ctl_SE" class="button" d="m47 47v32.35c15.992-2.4474 29.977-16.417 32.424-32.35z" style="fill:#bbaa55"/>
+	<path id="xy_ctl_up" class="button" d="m34 10h12v-9.5c-3.8785-0.47437-8.044-0.4824-12 0z" style="fill:#ffcc66"/>
+	<path d="m44.2 2.2v5.0271" style="fill:none;stroke-width:1.2;stroke:#000000"/>
+	<path id="xy_ctl_left" class="button" d="m10 46v-12h-9.5c-0.47437 3.8785-0.4824 8.044 0 12z" style="fill:#ffcc66"/>
+	<path d="m2.199 35.8h5.0271" style="fill:none;opacity:.889;stroke-width:1.2;stroke:#000000"/>
+	<path id="xy_ctl_right" class="button" d="m70 34v12h9.5c0.47437-3.8785 0.4824-8.044 0-12z" style="fill:#ffcc66"/>
+	<path d="m77.801 44.2h-5.0271" style="fill:none;stroke-width:1.2;stroke:#000000"/>
+	<path id="xy_ctl_down" class="button" d="m46 70h-12v9.5c3.8785 0.47437 8.044 0.4824 12 0z" style="fill:#ffcc66"/>
+	<path d="m35.8 77.8v-5.0271" style="fill:none;stroke-width:1.2;stroke:#000000"/>
+	<path d="m11 34v12h23v23h12v-23h23v-12h-23v-23h-12v23z" style="fill:#9999cc"/>
+	<path d="m34 13.49h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path d="m34 16.2h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path d="m34 19.48h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path d="m34 27.9h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path d="m34 59h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path id="xy_ctl_NW" class="button" d="m32.977 33v-32.35c-15.992 2.4474-29.977 16.417-32.424 32.35z" style="fill:#bbaa55"/>
+</svg>

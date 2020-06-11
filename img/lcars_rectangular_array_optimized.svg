@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="80mm" height="80mm" version="1.1" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<title>lcars_rectangular_array_ctl</title>
+	<metadata>
+		<rdf:RDF>
+			<cc:Work rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+				<dc:title>lcars_rectangular_array_ctl</dc:title>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<g transform="translate(0,-217)">
+		<path id="rect_array_ctl_top" class="button lcars-golden-tanoi-bg" transform="translate(0,212)" d="m35 14.5h45.036v-9.4892h-80.036v7.4892h35z" />
+		<path id="rect_array_ctl_TL" class="button lcars-neon-carrot-bg" transform="translate(0,212)" d="m33 16.178h-33v38.822h33z" />
+		<path d="m8 252.63h14v9.5549h-14z" style="fill:#000000"/>
+		<path d="m35 232.99h45.036v1.9773h-45.036z" style="fill:#ee9955"/>
+		<path id="rect_array_ctl_TR" class="button lcars-sandy-brown-bg" d="m35 237h45.047v17.002h-32.047v5.9832h-13z" />
+		<path d="m50 258.37h30.047v1.5422h-30.047z" style="fill:#ee9955"/>
+		<path d="m50 260.99h30.114v6.0146h-30.114z" style="fill:#ee9955"/>
+		<path d="m0 273h33v4.6952h-32.976z" style="fill:#ee9955"/>
+		<path id="rect_array_ctl_BL" class="button lcars-sandy-brown-bg" d="m0 279.56h33v17.439h-32.866z" />
+		<path d="m8 284.04h14v6.909h-14z" style="fill:#000000"/>
+		<path id="rect_array_ctl_BR" class="button lcars-neon-carrot-bg" d="m50 273h30.32v24.189h-30.32z" />
+		<path d="m39.51 240.84h7.1208v4.2632h-7.1208z" style="fill:#000000"/>
+		<path id="rect_array_ctl_center_up" class="button lcars-pale-canary-bg" transform="translate(0,212)" d="m35 62.488h13v3.948h-13z" />
+		<path id="rect_array_ctl_center_top" class="button lcars-atomic-tangerine-bg" transform="translate(0,212)" d="m35 55h13v5.0063h-13z" />
+		<path d="m35 283.76h13v1.8313h-13z" style="fill:#ffff99"/>
+		<path d="m35 290.3h13v1.8313h-13z" style="fill:#cc6666"/>
+		<path id="rect_array_ctl_center_down" class="button lcars-chestnut-rose-bg" d="m35 293.7h13v3.2865h-13z" />
+	</g>
+</svg>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="80mm" height="80mm" version="1.1" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+  <defs>
+    <style type="text/css"><![CDATA[
+	.lcars-gray-bg {
+	  fill: rgba(34,51,85,0.467);
+	}
+	.lcars-white-bg {
+	  fill: #fff;
+	}
+	.lcars-black-bg {
+	  fill: #000;
+	}
+	.lcars-pale-canary-bg {
+	  fill: #ff9;
+	}
+	.lcars-golden-tanoi-bg {
+	  fill: #fc6;
+	}
+	.lcars-neon-carrot-bg {
+	  fill: #f93;
+	}
+	.lcars-eggplant-bg {
+	  fill: #646;
+	}
+	.lcars-lilac-bg {
+	  fill: #c9c;
+	}
+	.lcars-anakiwa-bg {
+	  fill: #9cf;
+	}
+	.lcars-mariner-bg {
+	  fill: #36c;
+	}
+	.lcars-bahama-blue-bg {
+	  fill: #069;
+	}
+	.lcars-blue-bell-bg {
+	  fill: #99c;
+	}
+	.lcars-melrose-bg {
+	  fill: #99f;
+	}
+	.lcars-hopbush-bg {
+	  fill: #c69;
+	}
+	.lcars-chestnut-rose-bg {
+	  fill: #c66;
+	}
+	.lcars-orange-peel-bg {
+	  fill: #f96;
+	}
+	.lcars-atomic-tangerine-bg {
+	  fill: #f90;
+	}
+	.lcars-danub-bg {
+	  fill: #68c;
+	}
+	.lcars-indigo-bg {
+	  fill: #45b;
+	}
+	.lcars-lavender-purple-bg {
+	  fill: #97a;
+	}
+	.lcars-cosmic-bg {
+	  fill: #746;
+	}
+	.lcars-red-damask-bg {
+	  fill: #d64;
+	}
+	.lcars-medium-carmine-bg {
+	  fill: #a53;
+	}
+	.lcars-bourbon-bg {
+	  fill: #b62;
+	}
+	.lcars-sandy-brown-bg {
+	  fill: #e95;
+	}
+	.lcars-periwinkle-bg {
+	  fill: #cdf;
+	}
+	.lcars-dodger-blue-bg {
+	  fill: #59f;
+	}
+	.lcars-dodger-blue-alt-bg {
+	  fill: #36f;
+	}
+	.lcars-blue-bg {
+	  fill: #01e;
+	}
+	.lcars-navy-blue-bg {
+	  fill: #008;
+	}
+	.lcars-husk-bg {
+	  fill: #ba5;
+	}
+	.lcars-rust-bg {
+	  fill: #b41;
+	}
+	.lcars-tamarillo-bg {
+	  fill: #821;
+	}
+    ]]></style>
+  </defs>
+ <g transform="translate(0,-217)">
+  <path id="path892" d="m33 250v-32.35c-15.992 2.4474-29.977 16.417-32.424 32.35z" class="lcars-golden-tanoi-bg"/>
+  <use transform="matrix(-1 0 0 1 80 1.9179e-6)" width="100%" height="100%" xlink:href="#path892"/>
+  <use transform="matrix(1 0 0 -1 -8.2089e-8 514)" width="100%" height="100%" xlink:href="#path892"/>
+  <use transform="rotate(180 40 257)" width="100%" height="100%" xlink:href="#path892"/>
+  <path d="m34 227h12v-9.5c-3.8785-0.47437-8.044-0.4824-12 0z" class="lcars-blue-bell-bg"/>
+  <path d="m44.2 219.2v5.0271" style="fill:none;stroke-width:1.2;stroke:#000"/>
+  <path d="m10 263v-12h-9.5c-0.47437 3.8785-0.4824 8.044 0 12z" class="lcars-blue-bell-bg"/>
+  <path d="m2.199 252.8h5.0271" style="fill:none;opacity:.889;stroke-width:1.2;stroke:#000"/>
+  <path d="m70 251v12h9.5c0.47437-3.8785 0.4824-8.044 0-12z" class="lcars-blue-bell-bg"/>
+  <path d="m77.801 261.2h-5.0271" style="fill:none;stroke-width:1.2;stroke:#000"/>
+  <path d="m46 287h-12v9.5c3.8785 0.47437 8.044 0.4824 12 0z" class="lcars-blue-bell-bg"/>
+  <path d="m35.8 294.8v-5.0271" style="fill:none;stroke-width:1.2;stroke:#000"/>
+  <path d="m11 251v12h23v23h12v-23h23v-12h-23v-23h-12v23z" class="lcars-blue-bell-bg"/>
+  <path d="m34 230.49h12" style="fill:none;stroke-width:.75;stroke:#000"/>
+  <path d="m34 233.2h12" style="fill:none;stroke-width:.75;stroke:#000"/>
+  <path d="m34 236.48h12" style="fill:none;stroke-width:.75;stroke:#000"/>
+  <path d="m34 244.9h12" style="fill:none;stroke-width:.75;stroke:#000"/>
+  <path d="m34 276h12" style="fill:none;stroke-width:.75;stroke:#000"/>
+ </g>
+</svg>
