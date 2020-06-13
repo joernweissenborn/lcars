@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="80mm" height="80mm" version="1.1" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(0,-217)">
+  <path id="path892" d="m33 250v-32.35c-15.992 2.4474-29.977 16.417-32.424 32.35z" style="fill:#fc6"/>
+  <use transform="matrix(-1 0 0 1 80 1.9179e-6)" width="100%" height="100%" xlink:href="#path892"/>
+  <use transform="matrix(1 0 0 -1 -8.2089e-8 514)" width="100%" height="100%" xlink:href="#path892"/>
+  <use transform="rotate(180 40 257)" width="100%" height="100%" xlink:href="#path892"/>
+  <path d="m34 227h12v-9.5c-3.8785-0.47437-8.044-0.4824-12 0z" style="fill:#99c"/>
+  <path d="m44.2 219.2v5.0271" style="fill:none;stroke-width:1.2;stroke:#000"/>
+  <path d="m10 263v-12h-9.5c-0.47437 3.8785-0.4824 8.044 0 12z" style="fill:#99c"/>
+  <path d="m2.199 252.8h5.0271" style="fill:none;opacity:.889;stroke-width:1.2;stroke:#000"/>
+  <path d="m70 251v12h9.5c0.47437-3.8785 0.4824-8.044 0-12z" style="fill:#99c"/>
+  <path d="m77.801 261.2h-5.0271" style="fill:none;stroke-width:1.2;stroke:#000"/>
+  <path d="m46 287h-12v9.5c3.8785 0.47437 8.044 0.4824 12 0z" style="fill:#99c"/>
+  <path d="m35.8 294.8v-5.0271" style="fill:none;stroke-width:1.2;stroke:#000"/>
+  <path d="m11 251v12h23v23h12v-23h23v-12h-23v-23h-12v23z" style="fill:#99c"/>
+  <path d="m34 230.49h12" style="fill:none;stroke-width:.75;stroke:#000"/>
+  <path d="m34 233.2h12" style="fill:none;stroke-width:.75;stroke:#000"/>
+  <path d="m34 236.48h12" style="fill:none;stroke-width:.75;stroke:#000"/>
+  <path d="m34 244.9h12" style="fill:none;stroke-width:.75;stroke:#000"/>
+  <path d="m34 276h12" style="fill:none;stroke-width:.75;stroke:#000"/>
+ </g>
+</svg>

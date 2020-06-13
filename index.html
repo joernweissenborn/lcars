@@ -6,16 +6,17 @@
   <link rel="stylesheet" href="css/lcars.css">
   <style>
 
-  html, body { background: black }
+  html, body { background: black; }
   p, h1, h2, h3 {
     margin-top: 1em;
   }
 
-	pre {
-		display: inline;
-				white-space: pre-line;
-				word-wrap: break-word;
-	}
+  pre {
+    display: inline;
+    white-space: pre-line;
+    word-wrap: break-word;
+  }
+
   </style>
 </head>
 <body>
@@ -64,8 +65,9 @@
 				<h1>LCARS</h1>
 
 				<p>
-					LCARS is a CCS framework like Bootstrap to create user interfaces similiar as in a popular sci-fi franchise. Enjoy!
+					LCARS is a CSS framework like Bootstrap to create user interfaces similiar as in a popular sci-fi franchise. Enjoy!
 				</p>
+
 
 				<!-- LAYOUT -->
 				<h2>Layout</h2>
@@ -130,10 +132,11 @@
 						<div class="lcars-element lcars-golden-tanoi-bg">golden-tanoi</div>
 						<div class="lcars-element lcars-neon-carrot-bg">neon-carrot</div>
 						<div class="lcars-element lcars-eggplant-bg">eggplant</div>
-						<div class="lcars-element lcars-lilac-bg">lilac</div>
 						<div class="lcars-element lcars-anakiwa-bg">anakiwa</div>
 						<div class="lcars-element lcars-mariner-bg">mariner</div>
 						<div class="lcars-element lcars-bahama-blue-bg">bahama-blue</div>
+						<div class="lcars-element lcars-red-alert-bg">red-alert</div>
+						<div class="lcars-element lcars-white-bg">white</div>
 					</div>
 
 					<div class="lcars-column">
@@ -144,7 +147,7 @@
 						<div class="lcars-element lcars-chestnut-rose-bg">chestnut-rose</div>
 						<div class="lcars-element lcars-orange-peel-bg">orange-peel</div>
 						<div class="lcars-element lcars-atomic-tangerine-bg">atomic-tangerine</div>
-						<div class="lcars-element lcars-pale-canary-bg">pale-canary</div>
+						<div class="lcars-element lcars-gray-bg">gray</div>
 					</div>
 
 					<div class="lcars-column">
@@ -170,6 +173,18 @@
 					</div>
 				</div>
 				</p>
+
+
+				<!-- HYPERLINKS -->
+				<h2>Hyperlinks</h2>
+
+				<span>Class: <pre class="lcars-dodger-blue-color">:link :hover :focus :active :visited </pre> (but note that these are pseudo-classes, automatically applied by the web browser)</span>
+				<p>
+				<a href="#">Hyperlinks are highlighted</a> with an energetic color, and not bluish.
+				<a>Hyperlinks without an href attribute</a> are a little different: they will highlight only when you hover.
+				Emphasis but subtlety.
+				</p>
+
 
 				<!-- Bar -->
 				<h2>Bar</h2>
@@ -242,7 +257,7 @@
 					<li><span><pre class="lcars-rust-color">left-rounded</pre>: rounds the left edge</span></li>
 					<li><span><pre class="lcars-rust-color">right-rounded</pre>: rounds the right edge</span></li>
 					<li><span><pre class="lcars-rust-color">rounded</pre>: rounds the all edges</span></li>
-					<li><span><pre class="lcars-rust-color">button</pre>: Add button behaviour</span></li>
+					<li><span><pre class="lcars-rust-color">button</pre>: Add button behaviour. Optionally can include automatic <a href="#audio_section">Audible effect</a>.</span></li>
 				</ul>
 				</p>
 
@@ -318,9 +333,9 @@
 							<a>left-top</a>
 						</div>
 						<div class="lcars-bar spacer"></div>
-							<div class="lcars-bar horizontal-grayBlue bottom both-divider"></div>
+						<div class="lcars-bar horizontal lcars-blue-bell-bg bottom both-divider"></div>
 						<div class="lcars-bar spacer"></div>
-						<div class="lcars-bar horizontal-purple right-end bottom"></div>
+						<div class="lcars-bar horizontal lcars-lavender-purple-bg right-end bottom"></div>
 				</div>
 				</p>
 				<p>
@@ -333,9 +348,9 @@
 							<a>left-bottom</a>
 						</div>
 						<div class="lcars-bar spacer"></div>
-						<div class="lcars-bar horizontal-blue right-divider"></div>
+						<div class="lcars-bar horizontal lcars-dodger-blue-bg right-divider"></div>
 						<div class="lcars-bar spacer"></div>
-						<div class="lcars-bar horizontal-tan right-end"></div>
+						<div class="lcars-bar horizontal lcars-tan-bg right-end"></div>
 					</div>
 				</p>
 
@@ -392,10 +407,320 @@
 				</div>
 
 				</p>
+
+				<h2 id="audio_section">Audio</h2>
+
+				<span>Class: <pre class="lcars-dodger-blue-color">button</pre></span>
+				<p>
+					The button class will also automatically receive a sound-effect event if you include the following at the bottom of the page:
+					<ul>
+						<li>special dummy audio element for automatic file format support detection</li>
+						<li>js/lcars_audio.js script reference</li>
+					</ul>
+					<pre class="lcars-dodger-blue-color">
+  &lt;audio id="audDummy"/&gt;&lt;!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types --&gt;
+  &lt;script src="js/lcars_audio.js"&gt;&lt;/script&gt;
+					</pre>
+				</p>
+				<p>
+					To arbitrarily assign sound effects, use your preferred element selector method and call these simple functions from the lcarsAudio javascript module as the callback event handler:
+					<pre class="lcars-dodger-blue-color">
+  lcarsAudio.TactileInputAcknowledge();
+  lcarsAudio.TactileInputNegativeAcknowledge();
+  lcarsAudio.Alert();
+					</pre>
+					For quick and dirty specific assignments, you can also just assign the funcation call directly to the onClick attribute of any html element like so:
+					<pre class="lcars-dodger-blue-color">
+  &lt;dev id="special_button" onclick="lcarsAduio.TactileInputAcknowledge();"&gt;SP BTN&lt;/div&gt;
+					</pre>
+
+					<h3>Example</h3>
+					<p>
+						By onclick attribute:
+						<div id="special_button" class="lcars-element rounded" onclick="lcarsAudio.TactileInputAcknowledge();">SP BTN</div>
+						<div id="disabled_button" class="lcars-element lcars-gray-bg rounded" onclick="lcarsAudio.TactileInputNegativeAcknowledge();">INACTV</div>
+					</p>
+					<p>
+						And again, by CSS class instead:
+						<div id="special_button2" class="lcars-element rounded button">SP BTN</div>
+						<div id="another_disabled_button" class="lcars-element lcars-gray-bg rounded lcars-tactinput-neg-acknowledge-audio" >DISABLD</div>
+					</p>
+
+				</p>
+				<p>
+					LCARS clearly has a "grammar" for the audio signals. 
+					As with any fictional canon, there will be contradictions, gaps, and incorrect assumptions on the part of amateurs. 
+					Hopefully users will find the audio framework easily modifiable to suit, but also fairly usable as is.
+				</p>
+				<p>
+					A couple of simple place-holder sound effects are included for demonstration purposes, 
+					but to gain the full benefit of an authentic sounding LCARS interface, 
+					audio samples that match each of the semantic descriptions could be downloaded from elsewhere
+					on the web (<a href="http://www.stdimension.org/int/index.htm">STdimension media library</a> is an excellent resource) 
+					and renamed to match the Audio Filename Base column shown below, 
+					then transcoded to other audio file formats to provide mult-platform support 
+					(i.e., the major browser vendors do not all agree on what audio file formats should be supported by web browsers, but html5 standards provide fall-back mechanisms to help overcome this).
+					A trinity of m4a/aac, ogg/vorbis, and webm seems to give excellent platform coverage and should be handled by ffmpeg nicely.
+				</p>
+				<p>
+
+					<table >
+					<thead>
+					    <tr><th>JS lcarsAudio Module Play Function</th> <th>Element Subclass</th> <th>Audio Filename Base</th> <th>Semantic Description</th>
+					<thead>
+					<tbody>
+					    <tr>
+						<!--	<td>US</td> <td>UNIT SEPARATOR</td>
+							<td>Separate and qualify data logically; delimits a data item called a <i>unit</i>.</td>
+						-->
+						<td>TactileInputAcknowledge()</td>
+						<td>lcars-tactinput-acknowledge-audio (or button)</td>
+						<td>tactinput_acknowledge</td>
+						<td title="[beep]">Smallest unit of input acknowledgement, a single "keypress" received and understood. the Basic Button Beep.</td>
+					    </tr>
+					    <tr>
+						<!--	<td>RS</td> <td>RECORD SEPARATOR</td> 
+							<td>Separate and qualify data logically. Delimits a data item called a record.</td>
+						-->
+						<td>TactileInputAlternateAcknowledge()</td>
+						<td>lcars-tactinput-alt-acknowledge-audio</td>
+						<td>tactinput_alt_acknowledge</td>
+						<td >Input "punctuation", delimitation, or compositing/packaging of input acknowledgement. Perhaps analagous to the "hitting the enter key". Basic Button Beep 2, alternate (lower) tone.</td>
+					    </tr>
+					    <tr>
+						<!--	<td>NAK</td> <td>NEGATIVE ACKNOWLEDGE</td> 
+							<td>Transmission control character transmitted by a receiver as a negative response to the sender.</td>
+						-->
+						<td>TactileInputNegativeAcknowledge()</td>
+						<td>lcars-tactinput-neg-acknowledge-audio</td>
+						<td>tactinput_neg_acknowledge</td>
+						<td title="[tinkTinkTink]">Keypress failure/low-level access denied/nonresponse. The antithesis to Ack.</td>
+					    </tr>
+					    <tr>
+						<!--	<td>BEL</td> <td>BELL</td>
+							<td>There is a need to call for attention; it may control alarm or attention devices.</td>
+						-->
+						<td>Alert()</td>
+						<td>lcars-alert-audio</td>
+						<td>alert</td>
+						<td title="[TeeErrErrr]">Hard failure/access denied/warning level 1. Distinct from RedAlert.</td>
+					    </tr>
+					    <tr>
+						<!-- <td>DEL</td> <td>DELETE</td>
+						<td>(not defined)</td>
+						-->
+						<td>RedAlert()</td>
+						<td>lcars-red-alert-audio</td>
+						<td>red_alert</td>
+					    </tr>
+					</tbody>
+					</table>
+<!-- TODO move these up to above format and update lcars_audio.js module appropriately
+					<table>
+					<tbody>
+					    <tr>
+						<td>SOH</td>
+						<td>START OF HEADING</td>
+						
+						<td>Transmission control first character in header.  </td>
+						
+						<td>Initialized, ready for input from user.</td>
+						<td>output_soh</td>
+						<td>output_initialized</td>
+					    <tr>
+						<td>STX</td>
+						<td>START OF TEXT</td>
+						
+						<td>Transmission control character before text.</td>
+						<td title="[tlrbL]">Communications transmission or file transfer started, normally. Content part rather than handshakes or queues.</td>
+						
+						<td>output_stx</td>
+						<td>output_start_transmission</td>
+					    <tr>
+						<td>ETX</td>
+						<td>END OF TEXT</td>
+						
+						<td>Transmission control character which terminates a text.</td>
+						<td title="[Tlrbl]">Communications transmission or file transfer ended, normally.</td>
+						<td>output_etx</td>
+						<td>output_end_transmission</td>
+					    <tr>
+						<td>ENQ</td>
+						<td>ENQUIRY</td>
+						
+						<td>Transmission control character used as a request for a response from other end of connection</td>
+						<td title="[solfege:DoDoSo]">question, please answer, please confirm.</td>
+						<td>output_enq</td>
+						<td>output_enquiry</td>
+					    <tr>
+						<td>ACK</td>
+						<td>ACKNOWLEDGE</td>
+						
+						<td>Transmission control character transmitted by a receiver as an affirmative response to the sender.</td>
+						<td title="[solfege:DOsoDO]">input acknowledgement.</td>
+						<td>input_ack</td>
+						<td>input_acknowledge</td>
+					    <tr>
+						<td>LF</td>
+						<td>LINE FEED</td>
+						
+						<td>Advances the active position		to the same character position                                of the next line.</td>
+						<td title="[drdrdrddddrrdddrdrdrdr]">scrolling sound.</td>
+						<td>output_lf</td>
+						<td>output_line_feed</td>
+					    <tr>
+						<td>CAN</td>
+						<td>CANCEL</td>
+						
+						<td>A character indicating that the data preceding it is in error.
+						As a result, this data is to be ignored. </td>
+						
+						<td>Alarm/warning. maybe yellow alert? </td>
+						<td>output_can</td>
+						<td>output_alarm</td>
+					</tbody>
+					</table>
+-->
+				</p>
+
+				<h2 id="svg_section">SVG Special Elements</h2>
+
+				<p>
+					Some particularly complex geometry such as the classic circular x/y control can be more easily achieved with special prepackaged SVG images. A limited number of particularly recognizable special elements are included. They are totally optional and may be deleted if your project will not utilize them. 
+				</p>
+				<p>
+					These special elements may be inserted with traditional <span class="lcars-dodger-blue-color">img</span>  tags:
+
+<pre class="lcars-dodger-blue-color">
+&lt;img id="xy_control_element" src="img/lcars_xy_circle_widget_optimized.svg" /&gt;
+</pre>
+					<img id="xy_control_element" src="img/lcars_xy_circle_widget_optimized.svg" />
+				</p>
+				<p>
+				</p>
+					When using SVG files through img tags, CSS becomes less centralized. The SVG file will have to embed a copy of the CSS coloring class definitions directly into the SVG file source in under a style tag within a defs tag. View the source of img/lcars_xy_circle_widget_optimized_and_classes.svg for example. The set of color definitions are availble for easy copying in css/lcars.svg.colors.fragment.css
+					<img id="xy_control_element_using_classes" src="img/lcars_xy_circle_widget_optimized_and_classes.svg" />
+				<p>
+					
+					Or, <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_In_HTML_Introduction">Inline SVG</a> can be used for increased interactivity and customization within the element. SVG embedded like this can make use of standard element id and class attributes for css and DOM node selectors. This method is currently necessary for automatic audio support to apply to the SVG element.
+				</p>
+				<p>
+				
+					<!--  Fully inline svg style -->
+
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="80mm" height="80mm" version="1.1" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<metadata>
+		<rdf:RDF>
+			<cc:Work rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+				<dc:title/>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<path id="xy_ctl_NE" class="button lcars-husk-bg" d="m47 33v-32.35c15.992 2.4474 29.977 16.417 32.424 32.35z" />
+	<path id="xy_ctl_SW" class="button lcars-husk-bg" d="m33 47v32.35c-15.992-2.4474-29.977-16.417-32.424-32.35z" />
+	<path id="xy_ctl_SE" class="button lcars-husk-bg" d="m47 47v32.35c15.992-2.4474 29.977-16.417 32.424-32.35z" />
+	<path id="xy_ctl_up" class="button lcars-golden-tanoi-bg" d="m34 10h12v-9.5c-3.8785-0.47437-8.044-0.4824-12 0z" />
+	<path d="m44.2 2.2v5.0271" style="fill:none;stroke-width:1.2;stroke:#000000"/>
+	<path id="xy_ctl_left" class="button lcars-golden-tanoi-bg" d="m10 46v-12h-9.5c-0.47437 3.8785-0.4824 8.044 0 12z" />
+	<path d="m2.199 35.8h5.0271" style="fill:none;opacity:.889;stroke-width:1.2;stroke:#000000"/>
+	<path id="xy_ctl_right" class="button lcars-golden-tanoi-bg" d="m70 34v12h9.5c0.47437-3.8785 0.4824-8.044 0-12z" />
+	<path d="m77.801 44.2h-5.0271" style="fill:none;stroke-width:1.2;stroke:#000000"/>
+	<path id="xy_ctl_down" class="button lcars-golden-tanoi-bg" d="m46 70h-12v9.5c3.8785 0.47437 8.044 0.4824 12 0z" />
+	<path d="m35.8 77.8v-5.0271" style="fill:none;stroke-width:1.2;stroke:#000000"/>
+	<path d="m11 34v12h23v23h12v-23h23v-12h-23v-23h-12v23z" class="lcars-blue-bell-bg"/>
+	<path d="m34 13.49h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path d="m34 16.2h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path d="m34 19.48h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path d="m34 27.9h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path d="m34 59h12" style="fill:none;stroke-width:.75;stroke:#000000"/>
+	<path id="xy_ctl_NW" class="button lcars-husk-bg" d="m32.977 33v-32.35c-15.992 2.4474-29.977 16.417-32.424 32.35z" />
+</svg>
+
+					<!--  END Fully inline svg style -->
+
+				</p>
+				<p>
+					There are several features built-in to <a href="https://inkscape.org/">Inkscape</a>, the opensource SVG editor, that could be helpful in building some web-browser based behavior. While that should work fine, to keep this framework simple and consistent, a more basic process used to create the special elements was used:
+					<ol>
+						<li>Create master edition of the "special element" as a new SVG drawing file, with document sizing to match real world dimensions. This edition of the SVG file will be filled with guides and references, and saved in Inkscape extended SVG. This way, later on,  you can more easily modify and regenerate new editions.</li>
+						<li>While creating all the geometry, prefer closed paths instead of a variety of specific shape types for consistency in source layout giving maximum flexibility for editing geometry in the future, as well as query selector consistency when integrating the SVG source.</li>
+						<li>Create an intermediate "publishing" copy of the the SVG drawing:
+							<ul>
+								<li>Delete all guides.</li>
+								<li>Move all geometry to one layer, delete any photo reference layers.</li>
+								<li>Break up any groups where any sub-shape needs to be individually clickable. </li>
+								<li>Unlink all object clones (which may require some re-transformation and translation). </li>
+								<li>Assign IDs and matching labels in the "Object Properties" palette (these will translate to Selector-compatible html element IDs), but do not end IDs with digits, padd with some kind of letter if necessary.</li>
+							</ul>
+						</li>
+						<li>Save as "Optimized SVG" with these options:
+							<ul>
+								<li>Uncheck shorten color values.</li>
+								<li>Uncheck convert css attributes to XML attibutes.</li>
+								<li>Enable pretty printing format with line breaks, but use tab indentation.</li>
+								<li>Enable remove unused IDs, but preserve mannually created IDs not ending with digits.</li>
+							</ul>
+						</li>
+						<li>Finally, manually edit the XML code of the SVG file to apply class="button" to each important shape/path element that needs to be clickable. These should be easily identifiable as the elements with custom ID attribute values that you populated in Inkscape. It would also be ideal to replace fill properties in style=&quot;&quot; attributes with the corresponding <a href="#colors">lcars-COLORNAME-bg CSS class membership</a> (just add that name in after button, separated by a space). </li>
+						<li>When inserting the SVG XML code directly into an html5 document, exclude the XML doctype declaration from the SVG file.</li>
+					</ol>
+				</p>
+				<p>
+					To add custom behavior, just use element IDs in selector expressions like any other html5 element; e.g.,
+<pre class="lcars-dodger-blue-color">
+document.querySelector("#xy_ctl_up").addEventListener("click", function(){ 
+	yourCustomFunctionHere();
+	console.log("part of the svg element was clicked!"); 
+});
+</pre>
+				</p>
+				<p>
+
+
+<svg width="80mm" height="80mm" version="1.1" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<title>lcars_rectangular_array_ctl</title>
+	<metadata>
+		<rdf:RDF>
+			<cc:Work rdf:about="">
+				<dc:format>image/svg+xml</dc:format>
+				<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+				<dc:title>lcars_rectangular_array_ctl</dc:title>
+			</cc:Work>
+		</rdf:RDF>
+	</metadata>
+	<g transform="translate(0,-217)">
+		<path id="rect_array_ctl_top" class="button lcars-golden-tanoi-bg" transform="translate(0,212)" d="m35 14.5h45.036v-9.4892h-80.036v7.4892h35z" />
+		<path id="rect_array_ctl_TL" class="button lcars-neon-carrot-bg" transform="translate(0,212)" d="m33 16.178h-33v38.822h33z" />
+		<path d="m8 252.63h14v9.5549h-14z" style="fill:#000000"/>
+		<path d="m35 232.99h45.036v1.9773h-45.036z" style="fill:#ee9955"/>
+		<path id="rect_array_ctl_TR" class="button lcars-sandy-brown-bg" d="m35 237h45.047v17.002h-32.047v5.9832h-13z" />
+		<path d="m50 258.37h30.047v1.5422h-30.047z" style="fill:#ee9955"/>
+		<path d="m50 260.99h30.114v6.0146h-30.114z" style="fill:#ee9955"/>
+		<path d="m0 273h33v4.6952h-32.976z" style="fill:#ee9955"/>
+		<path id="rect_array_ctl_BL" class="button lcars-sandy-brown-bg" d="m0 279.56h33v17.439h-32.866z" />
+		<path d="m8 284.04h14v6.909h-14z" style="fill:#000000"/>
+		<path id="rect_array_ctl_BR" class="button lcars-neon-carrot-bg" d="m50 273h30.32v24.189h-30.32z" />
+		<path d="m39.51 240.84h7.1208v4.2632h-7.1208z" style="fill:#000000"/>
+		<path id="rect_array_ctl_center_up" class="button lcars-pale-canary-bg" transform="translate(0,212)" d="m35 62.488h13v3.948h-13z" />
+		<path id="rect_array_ctl_center_top" class="button lcars-atomic-tangerine-bg" transform="translate(0,212)" d="m35 55h13v5.0063h-13z" />
+		<path d="m35 283.76h13v1.8313h-13z" style="fill:#ffff99"/>
+		<path d="m35 290.3h13v1.8313h-13z" style="fill:#cc6666"/>
+		<path id="rect_array_ctl_center_down" class="button lcars-chestnut-rose-bg" d="m35 293.7h13v3.2865h-13z" />
+	</g>
+</svg>
+
+				</p>
+
 			</div>
 
 	</div>
 </div>
+
+<audio id="audDummy"/><!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types -->
+<script src="js/lcars_audio.js"></script>
 
 </body>
 </html>
