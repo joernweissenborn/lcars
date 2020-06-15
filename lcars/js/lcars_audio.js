@@ -21,6 +21,7 @@ var lcarsAudio = {
 	audTactInputNegAcknowledge: null,
 	audAlert:                   null,
 	audRedAlert:                null,
+	audReady:                   null,
 	initialize: function(auDummy) {
 		//Determine browser capability and willingness
 		for (var key in this.audioExtensions) {
@@ -49,7 +50,7 @@ var lcarsAudio = {
 
 		button_list = document.querySelectorAll("path.button");
 		for (var button of button_list) {
-			console.log("Audio-enabling SVG button " + button.id + " " + button.innerText);
+			console.log("Audio-enabling SVG button " + button.id );
 			button.addEventListener("click", function(){ lcarsAudio.TactileInputAcknowledge(); }); 
 		}
 
@@ -102,7 +103,16 @@ var lcarsAudio = {
 		//floating div pops up and flashes, then disappears. 
 	},
 	Ready: function () {
-		this.audReady.play();
+		var promise = this.audReady.play();
+		if (promise !== undefined) {
+			promise.then(_ => {
+				console.log("Sound probably just actually played, so user interaction with document status must be 'true'.");
+			}).catch(error => {
+				console.warn("Autoplay was prevented. User interaction required before playback will be allowed by browser.");
+			});
+		} else {
+		       console.warn("Didn't even get a promise back. Possibly some error or device limitation.");
+		}
 	}
 }
 
@@ -118,10 +128,13 @@ function enableAudio(el) {
 var audDummy = document.getElementById("audDummy").appendChild(document.createElement("audio"));
 lcarsAudio.initialize(audDummy);
 
-//All "booted" up notification. 
-//Many browsers won't play this next sound because the user hasn't "blessed" the action with a UI click yet.
+
+/*
+ * To have an All "booted" up notification, place this little snippet at the bottom of the page in a script block:
 document.addEventListener("DOMContentLoaded", function(event) { 
-	console.log("lcarsAudio: Attempting to play " + lcarsAudio.Ready);
+	//Note though: Many browsers won't play this next sound at first
+	//because the user hasn't "blessed" the action with a UI click yet.
 	lcarsAudio.Ready();
 });
 
+*/
