@@ -473,7 +473,7 @@
 						<!--	<td>US</td> <td>UNIT SEPARATOR</td>
 							<td>Separate and qualify data logically; delimits a data item called a <i>unit</i>.</td>
 						-->
-						<td>TactileInputAcknowledge()</td>
+						<td onclick="lcarsAudio.TactileInputAcknowledge();">TactileInputAcknowledge()</td>
 						<td>lcars-tactinput-acknowledge-audio (or button)</td>
 						<td>tactinput_acknowledge</td>
 						<td title="[beep]">Smallest unit of input acknowledgement, a single "keypress" received and understood. the Basic Button Beep.</td>
@@ -482,7 +482,7 @@
 						<!--	<td>RS</td> <td>RECORD SEPARATOR</td> 
 							<td>Separate and qualify data logically. Delimits a data item called a record.</td>
 						-->
-						<td>TactileInputAlternateAcknowledge()</td>
+						<td onclick="lcarsAudio.TactileInputAlternateAcknowledge();">TactileInputAlternateAcknowledge()</td>
 						<td>lcars-tactinput-alt-acknowledge-audio</td>
 						<td>tactinput_alt_acknowledge</td>
 						<td >Input "punctuation", delimitation, or compositing/packaging of input acknowledgement. Perhaps analagous to the "hitting the enter key". Basic Button Beep 2, alternate (lower) tone.</td>
@@ -491,7 +491,7 @@
 						<!--	<td>NAK</td> <td>NEGATIVE ACKNOWLEDGE</td> 
 							<td>Transmission control character transmitted by a receiver as a negative response to the sender.</td>
 						-->
-						<td>TactileInputNegativeAcknowledge()</td>
+						<td onclick="lcarsAudio.TactileInputNegativeAcknowledge();">TactileInputNegativeAcknowledge()</td>
 						<td>lcars-tactinput-neg-acknowledge-audio</td>
 						<td>tactinput_neg_acknowledge</td>
 						<td title="[tinkTinkTink]">Keypress failure/low-level access denied/nonresponse. The antithesis to Ack.</td>
@@ -500,7 +500,7 @@
 						<!--	<td>BEL</td> <td>BELL</td>
 							<td>There is a need to call for attention; it may control alarm or attention devices.</td>
 						-->
-						<td>Alert()</td>
+						<td onclick="lcarsAudio.Alert();">Alert()</td>
 						<td>lcars-alert-audio</td>
 						<td>alert</td>
 						<td title="[TeeErrErrr]">Hard failure/access denied/warning level 1. Distinct from RedAlert.</td>
@@ -509,10 +509,19 @@
 						<!-- <td>DEL</td> <td>DELETE</td>
 						<td>(not defined)</td>
 						-->
-						<td>RedAlert()</td>
+						<td onclick="lcarsAudio.RedAlert();">RedAlert()</td>
 						<td>lcars-red-alert-audio</td>
 						<td>red_alert</td>
+						<td title="[rrRRRTrrRRRT]">Emergency condition, highest level of alert.</td>
 					    </tr>
+					    <tr>
+						<!-- <td>SOH</td>
+						<td>START OF HEADING</td>
+						-->
+						<td onclick="lcarsAudio.Ready();">Ready()</td>
+						<td>lcars-ready-audio</td>
+						<td>ready</td>
+						<td>Interface initialized, ready for input from user.</td>
 					</tbody>
 					</table>
 <!-- TODO move these up to above format and update lcars_audio.js module appropriately
@@ -721,6 +730,14 @@ document.querySelector("#xy_ctl_up").addEventListener("click", function(){
 
 <audio id="audDummy"/><!--Just leave this here, just needed to enable automatic query canplay in the initialization code to load compatible media types -->
 <script src="js/lcars_audio.js"></script>
+
+<script>
+	//All "booted" up notification. 
+	//Many browsers won't play this next sound because the user hasn't "blessed" the action with a UI click yet.
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		lcarsAudio.Ready();
+	});
+</script>
 
 </body>
 </html>
