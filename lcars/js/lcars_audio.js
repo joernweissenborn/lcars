@@ -90,19 +90,19 @@ var lcarsAudio = {
 		this.audTactInputNegAcknowledge.play();
 	},
 	Alert: function () {
-		window.console && console.log(this.audAlert.readyState)
-		//audAlert.load();
+		//DEBUG//window.console && console.log(this.audAlert.readyState)
 		this.audAlert.play();
 		//TODO:bonus: have a fallback for no supported file types (or MUTE active):  
 		//floating div pops up and flashes, then disappears. 
 	},
 	RedAlert: function () {
-		window.console && console.log(this.audAlert.readyState)
+		//DEBUG//window.console && console.log(this.audAlert.readyState)
 		this.audRedAlert.play();
 		//TODO:bonus: have a fallback for no supported file types (or MUTE active):  
 		//floating div pops up and flashes, then disappears. 
 	},
 	Ready: function () {
+		//TODO: consider putting this in all the other play functions, too. Or maybe moving it out to some kind of in-audible primer sound?
 		var promise = this.audReady.play();
 		if (promise !== undefined) {
 			promise.then(_ => {
