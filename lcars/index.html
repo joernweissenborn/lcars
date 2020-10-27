@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>LCARS</title>
   <link rel="stylesheet" href="css/lcars.css">
+  <link rel="stylesheet" href="css/inputs.css">
   <style>
 
   html, body { background: black; }
@@ -229,7 +230,7 @@
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-text-box</pre></span>
 				<p>
-				<a>A text box with pre-defined font sizes. Use to fit headers and indicators, but not for large texts.</a>
+				<a>A display-only text box with pre-defined font sizes. Use to fit headers and indicators, but not for large texts.</a>
 
 				<ul>
 					<li><span><pre class="lcars-rust-color">big</pre>: font-size 150%</span></li>
@@ -245,6 +246,73 @@
 					<li><span><pre class="lcars-rust-color">bottom-right</pre>: align content to the bottom and to the right</span></li>
 				</ul>
 				</p>
+
+
+				<!-- INPUTS -->
+				<h2>Inputs</h2>
+
+				<p>
+				Note that these elements are somewhat outside of the atested UI elements. As far as arbitrary, free-form input, we can observe voice input, but we can only infer manual arbitrary input via stylus or some kind of configurable temporarily displayed full alphanumeric "keyboard" grid. Nonetheless, here we have more reasonable defaults (than regular raw browswer defaults) to blend in a little better, though it will be and will seem a bit inauthentic.
+				<p>
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-text-input</pre></span>
+				</p>
+				<p>
+				<a>A text box with pre-defined font sizes. Use to fit headers and indicators, but not for large texts.</a>
+				<p>
+					
+					single-line
+					<input id="username" class="NOTlcars-text-box centered-right"/>
+				
+				</p>
+				<p>
+					multi-line
+					...
+					<textarea id="description" class="lcars-text-box">
+					INITIAL DATA
+					</textarea>
+
+
+					</p>
+					<p>
+					Kinda complicated here... the width has to be at a higher level, then the height has to be at the textrea itself.
+					also recommend the minheight to avoid wierdness during resizing
+					<div class="lcars-row">
+						<div class="lcars-bracket left hollow"></div>
+						<div class="lcars-column" style="width:85%;">
+							<!--
+							<div class="lcars-element">
+							</div>
+							-->
+							<!-- and you may just might want a small negative margin-top on this, like -.25em; to get things nice and square.-->
+								<textarea id="description2" class="lcars-text-box" style="min-height:4em; height:8em; max-height: 30em; width:100%;">CAPTAIN'S LOG, SUPPLEMENTAL.     STARDATE 4 1 2 1 4 7 9. 
+FINAL FRONTIERS AND BOLD GOINGS ALL GOING ON AND GETTING REACHED, NOW. ITS SO BEAUTIFUL.  
+
+CREW IS ROCKING AND ROLLING. IS THERE ANYWHERE WE'VE NEVER GONE BEFORE? SURELY IT IS SO, SURELY WE WILL GO TO FIND THAT WHICH HAS NEVER BEEN OBSERVED BY OUR KIND.
+</textarea>
+						</div>
+					</div>
+				</p>
+				<p>
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-text-slider</pre></span>
+				</p>
+				<p> slider </p>
+				<p>
+					<label for="phaserfreq">PHASER FREQUENCY </label>
+					<input type="range" name="phaserfreq" id="phaserfrequency" min="50000" max="500000" step="100" value="250000">
+					<output class="lcars-slider-output" for="phaserfreq"></output>
+				</p>
+					<div class="lcars-column">
+						<div class="lcars-row">
+							<div class="lcars-element lcars-u-2-1">PHASERS</div>
+							<div class="lcars-element lcars-u-2-1 lcars-red-bg">
+								<div> POWER </div>
+								<div class="lcars-element-addition ">MJ
+									<input type="range" name="phaserfreq2" id="phaserfrequency2" min="2" max="10" step="1" value="3" style="width:100%">
+									<output class="lcars-slider-output" for="phaserfreq2"></output>
+								</div>
+							</div>
+						</div>
+					</div>
 
 				<!-- ELEMENT -->
 				<h2>Element</h2>
