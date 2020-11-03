@@ -345,7 +345,7 @@ body {
 }
 html,
 body {
-  font-family: "arial", monospace;
+  font-family: "Arial", monospace;
   color: #fff;
 }
 h1 {
@@ -1694,4 +1694,58 @@ path.button:active {
 }
 .lcars-u-16.half {
   width: 119.875rem;
+}
+a {
+  text-decoration: none;
+  display: inline;
+}
+a:link {
+  color: #fc6;
+  font-weight: 400;
+}
+a:visited {
+  color: #fc6;
+  font-weight: normal;
+}
+a:focus {
+  color: #fc6;
+  background-color: #080602;
+  font-weight: 400;
+}
+a:hover {
+  color: #fc6;
+  background-color: #090703;
+  font-weight: 400;
+}
+a:active {
+  color: #ff9;
+  font-weight: 500;
+  background-color: #0c0806;
+}
+input.lcars-text-input {
+  height: 1rem;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+textarea.lcars-text-box,
+textarea.lcars-text-input {
+  font-size: 1em;
+  font-family: "Arial", monospace;
+  text-align: justify;
+  padding: 0;
+  padding-right: 1em;
+  margin: 0;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: 0.2rem solid #696969;
+  background-color: transparent;
+  color: #fff;
+/* just the resizer now */
+  background: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PSI3NC4zMzcgMS4wODQgNjAuMzM0IDU5LjY5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOmJ4PSJodHRwczovL2JveHktc3ZnLmNvbSI+DQogIDxkZWZzPjwvZGVmcz4NCiAgPHBhdGggc3R5bGU9ImZpbGw6IHJnYigyMTYsIDIxNiwgMjE2KTsgc3Ryb2tlOiByZ2IoMCwgMCwgMCk7IiBkPSJNIDMxOC40MTggMTA4LjMwMSI+PC9wYXRoPg0KICA8Zz4NCiAgICA8cGF0aCBzdHlsZT0ic3Ryb2tlOiByZ2IoMCwgMCwgMCk7IGZpbGw6IHJnYigyMTAsIDE4MCwgNzEpOyIgZD0iTSA3NC42NzYgMS44OTQgTCAxMzQuNjcgMS44OTQgTCAxMzQuMzQ3IDQzLjkgQyAxMzQuMjQ5IDUxLjUyOSAxMjUuNDYzIDU5LjQ5OCAxMTYuODIyIDU5LjYzNSBMIDc1LjMxNSA1OS41MDUgTCA3NC42NzYgMS44OTQgWiI+PC9wYXRoPg0KICAgIDxwYXRoIGQ9Ik0gOTguNDcgMS4wODQgSCAxMTAuNTM3IFYgMjQuOTU5IEggMTM0LjY3MSBWIDM2Ljg5OCBIIDExMC41MzcgViA2MC43NzQgSCA5OC40NyBWIDM2Ljg5OCBIIDc0LjMzNyBWIDI0Ljk1OSBIIDk4LjQ3IFoiIHN0eWxlPSIiIGJ4OnNoYXBlPSJjcm9zcyA3NC4zMzcgMS4wODQgNjAuMzM0IDU5LjY5IDExLjkzOSAxMi4wNjcgMC41IDFAN2FkZTc1ZjUiPjwvcGF0aD4NCiAgPC9nPg0KPC9zdmc+") no-repeat rgba(0,0,0,0) 99.9% 100%;
+  background-size: 16px;
 }
