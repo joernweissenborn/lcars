@@ -367,6 +367,19 @@ h6 {
   font-size: 140%;
   font-weight: bold;
 }
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #696969;
+  outline: 1px solid #696969;
+}
+body {
+  background-color: #000;
+}
 .lcars-app-container {
   display: flex;
   width: calc(100% - 1rem);
