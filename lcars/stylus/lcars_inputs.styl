@@ -1,0 +1,76 @@
+// LCARS - Inputs
+
+// Text based inputs first
+
+input.{prefix}text-input
+  height 1rem
+  padding 0
+  margin 0
+  border none
+  background-color transparent
+  color white
+  font-size 1rem
+
+textarea.lcars-text-box, textarea.lcars-text-input
+  font-size 1em
+  font-family primary-font-family
+  text-align  justify
+  padding  0
+  padding-right  1em
+  margin 0
+  border-top none
+  border-bottom none
+  border-left none
+  border-right .2rem solid dimgray
+  background-color transparent
+  color white
+  /* just the resizer now */
+  background  url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PSI3NC4zMzcgMS4wODQgNjAuMzM0IDU5LjY5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOmJ4PSJodHRwczovL2JveHktc3ZnLmNvbSI+DQogIDxkZWZzPjwvZGVmcz4NCiAgPHBhdGggc3R5bGU9ImZpbGw6IHJnYigyMTYsIDIxNiwgMjE2KTsgc3Ryb2tlOiByZ2IoMCwgMCwgMCk7IiBkPSJNIDMxOC40MTggMTA4LjMwMSI+PC9wYXRoPg0KICA8Zz4NCiAgICA8cGF0aCBzdHlsZT0ic3Ryb2tlOiByZ2IoMCwgMCwgMCk7IGZpbGw6IHJnYigyMTAsIDE4MCwgNzEpOyIgZD0iTSA3NC42NzYgMS44OTQgTCAxMzQuNjcgMS44OTQgTCAxMzQuMzQ3IDQzLjkgQyAxMzQuMjQ5IDUxLjUyOSAxMjUuNDYzIDU5LjQ5OCAxMTYuODIyIDU5LjYzNSBMIDc1LjMxNSA1OS41MDUgTCA3NC42NzYgMS44OTQgWiI+PC9wYXRoPg0KICAgIDxwYXRoIGQ9Ik0gOTguNDcgMS4wODQgSCAxMTAuNTM3IFYgMjQuOTU5IEggMTM0LjY3MSBWIDM2Ljg5OCBIIDExMC41MzcgViA2MC43NzQgSCA5OC40NyBWIDM2Ljg5OCBIIDc0LjMzNyBWIDI0Ljk1OSBIIDk4LjQ3IFoiIHN0eWxlPSIiIGJ4OnNoYXBlPSJjcm9zcyA3NC4zMzcgMS4wODQgNjAuMzM0IDU5LjY5IDExLjkzOSAxMi4wNjcgMC41IDFAN2FkZTc1ZjUiPjwvcGF0aD4NCiAgPC9nPg0KPC9zdmc+")  no-repeat rgba(0,0,0,0) 99.9% 100%
+  background-size  16px
+
+// Range inputs (a.k.a. "sliders")
+// credit for a nice pure CSS solution:  https://stackoverflow.com/questions/18389224/how-to-style-html5-range-input-to-have-different-color-before-and-after-slider
+/*
+Chrome: Hide the overflow from input[range], and fill all the space left to thumb with shadow color.
+IE: no need to reinvent the wheel: ::-ms-fill-lower
+Firefox no need to reinvent the wheel: ::-moz-range-progress
+*/
+
+////Chrome
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  input[type='range']
+    overflow hidden
+    width 80px
+    -webkit-appearance none
+    background-color transparent
+    
+  input[type='range']::-webkit-slider-runnable-track 
+    height 1em
+    -webkit-appearance none
+    color #CCAA33
+    margin-top -1px
+    
+  input[type='range']::-webkit-slider-thumb 
+    width 1em
+    -webkit-appearance none
+    height 1em
+    cursor ew-resize
+    background #CCAA33
+    box-shadow -80px 0 0 80px #CCAA33
+    
+
+////Firefox
+input[type="range"]::-moz-range-progress
+  background-color #43e5f7
+
+input[type="range"]::-moz-range-track
+  background-color #9a905d
+
+////IE
+input[type="range"]::-ms-fill-lower
+  background-color #43e5f7
+
+input[type="range"]::-ms-fill-upper
+  background-color #9a905d
+
+
