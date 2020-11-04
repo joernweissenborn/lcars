@@ -47,7 +47,7 @@ Firefox no need to reinvent the wheel: ::-moz-range-progress
   input[type='range']::-webkit-slider-runnable-track 
     height 1em
     -webkit-appearance none
-    color #CCAA33
+    color default-color
     margin-top -1px
     
   input[type='range']::-webkit-slider-thumb 
@@ -55,22 +55,56 @@ Firefox no need to reinvent the wheel: ::-moz-range-progress
     -webkit-appearance none
     height 1em
     cursor ew-resize
-    background #CCAA33
-    box-shadow -80px 0 0 80px #CCAA33
+    background default-color
+    box-shadow -80px 0 0 80px default-color
     
 
 ////Firefox
 input[type="range"]::-moz-range-progress
-  background-color #43e5f7
+  background-color default-color
 
 input[type="range"]::-moz-range-track
-  background-color #9a905d
+  background-color default-color
 
 ////IE
 input[type="range"]::-ms-fill-lower
-  background-color #43e5f7
+  background-color default-color
 
 input[type="range"]::-ms-fill-upper
-  background-color #9a905d
+  background-color default-color
 
+
+//Again for each canonical color:
+
+////Chrome
+for colorName, colorValue in colors
+  @media screen and (-webkit-min-device-pixel-ratio:0)
+    input[type='range'].{prefix}{colorName}-color::-webkit-slider-runnable-track 
+      height 1em
+      -webkit-appearance none
+      color colorValue
+      margin-top -1px
+      
+    input[type='range'].{prefix}{colorName}-color::-webkit-slider-thumb 
+      width 1em
+      -webkit-appearance none
+      height 1em
+      cursor ew-resize
+      background colorValue
+      box-shadow -80px 0 0 80px colorValue
+      
+  
+  ////Firefox
+  input[type="range"].{prefix}{colorName}-color::-moz-range-progress
+    background-color colorValue
+  
+  input[type="range"].{prefix}{colorName}-color::-moz-range-track
+    background-color colorValue
+  
+  ////IE
+  input[type="range"].{prefix}{colorName}-color::-ms-fill-lower
+    background-color colorValue
+  
+  input[type="range"].{prefix}{colorName}-color::-ms-fill-upper
+    background-color colorValue
 
