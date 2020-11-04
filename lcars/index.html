@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <title>LCARS</title>
   <link rel="stylesheet" href="css/lcars.css">
-  <link rel="stylesheet" href="css/inputs.css">
   <style>
 
-  html, body { background: black; }
   p, h1, h2, h3 {
     margin-top: 1em;
   }
@@ -104,7 +102,7 @@
 				</p>
 
 				<!-- GRID -->
-				<h2>Grid</h2>
+				<h2 id="grid">Grid</h2>
 
 				<p>
 				<a>LCARS has a strict grid system. Item sizes are set in multiples of unit size. </a>
@@ -177,7 +175,7 @@
 
 
 				<!-- HYPERLINKS -->
-				<h2>Hyperlinks</h2>
+				<h2 id="hyperlinks">Hyperlinks</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">:link :hover :focus :active :visited </pre> (but note that these are pseudo-classes, automatically applied by the web browser)</span>
 				<p>
@@ -188,8 +186,7 @@
 
 
 				<!-- Bar -->
-				<h2>Bar</h2>
-
+				<h2 bar="bar">Bar</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-bar</pre></span>
 				<p>
@@ -224,13 +221,13 @@
 				</ul>
 				</p>
 
-				<!-- TEXT BOX -->
-				<h2>Text Box</h2>
 
+				<!-- TEXT BOX -->
+				<h2 id="textbox">Text Box</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-text-box</pre></span>
 				<p>
-				<a>A display-only text box with pre-defined font sizes. Use to fit headers and indicators, but not for large texts.</a>
+				A display-only text box with pre-defined font sizes. Use to fit headers and indicators, but not for large texts. Also not for <a href="#inputs">text inputs</a>.
 
 				<ul>
 					<li><span><pre class="lcars-rust-color">big</pre>: font-size 150%</span></li>
@@ -244,78 +241,18 @@
 					<li><span><pre class="lcars-rust-color">bottom</pre>: align content to the bottom</span></li>
 					<li><span><pre class="lcars-rust-color">bottom-centered</pre>: align content to the bottom and center horizontally</span></li>
 					<li><span><pre class="lcars-rust-color">bottom-right</pre>: align content to the bottom and to the right</span></li>
+					<li><span><pre class="lcars-rust-color">blink</pre>: attention demanding blinking text</span></li>
 				</ul>
+
 				</p>
+				<h3>Example</h3>
+				<div class="lcars-text-box right lcars-u-6 ">COMMS STATUS NOMINAL</div>
+				<div class="lcars-text-box large centered lcars-u-6 blink">INCOMING TRANSMISSION</div>
 
 
-				<!-- INPUTS -->
-				<h2>Inputs</h2>
-
-				<p>
-				Note that these elements are somewhat outside of the atested UI elements. As far as arbitrary, free-form input, we can observe voice input, but we can only infer manual arbitrary input via stylus or some kind of configurable temporarily displayed full alphanumeric "keyboard" grid. Nonetheless, here we have more reasonable defaults (than regular raw browswer defaults) to blend in a little better, though it will be and will seem a bit inauthentic.
-				<p>
-				<span>Class: <pre class="lcars-dodger-blue-color">lcars-text-input</pre></span>
-				</p>
-				<p>
-				<a>A text box with pre-defined font sizes. Use to fit headers and indicators, but not for large texts.</a>
-				<p>
-					
-					single-line
-					<input id="username" class="NOTlcars-text-box centered-right"/>
-				
-				</p>
-				<p>
-					multi-line
-					...
-					<textarea id="description" class="lcars-text-box">
-					INITIAL DATA
-					</textarea>
-
-
-					</p>
-					<p>
-					Kinda complicated here... the width has to be at a higher level, then the height has to be at the textrea itself.
-					also recommend the minheight to avoid wierdness during resizing
-					<div class="lcars-row">
-						<div class="lcars-bracket left hollow"></div>
-						<div class="lcars-column" style="width:85%;">
-							<!--
-							<div class="lcars-element">
-							</div>
-							-->
-							<!-- and you may just might want a small negative margin-top on this, like -.25em; to get things nice and square.-->
-								<textarea id="description2" class="lcars-text-box" style="min-height:4em; height:8em; max-height: 30em; width:100%;">CAPTAIN'S LOG, SUPPLEMENTAL.     STARDATE 4 1 2 1 4 7 9. 
-FINAL FRONTIERS AND BOLD GOINGS ALL GOING ON AND GETTING REACHED, NOW. ITS SO BEAUTIFUL.  
-
-CREW IS ROCKING AND ROLLING. IS THERE ANYWHERE WE'VE NEVER GONE BEFORE? SURELY IT IS SO, SURELY WE WILL GO TO FIND THAT WHICH HAS NEVER BEEN OBSERVED BY OUR KIND.
-</textarea>
-						</div>
-					</div>
-				</p>
-				<p>
-				<span>Class: <pre class="lcars-dodger-blue-color">lcars-text-slider</pre></span>
-				</p>
-				<p> slider </p>
-				<p>
-					<label for="phaserfreq">PHASER FREQUENCY </label>
-					<input type="range" name="phaserfreq" id="phaserfrequency" min="50000" max="500000" step="100" value="250000">
-					<output class="lcars-slider-output" for="phaserfreq"></output>
-				</p>
-					<div class="lcars-column">
-						<div class="lcars-row">
-							<div class="lcars-element lcars-u-2-1">PHASERS</div>
-							<div class="lcars-element lcars-u-2-1 lcars-red-bg">
-								<div> POWER </div>
-								<div class="lcars-element-addition ">MJ
-									<input type="range" name="phaserfreq2" id="phaserfrequency2" min="2" max="10" step="1" value="3" style="width:100%">
-									<output class="lcars-slider-output" for="phaserfreq2"></output>
-								</div>
-							</div>
-						</div>
-					</div>
 
 				<!-- ELEMENT -->
-				<h2>Element</h2>
+				<h2 id="element">Element</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-element</pre></span>
 				<p>
@@ -375,7 +312,7 @@ CREW IS ROCKING AND ROLLING. IS THERE ANYWHERE WE'VE NEVER GONE BEFORE? SURELY I
 					</div>
 				</p>
 
-				<h2>Elbow</h2>
+				<h2 id="elbow">Elbow</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-elbow</pre></span>
 				<p>
@@ -422,7 +359,7 @@ CREW IS ROCKING AND ROLLING. IS THERE ANYWHERE WE'VE NEVER GONE BEFORE? SURELY I
 					</div>
 				</p>
 
-				<h2>BRACKETS</h2>
+				<h2 id="brackets">Brackets</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-bracket</pre></span>
 				<p>
@@ -475,6 +412,110 @@ CREW IS ROCKING AND ROLLING. IS THERE ANYWHERE WE'VE NEVER GONE BEFORE? SURELY I
 				</div>
 
 				</p>
+
+
+				<!-- INPUTS -->
+				<h2 id="inputs">Inputs</h2>
+
+				<p> Note that these elements are somewhat outside of the atested UI elements. As far as arbitrary, free-form input, we can observe voice input, but we can only infer manual arbitrary input via stylus or some kind of configurable, temporarily displayed full alphanumeric tactile "keyboard". Nonetheless, here we have more reasonable defaults (than regular raw browswer defaults) to blend in a little better, should you need them. Beware though that it will be and will seem a bit inauthentic.
+				</p>
+				
+				<h3>Text</h3>
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-text-input</pre></span>
+				<p>
+				<span>A single-line text box and a multi-line text area that users may type into.</span>
+				</p>
+				<h4>Example</h4>
+				<p>	Single-line
+					<input id="username" class="lcars-text-input "/>
+				
+				</p>
+				<p>	Multi-line basic
+				</p>
+				<p>
+					<textarea id="description" class="lcars-text-box lcars-u-4">INITIAL DATA
+					</textarea>
+				</p>
+				<p>	Multi-line with more decoration
+				</p>
+				<p>
+					Kinda complicated here... the width has to be specified at a higher level in the DOM tree, and then the height has to be specified at the textrea element itself.
+					Also recommend setting the min-height and max-height properties to avoid bad reflows or overlapping during resizing.
+				</p>
+				<p>
+					<div class="lcars-row">
+						<div class="lcars-bracket left hollow"></div>
+						<div class="lcars-column lcars-u-5" > <!-- style="width:85%;" also worked pretty well, but lcars-u-X grid classes are preferred. -->
+							<!--
+							<div class="lcars-element">
+							</div>
+							-->
+							<!-- and you may just might want a small negative margin-top on this, like -.25em; to get things nice and square.-->
+								<textarea id="description2" class="lcars-text-input" style="min-height:4em; height:14em; max-height: 30em; width:100%;">CAPTAIN'S LOG, SUPPLEMENTAL.     STARDATE 	31415.92
+ALL FRONTIERS ARE FINAL, AND ALL THE BOLD GOINGS ARE INDEED GOING ON. WE HOPE FOR ALL THAT LIFE WILL BE LONG AND PROSPERITY WILL ABOUND.
+
+CREW IS SHIP-SHAPE. IS THERE ANYWHERE WE'VE NEVER GONE BEFORE? SURELY IT IS SO, SURELY WE WILL GO TO FIND THAT WHICH HAS NEVER BEEN OBSERVED BY OUR KIND IN A PRIOR EPOCH.
+
+HERE WE SEE JUSTIFIED TEXT, PER PARAGRAPH, AND NEWLINE CHARACTERS (IN THE SOURCE) ARE RESPECTED.
+</textarea>
+						</div>
+					</div>
+				</p>
+
+				<h3> Range</h3>
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-range-input</pre></span>
+
+				<p>
+				<span>Range inputs might also be called "slider bars". Note that these have some added complexity including multiple html elements inside a form element and some behavior-driving JavaScript, though this appears to be <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">standard html5</a>.</span>
+				</p>
+				<h4>Example</h4>
+				<p>
+					<form oninput="emitterFreqdisp.value=emitterFrequency.value">
+						<label for="emitterFreq">EMITTER FREQUENCY </label>
+						<input type="range" name="emitterFreq" id="emitterFrequency" min="50000" max="500000" step="100" value="250000">
+						<output class="lcars-slider-output" for="emitterFreq" id="emitterFreqdisp">0</output>THz
+					</form>
+				</p>
+				<p>
+					<form oninput="emitterPowerDisp.value=emitterPwr.value">
+					<div class="lcars-column">
+						<div class="lcars-row">
+							<div class="lcars-element lcars-u-2-1">EMITTER</div>
+							<div class="lcars-element lcars-u-2-1 lcars-pale-canary-bg">
+								<div> POWER </div>
+								<!-- the span helps to prevent the output from insisting on block dipslay (rather than preferred inline display) -->
+								<div class="lcars-element-addition "><span><output class="lcars-slider-output" for="emitterPower" id="emitterPowerDisp" >0</output>MJ</span>
+									<input type="range" name="emitterPower" id="emitterPwr" min="2" max="10" step="1" value="3" style="width:100%" class="lcars-pale-canary-color"> <!--sometimes looks nice with width:100% -->
+								</div>
+							</div>
+							<div class="lcars-element right-rounded">002</div>
+						</div>
+					</div>
+					</form>
+				</p>
+
+<!--========================= This is not ready yet. very much WIP, TODO.
+				<p>
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-range-input-vertical</pre></span>
+					Note that multitouch is probably not going to work. You might have to do some clever linking in a javascript code behind to get, say, all three verticals to progress linked together.
+					Note some extra tricky parts to the vertical slider via CSS rotation transform:  height and width are "swapped", but the margins aren't (on chrome, anyway), so you might see some weird flow.
+					It is possible that you will find this too cumbersome, and would prefer to leave this to the realm of "complex geometry", and therefore another of the SVG extensions.
+				</p>
+				<p XXstyle=" transform: rotate(-90deg); height:5em;width:30em; margin-top:15em; margin-bottom:15em;">
+					<form oninput="tpProgressDisp.value=tpProgress.value">
+						<label for="emitterFreq">TRANSMISSION PROGRESS</label>
+						<input type="range" name="tpProgress" id="tpProgress" min="0" max="100" step="2" value="0" >
+						<!!-- how to get these side-by-side?
+						<input type="range" name="tpProgress2" id="tpProgress2" min="0" max="100" step="2" value="0" style=" transform: rotate(-90deg); height:5em;width:30em; margin-top:15em; margin-bottom:15em;">
+						<input type="range" name="tpProgress3" id="tpProgress3" min="0" max="100" step="2" value="0" style=" transform: rotate(-90deg); height:5em;width:30em; margin-top:15em; margin-bottom:15em;">
+						--!!>
+						<p>
+							<output class="lcars-slider-output" for="tpProgress" id="tpProgressDisp">0</output>%
+						</p>
+					</form>
+				</p>
+===================================-->
+
 
 				<h2 id="audio_section">Audio</h2>
 
@@ -532,7 +573,7 @@ CREW IS ROCKING AND ROLLING. IS THERE ANYWHERE WE'VE NEVER GONE BEFORE? SURELY I
 				</p>
 				<p>
 
-					<table >
+					<table class="lcars-anakiwa-color scanning">
 					<thead>
 					    <tr><th>JS lcarsAudio Module Play Function</th> <th>Element Subclass</th> <th>Audio Filename Base</th> <th>Semantic Description</th>
 					<thead>
