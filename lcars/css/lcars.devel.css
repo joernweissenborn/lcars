@@ -1773,8 +1773,16 @@ textarea.lcars-text-input {
 }
 input[type="range"]::-moz-range-progress {
   background-color: #fc6;
+  height: 1em;
 }
 input[type="range"]::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #fc6;
 }
 input[type="range"]::-ms-fill-lower {
@@ -1801,8 +1809,16 @@ input[type="range"]::-ms-fill-upper {
 }
 input[type="range"].lcars-gray-color::-moz-range-progress {
   background-color: #234;
+  height: 1em;
 }
 input[type="range"].lcars-gray-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-gray-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #234;
 }
 input[type="range"].lcars-gray-color::-ms-fill-lower {
@@ -1829,8 +1845,16 @@ input[type="range"].lcars-gray-color::-ms-fill-upper {
 }
 input[type="range"].lcars-white-color::-moz-range-progress {
   background-color: #fff;
+  height: 1em;
 }
 input[type="range"].lcars-white-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-white-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #fff;
 }
 input[type="range"].lcars-white-color::-ms-fill-lower {
@@ -1857,8 +1881,16 @@ input[type="range"].lcars-white-color::-ms-fill-upper {
 }
 input[type="range"].lcars-black-color::-moz-range-progress {
   background-color: #000;
+  height: 1em;
 }
 input[type="range"].lcars-black-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-black-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #000;
 }
 input[type="range"].lcars-black-color::-ms-fill-lower {
@@ -1885,8 +1917,16 @@ input[type="range"].lcars-black-color::-ms-fill-upper {
 }
 input[type="range"].lcars-pale-canary-color::-moz-range-progress {
   background-color: #ff9;
+  height: 1em;
 }
 input[type="range"].lcars-pale-canary-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-pale-canary-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #ff9;
 }
 input[type="range"].lcars-pale-canary-color::-ms-fill-lower {
@@ -1913,8 +1953,16 @@ input[type="range"].lcars-pale-canary-color::-ms-fill-upper {
 }
 input[type="range"].lcars-golden-tanoi-color::-moz-range-progress {
   background-color: #fc6;
+  height: 1em;
 }
 input[type="range"].lcars-golden-tanoi-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-golden-tanoi-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #fc6;
 }
 input[type="range"].lcars-golden-tanoi-color::-ms-fill-lower {
@@ -1941,8 +1989,16 @@ input[type="range"].lcars-golden-tanoi-color::-ms-fill-upper {
 }
 input[type="range"].lcars-neon-carrot-color::-moz-range-progress {
   background-color: #f93;
+  height: 1em;
 }
 input[type="range"].lcars-neon-carrot-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-neon-carrot-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #f93;
 }
 input[type="range"].lcars-neon-carrot-color::-ms-fill-lower {
@@ -1969,8 +2025,16 @@ input[type="range"].lcars-neon-carrot-color::-ms-fill-upper {
 }
 input[type="range"].lcars-eggplant-color::-moz-range-progress {
   background-color: #646;
+  height: 1em;
 }
 input[type="range"].lcars-eggplant-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-eggplant-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #646;
 }
 input[type="range"].lcars-eggplant-color::-ms-fill-lower {
@@ -1997,8 +2061,16 @@ input[type="range"].lcars-eggplant-color::-ms-fill-upper {
 }
 input[type="range"].lcars-lilac-color::-moz-range-progress {
   background-color: #c9c;
+  height: 1em;
 }
 input[type="range"].lcars-lilac-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-lilac-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #c9c;
 }
 input[type="range"].lcars-lilac-color::-ms-fill-lower {
@@ -2025,8 +2097,16 @@ input[type="range"].lcars-lilac-color::-ms-fill-upper {
 }
 input[type="range"].lcars-anakiwa-color::-moz-range-progress {
   background-color: #9cf;
+  height: 1em;
 }
 input[type="range"].lcars-anakiwa-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-anakiwa-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #9cf;
 }
 input[type="range"].lcars-anakiwa-color::-ms-fill-lower {
@@ -2053,8 +2133,16 @@ input[type="range"].lcars-anakiwa-color::-ms-fill-upper {
 }
 input[type="range"].lcars-mariner-color::-moz-range-progress {
   background-color: #36c;
+  height: 1em;
 }
 input[type="range"].lcars-mariner-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-mariner-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #36c;
 }
 input[type="range"].lcars-mariner-color::-ms-fill-lower {
@@ -2081,8 +2169,16 @@ input[type="range"].lcars-mariner-color::-ms-fill-upper {
 }
 input[type="range"].lcars-bahama-blue-color::-moz-range-progress {
   background-color: #069;
+  height: 1em;
 }
 input[type="range"].lcars-bahama-blue-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-bahama-blue-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #069;
 }
 input[type="range"].lcars-bahama-blue-color::-ms-fill-lower {
@@ -2109,8 +2205,16 @@ input[type="range"].lcars-bahama-blue-color::-ms-fill-upper {
 }
 input[type="range"].lcars-red-alert-color::-moz-range-progress {
   background-color: #e10;
+  height: 1em;
 }
 input[type="range"].lcars-red-alert-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-red-alert-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #e10;
 }
 input[type="range"].lcars-red-alert-color::-ms-fill-lower {
@@ -2137,8 +2241,16 @@ input[type="range"].lcars-red-alert-color::-ms-fill-upper {
 }
 input[type="range"].lcars-blue-bell-color::-moz-range-progress {
   background-color: #99c;
+  height: 1em;
 }
 input[type="range"].lcars-blue-bell-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-blue-bell-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #99c;
 }
 input[type="range"].lcars-blue-bell-color::-ms-fill-lower {
@@ -2165,8 +2277,16 @@ input[type="range"].lcars-blue-bell-color::-ms-fill-upper {
 }
 input[type="range"].lcars-melrose-color::-moz-range-progress {
   background-color: #99f;
+  height: 1em;
 }
 input[type="range"].lcars-melrose-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-melrose-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #99f;
 }
 input[type="range"].lcars-melrose-color::-ms-fill-lower {
@@ -2193,8 +2313,16 @@ input[type="range"].lcars-melrose-color::-ms-fill-upper {
 }
 input[type="range"].lcars-hopbush-color::-moz-range-progress {
   background-color: #c69;
+  height: 1em;
 }
 input[type="range"].lcars-hopbush-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-hopbush-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #c69;
 }
 input[type="range"].lcars-hopbush-color::-ms-fill-lower {
@@ -2221,8 +2349,16 @@ input[type="range"].lcars-hopbush-color::-ms-fill-upper {
 }
 input[type="range"].lcars-chestnut-rose-color::-moz-range-progress {
   background-color: #c66;
+  height: 1em;
 }
 input[type="range"].lcars-chestnut-rose-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-chestnut-rose-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #c66;
 }
 input[type="range"].lcars-chestnut-rose-color::-ms-fill-lower {
@@ -2249,8 +2385,16 @@ input[type="range"].lcars-chestnut-rose-color::-ms-fill-upper {
 }
 input[type="range"].lcars-orange-peel-color::-moz-range-progress {
   background-color: #f96;
+  height: 1em;
 }
 input[type="range"].lcars-orange-peel-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-orange-peel-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #f96;
 }
 input[type="range"].lcars-orange-peel-color::-ms-fill-lower {
@@ -2277,8 +2421,16 @@ input[type="range"].lcars-orange-peel-color::-ms-fill-upper {
 }
 input[type="range"].lcars-atomic-tangerine-color::-moz-range-progress {
   background-color: #f90;
+  height: 1em;
 }
 input[type="range"].lcars-atomic-tangerine-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-atomic-tangerine-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #f90;
 }
 input[type="range"].lcars-atomic-tangerine-color::-ms-fill-lower {
@@ -2305,8 +2457,16 @@ input[type="range"].lcars-atomic-tangerine-color::-ms-fill-upper {
 }
 input[type="range"].lcars-danub-color::-moz-range-progress {
   background-color: #68c;
+  height: 1em;
 }
 input[type="range"].lcars-danub-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-danub-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #68c;
 }
 input[type="range"].lcars-danub-color::-ms-fill-lower {
@@ -2333,8 +2493,16 @@ input[type="range"].lcars-danub-color::-ms-fill-upper {
 }
 input[type="range"].lcars-indigo-color::-moz-range-progress {
   background-color: #45b;
+  height: 1em;
 }
 input[type="range"].lcars-indigo-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-indigo-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #45b;
 }
 input[type="range"].lcars-indigo-color::-ms-fill-lower {
@@ -2361,8 +2529,16 @@ input[type="range"].lcars-indigo-color::-ms-fill-upper {
 }
 input[type="range"].lcars-lavender-purple-color::-moz-range-progress {
   background-color: #97a;
+  height: 1em;
 }
 input[type="range"].lcars-lavender-purple-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-lavender-purple-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #97a;
 }
 input[type="range"].lcars-lavender-purple-color::-ms-fill-lower {
@@ -2389,8 +2565,16 @@ input[type="range"].lcars-lavender-purple-color::-ms-fill-upper {
 }
 input[type="range"].lcars-cosmic-color::-moz-range-progress {
   background-color: #746;
+  height: 1em;
 }
 input[type="range"].lcars-cosmic-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-cosmic-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #746;
 }
 input[type="range"].lcars-cosmic-color::-ms-fill-lower {
@@ -2417,8 +2601,16 @@ input[type="range"].lcars-cosmic-color::-ms-fill-upper {
 }
 input[type="range"].lcars-red-damask-color::-moz-range-progress {
   background-color: #d64;
+  height: 1em;
 }
 input[type="range"].lcars-red-damask-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-red-damask-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #d64;
 }
 input[type="range"].lcars-red-damask-color::-ms-fill-lower {
@@ -2445,8 +2637,16 @@ input[type="range"].lcars-red-damask-color::-ms-fill-upper {
 }
 input[type="range"].lcars-medium-carmine-color::-moz-range-progress {
   background-color: #a53;
+  height: 1em;
 }
 input[type="range"].lcars-medium-carmine-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-medium-carmine-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #a53;
 }
 input[type="range"].lcars-medium-carmine-color::-ms-fill-lower {
@@ -2473,8 +2673,16 @@ input[type="range"].lcars-medium-carmine-color::-ms-fill-upper {
 }
 input[type="range"].lcars-bourbon-color::-moz-range-progress {
   background-color: #b62;
+  height: 1em;
 }
 input[type="range"].lcars-bourbon-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-bourbon-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #b62;
 }
 input[type="range"].lcars-bourbon-color::-ms-fill-lower {
@@ -2501,8 +2709,16 @@ input[type="range"].lcars-bourbon-color::-ms-fill-upper {
 }
 input[type="range"].lcars-sandy-brown-color::-moz-range-progress {
   background-color: #e95;
+  height: 1em;
 }
 input[type="range"].lcars-sandy-brown-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-sandy-brown-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #e95;
 }
 input[type="range"].lcars-sandy-brown-color::-ms-fill-lower {
@@ -2529,8 +2745,16 @@ input[type="range"].lcars-sandy-brown-color::-ms-fill-upper {
 }
 input[type="range"].lcars-periwinkle-color::-moz-range-progress {
   background-color: #cdf;
+  height: 1em;
 }
 input[type="range"].lcars-periwinkle-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-periwinkle-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #cdf;
 }
 input[type="range"].lcars-periwinkle-color::-ms-fill-lower {
@@ -2557,8 +2781,16 @@ input[type="range"].lcars-periwinkle-color::-ms-fill-upper {
 }
 input[type="range"].lcars-dodger-blue-color::-moz-range-progress {
   background-color: #59f;
+  height: 1em;
 }
 input[type="range"].lcars-dodger-blue-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-dodger-blue-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #59f;
 }
 input[type="range"].lcars-dodger-blue-color::-ms-fill-lower {
@@ -2585,8 +2817,16 @@ input[type="range"].lcars-dodger-blue-color::-ms-fill-upper {
 }
 input[type="range"].lcars-dodger-blue-alt-color::-moz-range-progress {
   background-color: #36f;
+  height: 1em;
 }
 input[type="range"].lcars-dodger-blue-alt-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-dodger-blue-alt-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #36f;
 }
 input[type="range"].lcars-dodger-blue-alt-color::-ms-fill-lower {
@@ -2613,8 +2853,16 @@ input[type="range"].lcars-dodger-blue-alt-color::-ms-fill-upper {
 }
 input[type="range"].lcars-blue-color::-moz-range-progress {
   background-color: #01e;
+  height: 1em;
 }
 input[type="range"].lcars-blue-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-blue-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #01e;
 }
 input[type="range"].lcars-blue-color::-ms-fill-lower {
@@ -2641,8 +2889,16 @@ input[type="range"].lcars-blue-color::-ms-fill-upper {
 }
 input[type="range"].lcars-navy-blue-color::-moz-range-progress {
   background-color: #008;
+  height: 1em;
 }
 input[type="range"].lcars-navy-blue-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-navy-blue-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #008;
 }
 input[type="range"].lcars-navy-blue-color::-ms-fill-lower {
@@ -2669,8 +2925,16 @@ input[type="range"].lcars-navy-blue-color::-ms-fill-upper {
 }
 input[type="range"].lcars-husk-color::-moz-range-progress {
   background-color: #ba5;
+  height: 1em;
 }
 input[type="range"].lcars-husk-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-husk-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #ba5;
 }
 input[type="range"].lcars-husk-color::-ms-fill-lower {
@@ -2697,8 +2961,16 @@ input[type="range"].lcars-husk-color::-ms-fill-upper {
 }
 input[type="range"].lcars-rust-color::-moz-range-progress {
   background-color: #b41;
+  height: 1em;
 }
 input[type="range"].lcars-rust-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-rust-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #b41;
 }
 input[type="range"].lcars-rust-color::-ms-fill-lower {
@@ -2725,8 +2997,16 @@ input[type="range"].lcars-rust-color::-ms-fill-upper {
 }
 input[type="range"].lcars-tamarillo-color::-moz-range-progress {
   background-color: #821;
+  height: 1em;
 }
 input[type="range"].lcars-tamarillo-color::-moz-range-track {
+  background-color: transparent;
+}
+input[type="range"].lcars-tamarillo-color::-moz-range-thumb {
+  border: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 0%;
   background-color: #821;
 }
 input[type="range"].lcars-tamarillo-color::-ms-fill-lower {

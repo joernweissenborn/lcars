@@ -36,6 +36,8 @@ IE: no need to reinvent the wheel: ::-ms-fill-lower
 Firefox no need to reinvent the wheel: ::-moz-range-progress
 */
 
+//First a default spec
+
 ////Chrome
 @media screen and (-webkit-min-device-pixel-ratio:0)
   input[type='range']
@@ -62,9 +64,18 @@ Firefox no need to reinvent the wheel: ::-moz-range-progress
 ////Firefox
 input[type="range"]::-moz-range-progress
   background-color default-color
+  height 1em
 
 input[type="range"]::-moz-range-track
-  background-color default-color
+  background-color transparent
+
+input[type="range"]::-moz-range-thumb
+    border none
+    height 1em
+    width 1em
+    border-radius 0%
+    background-color default-color
+
 
 ////IE
 input[type="range"]::-ms-fill-lower
@@ -97,10 +108,18 @@ for colorName, colorValue in colors
   ////Firefox
   input[type="range"].{prefix}{colorName}-color::-moz-range-progress
     background-color colorValue
+    height 1em
   
   input[type="range"].{prefix}{colorName}-color::-moz-range-track
-    background-color colorValue
+    background-color transparent
   
+  input[type="range"].{prefix}{colorName}-color::-moz-range-thumb
+    border none
+    height 1em
+    width 1em
+    border-radius 0%
+    background-color colorValue
+
   ////IE
   input[type="range"].{prefix}{colorName}-color::-ms-fill-lower
     background-color colorValue
