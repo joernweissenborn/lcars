@@ -5,7 +5,6 @@
   <title>LCARS</title>
   <link rel="stylesheet" href="css/lcars.css">
   <style>
-
   p, h1, h2, h3 {
     margin-top: 1em;
   }
@@ -417,6 +416,8 @@
 				<!-- INPUTS -->
 				<h2 id="inputs">Inputs</h2>
 
+				<p> Basic input controls other than buttons. Text inputs and range (slider) inputs, for example.
+				</p>
 				<p> Note that these elements are somewhat outside of the atested UI elements. As far as arbitrary, free-form input, we can observe voice input, but we can only infer manual arbitrary input via stylus or some kind of configurable, temporarily displayed full alphanumeric tactile "keyboard". Nonetheless, here we have more reasonable defaults (than regular raw browswer defaults) to blend in a little better, should you need them. Beware though that it will be and will seem a bit inauthentic.
 				</p>
 				
@@ -424,10 +425,13 @@
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-text-input</pre></span>
 				<p>
 				<span>A single-line text box and a multi-line text area that users may type into.</span>
+					<ul>
+						<li><span><pre class="lcars-rust-color">decorated</pre>: add simple right and left borders to indicate text input area boundaries.</span></li>
+					</ul>
 				</p>
 				<h4>Example</h4>
 				<p>	Single-line
-					<input id="username" class="lcars-text-input "/>
+					<input id="username" class="lcars-text-input decorated lcars-atomic-tangerine-color"/>
 				
 				</p>
 				<p>	Multi-line basic
@@ -439,8 +443,8 @@
 				<p>	Multi-line with more decoration
 				</p>
 				<p>
-					Kinda complicated here... the width has to be specified at a higher level in the DOM tree, and then the height has to be specified at the textrea element itself.
-					Also recommend setting the min-height and max-height properties to avoid bad reflows or overlapping during resizing.
+					Somewhat more complicated here; the width has to be specified at a higher position in the DOM tree, and then the height has to be specified at the textrea element itself.
+					Also recommended: setting the min-height and max-height properties to avoid bad reflows or overlapping during resizing.
 				</p>
 				<p>
 					<div class="lcars-row">
@@ -451,7 +455,8 @@
 							</div>
 							-->
 							<!-- and you may just might want a small negative margin-top on this, like -.25em; to get things nice and square.-->
-								<textarea id="description2" class="lcars-text-input" style="min-height:4em; height:14em; max-height: 30em; width:100%;">CAPTAIN'S LOG, SUPPLEMENTAL.     STARDATE 	31415.92
+								<input id="entry_index" class="lcars-text-input " value="L0:SD:31415.92" />
+								<textarea id="log_text" class="lcars-text-input" style="min-height:4em; height:14em; max-height: 30em; width:100%;">CAPTAIN'S LOG, SUPPLEMENTAL.     STARDATE 	31415.92
 ALL FRONTIERS ARE FINAL, AND ALL THE BOLD GOINGS ARE INDEED GOING ON. WE HOPE FOR ALL THAT LIFE WILL BE LONG AND PROSPERITY WILL ABOUND.
 
 CREW IS SHIP-SHAPE. IS THERE ANYWHERE WE'VE NEVER GONE BEFORE? SURELY IT IS SO, SURELY WE WILL GO TO FIND THAT WHICH HAS NEVER BEEN OBSERVED BY OUR KIND IN A PRIOR EPOCH.
@@ -485,7 +490,7 @@ HERE WE SEE JUSTIFIED TEXT, PER PARAGRAPH, AND NEWLINE CHARACTERS (IN THE SOURCE
 								<div> POWER </div>
 								<!-- the span helps to prevent the output from insisting on block dipslay (rather than preferred inline display) -->
 								<div class="lcars-element-addition "><span><output class="lcars-slider-output" for="emitterPower" id="emitterPowerDisp" >0</output>MJ</span>
-									<input type="range" name="emitterPower" id="emitterPwr" min="2" max="10" step="1" value="3" style="width:100%" class="lcars-pale-canary-color"> <!--sometimes looks nice with width:100% -->
+									<input type="range" name="emitterPower" id="emitterPwr" min="1" max="10" step="1" value="3" style="width:100%" class="XXlcars-pale-canary-color"> <!--sometimes looks nice with width:100% -->
 								</div>
 							</div>
 							<div class="lcars-element right-rounded">002</div>
