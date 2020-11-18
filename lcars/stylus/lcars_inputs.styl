@@ -3,10 +3,11 @@
 // Text based inputs first
 
 textarea, input
-  background-color transparent
   font-size 1em
   font-family primary-font-family
   color white
+  border none
+  background-color transparent
 
 input.{prefix}text-input
   height 1rem
@@ -29,18 +30,18 @@ textarea.lcars-text-box, textarea.lcars-text-input
   background-size  16px
 
   //Decorated modifier subclass, but just for inputs
-textarea.lcars-text-box.decorated, textarea.lcars-text-input.decorated
+textarea.lcars-text-box.decorated, textarea.lcars-text-input.decorated, textarea.decorated
+  caret-color white
   border-left   .2rem solid dimgray
   padding-left  .5rem
   padding-right .5rem
   border-right  .2rem solid dimgray
-  caret-color white
 
 for colorName, colorValue in colors
-  textarea.lcars-text-box.{prefix}{colorName}-color, textarea.lcars-text-input.{prefix}{colorName}-color
+  textarea.lcars-text-box.{prefix}{colorName}-color, textarea.lcars-text-input.{prefix}{colorName}-color, textarea.{prefix}{colorName}-color
     caret-color colorValue
 
-  input.decorated.{prefix}{colorName}-color, textarea.lcars-text-box.decorated.{prefix}{colorName}-color, textarea.lcars-text-input.decorated.{prefix}{colorName}-color
+  input.decorated.{prefix}{colorName}-color, textarea.lcars-text-box.decorated.{prefix}{colorName}-color, textarea.{prefix}{colorName}-color, textarea.lcars-text-input.decorated.{prefix}{colorName}-color
     border-left   .2rem solid colorValue
     padding-left  .5rem
     padding-right .5rem

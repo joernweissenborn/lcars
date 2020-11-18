@@ -1801,10 +1801,11 @@ a:active {
 }
 textarea,
 input {
-  background-color: transparent;
   font-size: 1em;
   font-family: "Arial", monospace;
   color: #fff;
+  border: none;
+  background-color: transparent;
 }
 input.lcars-text-input {
   height: 1rem;
@@ -1829,19 +1830,22 @@ textarea.lcars-text-input {
   background-size: 16px;
 }
 textarea.lcars-text-box.decorated,
-textarea.lcars-text-input.decorated {
+textarea.lcars-text-input.decorated,
+textarea.decorated {
+  caret-color: #fff;
   border-left: 0.2rem solid #696969;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border-right: 0.2rem solid #696969;
-  caret-color: #fff;
 }
 textarea.lcars-text-box.lcars-gray-color,
-textarea.lcars-text-input.lcars-gray-color {
+textarea.lcars-text-input.lcars-gray-color,
+textarea.lcars-gray-color {
   caret-color: #234;
 }
 input.decorated.lcars-gray-color,
 textarea.lcars-text-box.decorated.lcars-gray-color,
+textarea.lcars-gray-color,
 textarea.lcars-text-input.decorated.lcars-gray-color {
   border-left: 0.2rem solid #234;
   padding-left: 0.5rem;
@@ -1849,11 +1853,13 @@ textarea.lcars-text-input.decorated.lcars-gray-color {
   border-right: 0.2rem solid #234;
 }
 textarea.lcars-text-box.lcars-white-color,
-textarea.lcars-text-input.lcars-white-color {
+textarea.lcars-text-input.lcars-white-color,
+textarea.lcars-white-color {
   caret-color: #fff;
 }
 input.decorated.lcars-white-color,
 textarea.lcars-text-box.decorated.lcars-white-color,
+textarea.lcars-white-color,
 textarea.lcars-text-input.decorated.lcars-white-color {
   border-left: 0.2rem solid #fff;
   padding-left: 0.5rem;
@@ -1861,11 +1867,13 @@ textarea.lcars-text-input.decorated.lcars-white-color {
   border-right: 0.2rem solid #fff;
 }
 textarea.lcars-text-box.lcars-black-color,
-textarea.lcars-text-input.lcars-black-color {
+textarea.lcars-text-input.lcars-black-color,
+textarea.lcars-black-color {
   caret-color: #000;
 }
 input.decorated.lcars-black-color,
 textarea.lcars-text-box.decorated.lcars-black-color,
+textarea.lcars-black-color,
 textarea.lcars-text-input.decorated.lcars-black-color {
   border-left: 0.2rem solid #000;
   padding-left: 0.5rem;
@@ -1873,11 +1881,13 @@ textarea.lcars-text-input.decorated.lcars-black-color {
   border-right: 0.2rem solid #000;
 }
 textarea.lcars-text-box.lcars-pale-canary-color,
-textarea.lcars-text-input.lcars-pale-canary-color {
+textarea.lcars-text-input.lcars-pale-canary-color,
+textarea.lcars-pale-canary-color {
   caret-color: #ff9;
 }
 input.decorated.lcars-pale-canary-color,
 textarea.lcars-text-box.decorated.lcars-pale-canary-color,
+textarea.lcars-pale-canary-color,
 textarea.lcars-text-input.decorated.lcars-pale-canary-color {
   border-left: 0.2rem solid #ff9;
   padding-left: 0.5rem;
@@ -1885,11 +1895,13 @@ textarea.lcars-text-input.decorated.lcars-pale-canary-color {
   border-right: 0.2rem solid #ff9;
 }
 textarea.lcars-text-box.lcars-golden-tanoi-color,
-textarea.lcars-text-input.lcars-golden-tanoi-color {
+textarea.lcars-text-input.lcars-golden-tanoi-color,
+textarea.lcars-golden-tanoi-color {
   caret-color: #fc6;
 }
 input.decorated.lcars-golden-tanoi-color,
 textarea.lcars-text-box.decorated.lcars-golden-tanoi-color,
+textarea.lcars-golden-tanoi-color,
 textarea.lcars-text-input.decorated.lcars-golden-tanoi-color {
   border-left: 0.2rem solid #fc6;
   padding-left: 0.5rem;
@@ -1897,11 +1909,13 @@ textarea.lcars-text-input.decorated.lcars-golden-tanoi-color {
   border-right: 0.2rem solid #fc6;
 }
 textarea.lcars-text-box.lcars-neon-carrot-color,
-textarea.lcars-text-input.lcars-neon-carrot-color {
+textarea.lcars-text-input.lcars-neon-carrot-color,
+textarea.lcars-neon-carrot-color {
   caret-color: #f93;
 }
 input.decorated.lcars-neon-carrot-color,
 textarea.lcars-text-box.decorated.lcars-neon-carrot-color,
+textarea.lcars-neon-carrot-color,
 textarea.lcars-text-input.decorated.lcars-neon-carrot-color {
   border-left: 0.2rem solid #f93;
   padding-left: 0.5rem;
@@ -1909,11 +1923,13 @@ textarea.lcars-text-input.decorated.lcars-neon-carrot-color {
   border-right: 0.2rem solid #f93;
 }
 textarea.lcars-text-box.lcars-eggplant-color,
-textarea.lcars-text-input.lcars-eggplant-color {
+textarea.lcars-text-input.lcars-eggplant-color,
+textarea.lcars-eggplant-color {
   caret-color: #646;
 }
 input.decorated.lcars-eggplant-color,
 textarea.lcars-text-box.decorated.lcars-eggplant-color,
+textarea.lcars-eggplant-color,
 textarea.lcars-text-input.decorated.lcars-eggplant-color {
   border-left: 0.2rem solid #646;
   padding-left: 0.5rem;
@@ -1921,11 +1937,13 @@ textarea.lcars-text-input.decorated.lcars-eggplant-color {
   border-right: 0.2rem solid #646;
 }
 textarea.lcars-text-box.lcars-lilac-color,
-textarea.lcars-text-input.lcars-lilac-color {
+textarea.lcars-text-input.lcars-lilac-color,
+textarea.lcars-lilac-color {
   caret-color: #c9c;
 }
 input.decorated.lcars-lilac-color,
 textarea.lcars-text-box.decorated.lcars-lilac-color,
+textarea.lcars-lilac-color,
 textarea.lcars-text-input.decorated.lcars-lilac-color {
   border-left: 0.2rem solid #c9c;
   padding-left: 0.5rem;
@@ -1933,11 +1951,13 @@ textarea.lcars-text-input.decorated.lcars-lilac-color {
   border-right: 0.2rem solid #c9c;
 }
 textarea.lcars-text-box.lcars-anakiwa-color,
-textarea.lcars-text-input.lcars-anakiwa-color {
+textarea.lcars-text-input.lcars-anakiwa-color,
+textarea.lcars-anakiwa-color {
   caret-color: #9cf;
 }
 input.decorated.lcars-anakiwa-color,
 textarea.lcars-text-box.decorated.lcars-anakiwa-color,
+textarea.lcars-anakiwa-color,
 textarea.lcars-text-input.decorated.lcars-anakiwa-color {
   border-left: 0.2rem solid #9cf;
   padding-left: 0.5rem;
@@ -1945,11 +1965,13 @@ textarea.lcars-text-input.decorated.lcars-anakiwa-color {
   border-right: 0.2rem solid #9cf;
 }
 textarea.lcars-text-box.lcars-mariner-color,
-textarea.lcars-text-input.lcars-mariner-color {
+textarea.lcars-text-input.lcars-mariner-color,
+textarea.lcars-mariner-color {
   caret-color: #36c;
 }
 input.decorated.lcars-mariner-color,
 textarea.lcars-text-box.decorated.lcars-mariner-color,
+textarea.lcars-mariner-color,
 textarea.lcars-text-input.decorated.lcars-mariner-color {
   border-left: 0.2rem solid #36c;
   padding-left: 0.5rem;
@@ -1957,11 +1979,13 @@ textarea.lcars-text-input.decorated.lcars-mariner-color {
   border-right: 0.2rem solid #36c;
 }
 textarea.lcars-text-box.lcars-bahama-blue-color,
-textarea.lcars-text-input.lcars-bahama-blue-color {
+textarea.lcars-text-input.lcars-bahama-blue-color,
+textarea.lcars-bahama-blue-color {
   caret-color: #069;
 }
 input.decorated.lcars-bahama-blue-color,
 textarea.lcars-text-box.decorated.lcars-bahama-blue-color,
+textarea.lcars-bahama-blue-color,
 textarea.lcars-text-input.decorated.lcars-bahama-blue-color {
   border-left: 0.2rem solid #069;
   padding-left: 0.5rem;
@@ -1969,11 +1993,13 @@ textarea.lcars-text-input.decorated.lcars-bahama-blue-color {
   border-right: 0.2rem solid #069;
 }
 textarea.lcars-text-box.lcars-red-alert-color,
-textarea.lcars-text-input.lcars-red-alert-color {
+textarea.lcars-text-input.lcars-red-alert-color,
+textarea.lcars-red-alert-color {
   caret-color: #e10;
 }
 input.decorated.lcars-red-alert-color,
 textarea.lcars-text-box.decorated.lcars-red-alert-color,
+textarea.lcars-red-alert-color,
 textarea.lcars-text-input.decorated.lcars-red-alert-color {
   border-left: 0.2rem solid #e10;
   padding-left: 0.5rem;
@@ -1981,11 +2007,13 @@ textarea.lcars-text-input.decorated.lcars-red-alert-color {
   border-right: 0.2rem solid #e10;
 }
 textarea.lcars-text-box.lcars-blue-bell-color,
-textarea.lcars-text-input.lcars-blue-bell-color {
+textarea.lcars-text-input.lcars-blue-bell-color,
+textarea.lcars-blue-bell-color {
   caret-color: #99c;
 }
 input.decorated.lcars-blue-bell-color,
 textarea.lcars-text-box.decorated.lcars-blue-bell-color,
+textarea.lcars-blue-bell-color,
 textarea.lcars-text-input.decorated.lcars-blue-bell-color {
   border-left: 0.2rem solid #99c;
   padding-left: 0.5rem;
@@ -1993,11 +2021,13 @@ textarea.lcars-text-input.decorated.lcars-blue-bell-color {
   border-right: 0.2rem solid #99c;
 }
 textarea.lcars-text-box.lcars-melrose-color,
-textarea.lcars-text-input.lcars-melrose-color {
+textarea.lcars-text-input.lcars-melrose-color,
+textarea.lcars-melrose-color {
   caret-color: #99f;
 }
 input.decorated.lcars-melrose-color,
 textarea.lcars-text-box.decorated.lcars-melrose-color,
+textarea.lcars-melrose-color,
 textarea.lcars-text-input.decorated.lcars-melrose-color {
   border-left: 0.2rem solid #99f;
   padding-left: 0.5rem;
@@ -2005,11 +2035,13 @@ textarea.lcars-text-input.decorated.lcars-melrose-color {
   border-right: 0.2rem solid #99f;
 }
 textarea.lcars-text-box.lcars-hopbush-color,
-textarea.lcars-text-input.lcars-hopbush-color {
+textarea.lcars-text-input.lcars-hopbush-color,
+textarea.lcars-hopbush-color {
   caret-color: #c69;
 }
 input.decorated.lcars-hopbush-color,
 textarea.lcars-text-box.decorated.lcars-hopbush-color,
+textarea.lcars-hopbush-color,
 textarea.lcars-text-input.decorated.lcars-hopbush-color {
   border-left: 0.2rem solid #c69;
   padding-left: 0.5rem;
@@ -2017,11 +2049,13 @@ textarea.lcars-text-input.decorated.lcars-hopbush-color {
   border-right: 0.2rem solid #c69;
 }
 textarea.lcars-text-box.lcars-chestnut-rose-color,
-textarea.lcars-text-input.lcars-chestnut-rose-color {
+textarea.lcars-text-input.lcars-chestnut-rose-color,
+textarea.lcars-chestnut-rose-color {
   caret-color: #c66;
 }
 input.decorated.lcars-chestnut-rose-color,
 textarea.lcars-text-box.decorated.lcars-chestnut-rose-color,
+textarea.lcars-chestnut-rose-color,
 textarea.lcars-text-input.decorated.lcars-chestnut-rose-color {
   border-left: 0.2rem solid #c66;
   padding-left: 0.5rem;
@@ -2029,11 +2063,13 @@ textarea.lcars-text-input.decorated.lcars-chestnut-rose-color {
   border-right: 0.2rem solid #c66;
 }
 textarea.lcars-text-box.lcars-orange-peel-color,
-textarea.lcars-text-input.lcars-orange-peel-color {
+textarea.lcars-text-input.lcars-orange-peel-color,
+textarea.lcars-orange-peel-color {
   caret-color: #f96;
 }
 input.decorated.lcars-orange-peel-color,
 textarea.lcars-text-box.decorated.lcars-orange-peel-color,
+textarea.lcars-orange-peel-color,
 textarea.lcars-text-input.decorated.lcars-orange-peel-color {
   border-left: 0.2rem solid #f96;
   padding-left: 0.5rem;
@@ -2041,11 +2077,13 @@ textarea.lcars-text-input.decorated.lcars-orange-peel-color {
   border-right: 0.2rem solid #f96;
 }
 textarea.lcars-text-box.lcars-atomic-tangerine-color,
-textarea.lcars-text-input.lcars-atomic-tangerine-color {
+textarea.lcars-text-input.lcars-atomic-tangerine-color,
+textarea.lcars-atomic-tangerine-color {
   caret-color: #f90;
 }
 input.decorated.lcars-atomic-tangerine-color,
 textarea.lcars-text-box.decorated.lcars-atomic-tangerine-color,
+textarea.lcars-atomic-tangerine-color,
 textarea.lcars-text-input.decorated.lcars-atomic-tangerine-color {
   border-left: 0.2rem solid #f90;
   padding-left: 0.5rem;
@@ -2053,11 +2091,13 @@ textarea.lcars-text-input.decorated.lcars-atomic-tangerine-color {
   border-right: 0.2rem solid #f90;
 }
 textarea.lcars-text-box.lcars-danub-color,
-textarea.lcars-text-input.lcars-danub-color {
+textarea.lcars-text-input.lcars-danub-color,
+textarea.lcars-danub-color {
   caret-color: #68c;
 }
 input.decorated.lcars-danub-color,
 textarea.lcars-text-box.decorated.lcars-danub-color,
+textarea.lcars-danub-color,
 textarea.lcars-text-input.decorated.lcars-danub-color {
   border-left: 0.2rem solid #68c;
   padding-left: 0.5rem;
@@ -2065,11 +2105,13 @@ textarea.lcars-text-input.decorated.lcars-danub-color {
   border-right: 0.2rem solid #68c;
 }
 textarea.lcars-text-box.lcars-indigo-color,
-textarea.lcars-text-input.lcars-indigo-color {
+textarea.lcars-text-input.lcars-indigo-color,
+textarea.lcars-indigo-color {
   caret-color: #45b;
 }
 input.decorated.lcars-indigo-color,
 textarea.lcars-text-box.decorated.lcars-indigo-color,
+textarea.lcars-indigo-color,
 textarea.lcars-text-input.decorated.lcars-indigo-color {
   border-left: 0.2rem solid #45b;
   padding-left: 0.5rem;
@@ -2077,11 +2119,13 @@ textarea.lcars-text-input.decorated.lcars-indigo-color {
   border-right: 0.2rem solid #45b;
 }
 textarea.lcars-text-box.lcars-lavender-purple-color,
-textarea.lcars-text-input.lcars-lavender-purple-color {
+textarea.lcars-text-input.lcars-lavender-purple-color,
+textarea.lcars-lavender-purple-color {
   caret-color: #97a;
 }
 input.decorated.lcars-lavender-purple-color,
 textarea.lcars-text-box.decorated.lcars-lavender-purple-color,
+textarea.lcars-lavender-purple-color,
 textarea.lcars-text-input.decorated.lcars-lavender-purple-color {
   border-left: 0.2rem solid #97a;
   padding-left: 0.5rem;
@@ -2089,11 +2133,13 @@ textarea.lcars-text-input.decorated.lcars-lavender-purple-color {
   border-right: 0.2rem solid #97a;
 }
 textarea.lcars-text-box.lcars-cosmic-color,
-textarea.lcars-text-input.lcars-cosmic-color {
+textarea.lcars-text-input.lcars-cosmic-color,
+textarea.lcars-cosmic-color {
   caret-color: #746;
 }
 input.decorated.lcars-cosmic-color,
 textarea.lcars-text-box.decorated.lcars-cosmic-color,
+textarea.lcars-cosmic-color,
 textarea.lcars-text-input.decorated.lcars-cosmic-color {
   border-left: 0.2rem solid #746;
   padding-left: 0.5rem;
@@ -2101,11 +2147,13 @@ textarea.lcars-text-input.decorated.lcars-cosmic-color {
   border-right: 0.2rem solid #746;
 }
 textarea.lcars-text-box.lcars-red-damask-color,
-textarea.lcars-text-input.lcars-red-damask-color {
+textarea.lcars-text-input.lcars-red-damask-color,
+textarea.lcars-red-damask-color {
   caret-color: #d64;
 }
 input.decorated.lcars-red-damask-color,
 textarea.lcars-text-box.decorated.lcars-red-damask-color,
+textarea.lcars-red-damask-color,
 textarea.lcars-text-input.decorated.lcars-red-damask-color {
   border-left: 0.2rem solid #d64;
   padding-left: 0.5rem;
@@ -2113,11 +2161,13 @@ textarea.lcars-text-input.decorated.lcars-red-damask-color {
   border-right: 0.2rem solid #d64;
 }
 textarea.lcars-text-box.lcars-medium-carmine-color,
-textarea.lcars-text-input.lcars-medium-carmine-color {
+textarea.lcars-text-input.lcars-medium-carmine-color,
+textarea.lcars-medium-carmine-color {
   caret-color: #a53;
 }
 input.decorated.lcars-medium-carmine-color,
 textarea.lcars-text-box.decorated.lcars-medium-carmine-color,
+textarea.lcars-medium-carmine-color,
 textarea.lcars-text-input.decorated.lcars-medium-carmine-color {
   border-left: 0.2rem solid #a53;
   padding-left: 0.5rem;
@@ -2125,11 +2175,13 @@ textarea.lcars-text-input.decorated.lcars-medium-carmine-color {
   border-right: 0.2rem solid #a53;
 }
 textarea.lcars-text-box.lcars-bourbon-color,
-textarea.lcars-text-input.lcars-bourbon-color {
+textarea.lcars-text-input.lcars-bourbon-color,
+textarea.lcars-bourbon-color {
   caret-color: #b62;
 }
 input.decorated.lcars-bourbon-color,
 textarea.lcars-text-box.decorated.lcars-bourbon-color,
+textarea.lcars-bourbon-color,
 textarea.lcars-text-input.decorated.lcars-bourbon-color {
   border-left: 0.2rem solid #b62;
   padding-left: 0.5rem;
@@ -2137,11 +2189,13 @@ textarea.lcars-text-input.decorated.lcars-bourbon-color {
   border-right: 0.2rem solid #b62;
 }
 textarea.lcars-text-box.lcars-sandy-brown-color,
-textarea.lcars-text-input.lcars-sandy-brown-color {
+textarea.lcars-text-input.lcars-sandy-brown-color,
+textarea.lcars-sandy-brown-color {
   caret-color: #e95;
 }
 input.decorated.lcars-sandy-brown-color,
 textarea.lcars-text-box.decorated.lcars-sandy-brown-color,
+textarea.lcars-sandy-brown-color,
 textarea.lcars-text-input.decorated.lcars-sandy-brown-color {
   border-left: 0.2rem solid #e95;
   padding-left: 0.5rem;
@@ -2149,11 +2203,13 @@ textarea.lcars-text-input.decorated.lcars-sandy-brown-color {
   border-right: 0.2rem solid #e95;
 }
 textarea.lcars-text-box.lcars-periwinkle-color,
-textarea.lcars-text-input.lcars-periwinkle-color {
+textarea.lcars-text-input.lcars-periwinkle-color,
+textarea.lcars-periwinkle-color {
   caret-color: #cdf;
 }
 input.decorated.lcars-periwinkle-color,
 textarea.lcars-text-box.decorated.lcars-periwinkle-color,
+textarea.lcars-periwinkle-color,
 textarea.lcars-text-input.decorated.lcars-periwinkle-color {
   border-left: 0.2rem solid #cdf;
   padding-left: 0.5rem;
@@ -2161,11 +2217,13 @@ textarea.lcars-text-input.decorated.lcars-periwinkle-color {
   border-right: 0.2rem solid #cdf;
 }
 textarea.lcars-text-box.lcars-dodger-blue-color,
-textarea.lcars-text-input.lcars-dodger-blue-color {
+textarea.lcars-text-input.lcars-dodger-blue-color,
+textarea.lcars-dodger-blue-color {
   caret-color: #59f;
 }
 input.decorated.lcars-dodger-blue-color,
 textarea.lcars-text-box.decorated.lcars-dodger-blue-color,
+textarea.lcars-dodger-blue-color,
 textarea.lcars-text-input.decorated.lcars-dodger-blue-color {
   border-left: 0.2rem solid #59f;
   padding-left: 0.5rem;
@@ -2173,11 +2231,13 @@ textarea.lcars-text-input.decorated.lcars-dodger-blue-color {
   border-right: 0.2rem solid #59f;
 }
 textarea.lcars-text-box.lcars-dodger-blue-alt-color,
-textarea.lcars-text-input.lcars-dodger-blue-alt-color {
+textarea.lcars-text-input.lcars-dodger-blue-alt-color,
+textarea.lcars-dodger-blue-alt-color {
   caret-color: #36f;
 }
 input.decorated.lcars-dodger-blue-alt-color,
 textarea.lcars-text-box.decorated.lcars-dodger-blue-alt-color,
+textarea.lcars-dodger-blue-alt-color,
 textarea.lcars-text-input.decorated.lcars-dodger-blue-alt-color {
   border-left: 0.2rem solid #36f;
   padding-left: 0.5rem;
@@ -2185,11 +2245,13 @@ textarea.lcars-text-input.decorated.lcars-dodger-blue-alt-color {
   border-right: 0.2rem solid #36f;
 }
 textarea.lcars-text-box.lcars-blue-color,
-textarea.lcars-text-input.lcars-blue-color {
+textarea.lcars-text-input.lcars-blue-color,
+textarea.lcars-blue-color {
   caret-color: #01e;
 }
 input.decorated.lcars-blue-color,
 textarea.lcars-text-box.decorated.lcars-blue-color,
+textarea.lcars-blue-color,
 textarea.lcars-text-input.decorated.lcars-blue-color {
   border-left: 0.2rem solid #01e;
   padding-left: 0.5rem;
@@ -2197,11 +2259,13 @@ textarea.lcars-text-input.decorated.lcars-blue-color {
   border-right: 0.2rem solid #01e;
 }
 textarea.lcars-text-box.lcars-navy-blue-color,
-textarea.lcars-text-input.lcars-navy-blue-color {
+textarea.lcars-text-input.lcars-navy-blue-color,
+textarea.lcars-navy-blue-color {
   caret-color: #008;
 }
 input.decorated.lcars-navy-blue-color,
 textarea.lcars-text-box.decorated.lcars-navy-blue-color,
+textarea.lcars-navy-blue-color,
 textarea.lcars-text-input.decorated.lcars-navy-blue-color {
   border-left: 0.2rem solid #008;
   padding-left: 0.5rem;
@@ -2209,11 +2273,13 @@ textarea.lcars-text-input.decorated.lcars-navy-blue-color {
   border-right: 0.2rem solid #008;
 }
 textarea.lcars-text-box.lcars-husk-color,
-textarea.lcars-text-input.lcars-husk-color {
+textarea.lcars-text-input.lcars-husk-color,
+textarea.lcars-husk-color {
   caret-color: #ba5;
 }
 input.decorated.lcars-husk-color,
 textarea.lcars-text-box.decorated.lcars-husk-color,
+textarea.lcars-husk-color,
 textarea.lcars-text-input.decorated.lcars-husk-color {
   border-left: 0.2rem solid #ba5;
   padding-left: 0.5rem;
@@ -2221,11 +2287,13 @@ textarea.lcars-text-input.decorated.lcars-husk-color {
   border-right: 0.2rem solid #ba5;
 }
 textarea.lcars-text-box.lcars-rust-color,
-textarea.lcars-text-input.lcars-rust-color {
+textarea.lcars-text-input.lcars-rust-color,
+textarea.lcars-rust-color {
   caret-color: #b41;
 }
 input.decorated.lcars-rust-color,
 textarea.lcars-text-box.decorated.lcars-rust-color,
+textarea.lcars-rust-color,
 textarea.lcars-text-input.decorated.lcars-rust-color {
   border-left: 0.2rem solid #b41;
   padding-left: 0.5rem;
@@ -2233,11 +2301,13 @@ textarea.lcars-text-input.decorated.lcars-rust-color {
   border-right: 0.2rem solid #b41;
 }
 textarea.lcars-text-box.lcars-tamarillo-color,
-textarea.lcars-text-input.lcars-tamarillo-color {
+textarea.lcars-text-input.lcars-tamarillo-color,
+textarea.lcars-tamarillo-color {
   caret-color: #821;
 }
 input.decorated.lcars-tamarillo-color,
 textarea.lcars-text-box.decorated.lcars-tamarillo-color,
+textarea.lcars-tamarillo-color,
 textarea.lcars-text-input.decorated.lcars-tamarillo-color {
   border-left: 0.2rem solid #821;
   padding-left: 0.5rem;
