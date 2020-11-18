@@ -3,18 +3,18 @@ LCARS (Library Computer Access Retrieval System)
 
 LCARS is a purely client-side CSS and HTML framework, similar to [Bootstrap](http://getbootstrap.com/), [Foundation](http://foundation.zurb.com/), [Topcoat](http://topcoat.io/), [Brick](http://mozilla.github.io/brick/index.html), or [Pure](http://purecss.io/).
 
-It's purpose is to create websitse inspired by the user interface of a popular sci-fi franchise.
+Its purpose is to create websites inspired by the user interface design of a certain popular sci-fi franchise.
 
-LCARS is written in [Stylus](http://learnboost.github.io/stylus/). To make use of this package, you will not need the Stylus source, nor most of the metadata and configuration files. That is because each distribution also contains the compiled CSS, which is the heart of the project. If you want to develop and submit Pull Requests, then you will need to modify the Stylus files and be able to compile them.
+LCARS is written in [Stylus](http://learnboost.github.io/stylus/). To make use of this package, you will not need the Stylus source, nor most of the metadata and configuration files. That is because each distribution also contains the compiled CSS, which is the heart of the project. However, if you wish to develop and submit Pull Requests, then you will need to modify the Stylus files and be able to compile them.
 
-There are also a few required HTML element nesting and corresponding CSS classes that are necessary for the styling to apply correctly. Looking directly at the source of the index.html demonstration/documentation page should prove instructive.
+There are also a few requirements in terms of HTML elements, nesting, and corresponding CSS classes that are necessary for the styling to apply correctly. Looking directly at the source of the index.html demonstration/documentation page should prove instructive.
 
-## Demo And Documentation
+## Demo and Documentation
 
 [See](http://joernweissenborn.github.io/lcars/)
 
 ## Super Quick Start Guide 
-(these commands should run in typical UNIX or linux shell as well as Windows PowerShell):
+(these commands should run in a typical UNIX or linux shell as well as Windows PowerShell):
 ```
 mkdir your_new_project_name
 cd your_new_project_name
@@ -38,7 +38,7 @@ This gives you the minimum (just two files, and only about 70KB!) and won't incl
 Now you can boldly go out and develop some new web pages never seen before.
 
 
-## Problems Or Feature Requests
+## Problems or Feature Requests
 
 Please file an issue, I am happy to help!
 
