@@ -26,7 +26,7 @@ textarea.lcars-text-box, textarea.lcars-text-input
   border-right none  /*.2rem solid dimgray*/
   color white
   /* just the resizer now */
-  background  url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PSI3NC4zMzcgMS4wODQgNjAuMzM0IDU5LjY5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOmJ4PSJodHRwczovL2JveHktc3ZnLmNvbSI+DQogIDxkZWZzPjwvZGVmcz4NCiAgPHBhdGggc3R5bGU9ImZpbGw6IHJnYigyMTYsIDIxNiwgMjE2KTsgc3Ryb2tlOiByZ2IoMCwgMCwgMCk7IiBkPSJNIDMxOC40MTggMTA4LjMwMSI+PC9wYXRoPg0KICA8Zz4NCiAgICA8cGF0aCBzdHlsZT0ic3Ryb2tlOiByZ2IoMCwgMCwgMCk7IGZpbGw6IHJnYigyMTAsIDE4MCwgNzEpOyIgZD0iTSA3NC42NzYgMS44OTQgTCAxMzQuNjcgMS44OTQgTCAxMzQuMzQ3IDQzLjkgQyAxMzQuMjQ5IDUxLjUyOSAxMjUuNDYzIDU5LjQ5OCAxMTYuODIyIDU5LjYzNSBMIDc1LjMxNSA1OS41MDUgTCA3NC42NzYgMS44OTQgWiI+PC9wYXRoPg0KICAgIDxwYXRoIGQ9Ik0gOTguNDcgMS4wODQgSCAxMTAuNTM3IFYgMjQuOTU5IEggMTM0LjY3MSBWIDM2Ljg5OCBIIDExMC41MzcgViA2MC43NzQgSCA5OC40NyBWIDM2Ljg5OCBIIDc0LjMzNyBWIDI0Ljk1OSBIIDk4LjQ3IFoiIHN0eWxlPSIiIGJ4OnNoYXBlPSJjcm9zcyA3NC4zMzcgMS4wODQgNjAuMzM0IDU5LjY5IDExLjkzOSAxMi4wNjcgMC41IDFAN2FkZTc1ZjUiPjwvcGF0aD4NCiAgPC9nPg0KPC9zdmc+")  no-repeat rgba(0,0,0,0) 99.9% 100%
+  background  url("data:image/svg+xml,%3csvg width='500' height='500' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23999' stroke-width='150' d='M77 83h349v339H77z'/%3e%3c/svg%3e")  no-repeat rgba(0,0,0,0) 99.9% 100%
   background-size  16px
 
   //Decorated modifier subclass, but just for inputs
@@ -38,19 +38,50 @@ textarea.lcars-text-box.decorated, textarea.lcars-text-input.decorated, textarea
   border-right  .2rem solid dimgray
 
 for colorName, colorValue in colors
-  textarea.lcars-text-box.{prefix}{colorName}-color, textarea.lcars-text-input.{prefix}{colorName}-color, textarea.{prefix}{colorName}-color
+  textarea.lcars-text-box.{prefix}{colorName}-color, 
+  textarea.lcars-text-input.{prefix}{colorName}-color, 
+  textarea.{prefix}{colorName}-color
     caret-color colorValue
 
-  input.decorated.{prefix}{colorName}-color, textarea.lcars-text-box.decorated.{prefix}{colorName}-color, textarea.{prefix}{colorName}-color, textarea.lcars-text-input.decorated.{prefix}{colorName}-color
+  input.decorated.{prefix}{colorName}-color, 
+  textarea.lcars-text-box.decorated.{prefix}{colorName}-color, 
+  textarea.decorated.{prefix}{colorName}-color, 
+  textarea.lcars-text-input.decorated.{prefix}{colorName}-color
     border-left   .2rem solid colorValue
     padding-left  .5rem
     padding-right .5rem
     border-right  .2rem solid colorValue
 
+  input.decorated.left-rounded.{prefix}{colorName}-color, 
+  textarea.lcars-text-box.decorated.left-rounded.{prefix}{colorName}-color, 
+  textarea.decorated.left-rounded.{prefix}{colorName}-color, 
+  textarea.lcars-text-input.decorated.left-rounded.{prefix}{colorName}-color
+    border-left  .8em solid colorValue
+    border-top-left-radius .5em
+    border-bottom-left-radius .5em
+
+  input.decorated.right-rounded.{prefix}{colorName}-color, 
+  textarea.lcars-text-box.decorated.right-rounded.{prefix}{colorName}-color, 
+  textarea.decorated.right-rounded.{prefix}{colorName}-color, 
+  textarea.lcars-text-input.decorated.right-rounded.{prefix}{colorName}-color
+    border-right  .8em solid colorValue
+    border-top-right-radius .5em
+    border-bottom-right-radius .5em
+
+  input.decorated.rounded.{prefix}{colorName}-color, 
+  textarea.lcars-text-box.decorated.rounded.{prefix}{colorName}-color, 
+  textarea.decorated.rounded.{prefix}{colorName}-color, 
+  textarea.lcars-text-input.decorated.rounded.{prefix}{colorName}-color
+    border-right  .8em solid colorValue
+    border-left  .8em solid colorValue
+    border-radius .5em
+
+
 // Range inputs (a.k.a. "sliders")
 // credit for a nice pure CSS solution + supplements:  
 //   https://stackoverflow.com/questions/18389224/how-to-style-html5-range-input-to-have-different-color-before-and-after-slider
 //   https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html
+//   https://css-tricks.com/sliding-nightmare-understanding-range-input/
 /*
 Chrome: Hide the overflow from input[range], and fill all the space left to thumb with shadow color.
 IE: no need to reinvent the wheel: ::-ms-fill-lower
