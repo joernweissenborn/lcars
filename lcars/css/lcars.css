@@ -4274,70 +4274,70 @@ th {
 table th {
   font-weight: bolder;
 }
-table.scanning tr nth-child(1) td {
+table.lcars-table.scanning tr:nth-child(1) td {
   background: transparent;
   animation-name: rowscan;
   animation-duration: 8s;
   animation-delay: 0.8s;
   animation-iteration-count: infinite;
 }
-table.scanning tr nth-child(2) td {
+table.lcars-table.scanning tr:nth-child(2) td {
   background: transparent;
   animation-name: rowscan;
   animation-duration: 8s;
   animation-delay: 1.6s;
   animation-iteration-count: infinite;
 }
-table.scanning tr nth-child(3) td {
+table.lcars-table.scanning tr:nth-child(3) td {
   background: transparent;
   animation-name: rowscan;
   animation-duration: 8s;
   animation-delay: 2.4s;
   animation-iteration-count: infinite;
 }
-table.scanning tr nth-child(4) td {
+table.lcars-table.scanning tr:nth-child(4) td {
   background: transparent;
   animation-name: rowscan;
   animation-duration: 8s;
   animation-delay: 3.2s;
   animation-iteration-count: infinite;
 }
-table.scanning tr nth-child(5) td {
+table.lcars-table.scanning tr:nth-child(5) td {
   background: transparent;
   animation-name: rowscan;
   animation-duration: 8s;
   animation-delay: 4s;
   animation-iteration-count: infinite;
 }
-table.scanning tr nth-child(6) td {
+table.lcars-table.scanning tr:nth-child(6) td {
   background: transparent;
   animation-name: rowscan;
   animation-duration: 8s;
   animation-delay: 4.800000000000001s;
   animation-iteration-count: infinite;
 }
-table.scanning tr nth-child(7) td {
+table.lcars-table.scanning tr:nth-child(7) td {
   background: transparent;
   animation-name: rowscan;
   animation-duration: 8s;
   animation-delay: 5.600000000000001s;
   animation-iteration-count: infinite;
 }
-table.scanning tr nth-child(8) td {
+table.lcars-table.scanning tr:nth-child(8) td {
   background: transparent;
   animation-name: rowscan;
   animation-duration: 8s;
   animation-delay: 6.4s;
   animation-iteration-count: infinite;
 }
-table.scanning tr nth-child(9) td {
+table.lcars-table.scanning tr:nth-child(9) td {
   background: transparent;
   animation-name: rowscan;
   animation-duration: 8s;
   animation-delay: 7.2s;
   animation-iteration-count: infinite;
 }
-table.scanning tr nth-child(10) td {
+table.lcars-table.scanning tr:nth-child(10) td {
   background: transparent;
   animation-name: rowscan;
   animation-duration: 8s;

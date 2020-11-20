@@ -16,7 +16,7 @@ table th
 animationDuration   = 8s
 animationFramecount = 10
 for animationFrameIdx in (1..animationFramecount)
-  table.scanning tr nth-child({animationFrameIdx}) td 
+  table.lcars-table.scanning tr:nth-child({animationFrameIdx}) td 
     background transparent
     animation-name rowscan
     animation-duration animationDuration
