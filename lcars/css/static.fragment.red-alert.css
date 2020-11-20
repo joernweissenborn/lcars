@@ -1,0 +1,46 @@
+/* RED ALERT 
+ * baseline red-ification
+ */
+body.red-alert div.lcars-element,
+body.red-alert div.lcars-bracket,
+body.red-alert div.lcars-elbow, 
+body.red-alert div.lcars-bar {
+	background-color: #e10 !important;
+}
+/* A few already-lighter colors remain white accents */
+body.red-alert div.lcars-element.lcars-white-bg ,
+body.red-alert div.lcars-element.lcars-pale-canary-bg ,
+body.red-alert div.lcars-element.lcars-periwinkle-bg {
+	background-color: white !important;
+}
+body.red-alert div.lcars-element.lcars-gray-bg {
+	background-color: #234 !important;
+}
+/* And now we have to "undo" a few things that got caught up in broad red-ification */
+body.red-alert div.lcars-bar.spacer ,
+body.red-alert div.lcars-bar.double-spacer {
+	background-color: black !important;
+}
+body.red-alert div.lcars-bracket.hollow {
+	background-color: black !important;
+	border-color: white;
+}
+
+/* and a few other specials.. */
+body.red-alert a:link ,
+body.red-alert a:visited ,
+body.red-alert a:focus ,
+body.red-alert a:hover ,
+body.red-alert a:active {
+  color: #e21;
+}
+body.red-alert th ,
+body.red-alert h3 {
+  color: #e21;
+}
+
+/* NOTE: this will only impact INLINE SVG. Possibly some javascript could help with img-imported SVG. Maybe. */
+body.red-alert svg path.button {
+  fill: #e21;
+}
+

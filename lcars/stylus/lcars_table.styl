@@ -1,0 +1,117 @@
+// LCARS table
+
+// Baseline defaults
+table 
+  border none
+
+table td,th 
+  text-align left
+  vertical-align top
+
+table th 
+  font-weight bolder
+
+//TODO: maybe something for captions and/or tfoot?
+
+animationDuration   = 8s
+animationFramecount = 10
+for animationFrameIdx in (1..animationFramecount)
+  table.scanning tr nth-child({animationFrameIdx}) td 
+    background transparent
+    animation-name rowscan
+    animation-duration animationDuration
+    animation-delay ((animationDuration / animationFramecount) * animationFrameIdx)
+    animation-iteration-count infinite
+
+@keyframes rowscan 
+  0% {
+    filter brightness(1.0)
+  }
+  3% {
+    filter brightness(1.65)
+  }
+  10% {
+    filter brightness(1.65)
+  }
+  14% {
+    filter brightness(1.0)
+  }
+  100% {
+    filter brightness(1.0)
+  }
+
+
+/*
+table.scanning tr nth-child(1)  td 
+  background transparent
+  animation-name rowscan
+  animation-duration 8s
+  animation-delay 20ms
+  animation-iteration-count infinite
+
+table.scanning tr nth-child(2) td 
+  background transparent
+  animation-name rowscan
+  animation-duration 8s
+  animation-delay .8s
+  animation-iteration-count infinite
+
+
+table.scanning tr nth-child(3)  td 
+  background transparent
+  animation-name rowscan
+  animation-duration 8s
+  animation-delay 1.6s
+  animation-iteration-count infinite
+
+table.scanning tr nth-child(4)  td 
+  background transparent
+  animation-name rowscan
+  animation-duration 8s
+  animation-delay 2.4s
+  animation-iteration-count infinite
+
+table.scanning tr nth-child(5)  td 
+  background transparent
+  animation-name rowscan
+  animation-duration 8s
+  animation-delay 3.2s
+  animation-iteration-count infinite
+
+table.scanning tr nth-child(6)  td 
+  background transparent
+  animation-name rowscan
+  animation-duration 8s
+  animation-delay 4s
+  animation-iteration-count infinite
+
+
+table.scanning tr nth-child(7)  td 
+  background transparent
+  animation-name rowscan
+  animation-duration 8s
+  animation-delay 4.8s
+  animation-iteration-count infinite
+
+table.scanning tr nth-child(8)  td 
+  background transparent
+  animation-name rowscan
+  animation-duration 8s
+  animation-delay 5.6s
+  animation-iteration-count infinite
+
+table.scanning tr nth-child(9)  td 
+  background transparent
+  animation-name rowscan
+  animation-duration 8s
+  animation-delay 6.4s
+  animation-iteration-count infinite
+
+table.scanning tr nth-child(10)  td 
+  background transparent
+  animation-name rowscan
+  animation-duration 8s
+  animation-delay 7.2s
+  animation-iteration-count infinite
+
+  */

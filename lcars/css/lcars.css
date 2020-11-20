@@ -4263,3 +4263,152 @@ input[type="range"].lcars-tamarillo-color::-ms-fill-upper {
 .lcars-element-addition > input[type="range"] {
   height: 30%;
 }
+table {
+  border: none;
+}
+table td,
+th {
+  text-align: left;
+  vertical-align: top;
+}
+table th {
+  font-weight: bolder;
+}
+table.scanning tr nth-child(1) td {
+  background: transparent;
+  animation-name: rowscan;
+  animation-duration: 8s;
+  animation-delay: 0.8s;
+  animation-iteration-count: infinite;
+}
+table.scanning tr nth-child(2) td {
+  background: transparent;
+  animation-name: rowscan;
+  animation-duration: 8s;
+  animation-delay: 1.6s;
+  animation-iteration-count: infinite;
+}
+table.scanning tr nth-child(3) td {
+  background: transparent;
+  animation-name: rowscan;
+  animation-duration: 8s;
+  animation-delay: 2.4s;
+  animation-iteration-count: infinite;
+}
+table.scanning tr nth-child(4) td {
+  background: transparent;
+  animation-name: rowscan;
+  animation-duration: 8s;
+  animation-delay: 3.2s;
+  animation-iteration-count: infinite;
+}
+table.scanning tr nth-child(5) td {
+  background: transparent;
+  animation-name: rowscan;
+  animation-duration: 8s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+table.scanning tr nth-child(6) td {
+  background: transparent;
+  animation-name: rowscan;
+  animation-duration: 8s;
+  animation-delay: 4.800000000000001s;
+  animation-iteration-count: infinite;
+}
+table.scanning tr nth-child(7) td {
+  background: transparent;
+  animation-name: rowscan;
+  animation-duration: 8s;
+  animation-delay: 5.600000000000001s;
+  animation-iteration-count: infinite;
+}
+table.scanning tr nth-child(8) td {
+  background: transparent;
+  animation-name: rowscan;
+  animation-duration: 8s;
+  animation-delay: 6.4s;
+  animation-iteration-count: infinite;
+}
+table.scanning tr nth-child(9) td {
+  background: transparent;
+  animation-name: rowscan;
+  animation-duration: 8s;
+  animation-delay: 7.2s;
+  animation-iteration-count: infinite;
+}
+table.scanning tr nth-child(10) td {
+  background: transparent;
+  animation-name: rowscan;
+  animation-duration: 8s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+}
+@-moz-keyframes rowscan {
+  0% {
+    filter: brightness(1);
+  }
+  3% {
+    filter: brightness(1.65);
+  }
+  10% {
+    filter: brightness(1.65);
+  }
+  14% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+@-webkit-keyframes rowscan {
+  0% {
+    filter: brightness(1);
+  }
+  3% {
+    filter: brightness(1.65);
+  }
+  10% {
+    filter: brightness(1.65);
+  }
+  14% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+@-o-keyframes rowscan {
+  0% {
+    filter: brightness(1);
+  }
+  3% {
+    filter: brightness(1.65);
+  }
+  10% {
+    filter: brightness(1.65);
+  }
+  14% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+@keyframes rowscan {
+  0% {
+    filter: brightness(1);
+  }
+  3% {
+    filter: brightness(1.65);
+  }
+  10% {
+    filter: brightness(1.65);
+  }
+  14% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
