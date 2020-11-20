@@ -33,7 +33,7 @@ cd ../../
 
 Next, just load up your_new_lcars_screen.html in a web browser and edit with a plain old text editor. Just pull out all the stuff you don't need and customize the text you want.
 
-This gives you the minimum (just two files, and only about 70KB!) and won't include extensions like sound or javascript behaviors or extra complex SVG elements. And you can now safely delete lcars-master/ and lcars_master.zip if you don't want any of those extensions and want to clean up your project directory a little. This should be pretty easy to just drop into any other web project you already have built, too. Just be aware of how CSS works in terms of how and when styling override occurs.
+This gives you the minimum (just two files, and only about 70KB!) and won't include extensions like sound or javascript behaviors or extra complex SVG elements. And you can now safely delete lcars-master/ and lcars_master.zip if you don't want any of those extensions and want to clean up your project directory a little. This should be pretty easy to just drop into any other web project you already have built, too; just insert an [html link element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) to lcars.css in your project's html files. Also you should be aware of [how CSS works](https://developer.mozilla.org/en-US/docs/Web/CSS) in terms of how and when styling override occurs.
 
 Now you can boldly go out and develop some new web pages never seen before.
 
