@@ -41,8 +41,8 @@
 		<!-- SIDE MENU ================================================= -->
 
 		<div id="left-menu" class="lcars-column start-space lcars-u-1">
-			<a href="#container"><div class="lcars-element lcars-chestnut-rose-bg">TOP</div></a>
-			<a href="https://github.com/joernweissenborn/lcars"><div class="lcars-element">SRC</div></a>
+			<a href="#container"><div class="lcars-element button lcars-chestnut-rose-bg">TOP</div></a>
+			<a href="https://github.com/joernweissenborn/lcars"><div class="lcars-element button">SRC</div></a>
 			<!-- FILLER -->
 			<div class="lcars-bar lcars-u-1"></div>
 		</div>
@@ -112,13 +112,48 @@
 				<h2>Grid</h2>
 
 				<p>
-				<a>LCARS has a strict grid system. Item sizes are set in multiples of unit size. </a>
+				<a>LCARS has a strict grid layout system. Item sizes are set in multiples of unit size.</a>
 				<ul>
 					<li>The <pre class="lcars-dodger-blue-color">lcars-u-X</pre> class sets the width to X * unit width (X = 0..16) </li>
 					<li>The <pre class="lcars-dodger-blue-color">lcars-vu-X</pre> class sets the height to X * unit height (X = 0..16)</li>
 					<li>The <pre class="lcars-dodger-blue-color">lcars-u-X-Y</pre> class sets the width to X * unit width and the height to Y times the unit height (X,Y = 0..16)</li>
 				</ul>
 				</p>
+				<p>
+				<div class="lcars-row" > <!--Rows of columns work easily -->
+					<div class="lcars-column lcars-u-1"> <div class="lcars-element ">U-1</div> </div> 
+					<div class="lcars-column lcars-u-1"> <div class="lcars-element ">U-1</div> </div> 
+					<div class="lcars-column lcars-u-1"> <div class="lcars-element ">U-1</div> </div> 
+					<div class="lcars-column lcars-u-1"> <div class="lcars-element ">U-1</div> </div> 
+				</div>
+				<div class="lcars-row" > <!--Default unit multiple, if no class is specified, is 1-->
+					<div class="lcars-column lcars-u-2"> <div class="lcars-element ">U-1</div> </div> 
+					<div class="lcars-column lcars-u-2"> <div class="lcars-element lcars-u-2">U-2</div> </div> 
+				</div>
+				<div class="lcars-row" > 
+					<div class="lcars-column lcars-u-3"> <div class="lcars-element lcars-u-3">U-3</div> </div>
+					<div class="lcars-column lcars-u-1"> <div class="lcars-element lcars-u-1">U-1</div> </div>
+				</div>
+				<div class="lcars-row" > 
+					<div class="lcars-column lcars-u-4">
+						<div class="lcars-element lcars-u-4">U-4</div>
+					</div>
+				</div>
+
+				</p>
+
+				<div class="lcars-column lcars-u-2" > <!--However, columns of rows might not behave the way you would expect-->
+					<div class="lcars-row lcars-u-1"> <div class="lcars-element lcars-u-1">U-1</div> </div> 
+					<div class="lcars-row lcars-u-1"> <div class="lcars-element lcars-u-1">U-1</div> </div> 
+				</div>
+				<div class="lcars-column lcars-u-2" > 
+					<div class="lcars-row"> <div class="lcars-element lcars-u-1">U-1</div> </div> 
+					<div class="lcars-row"> <div class="lcars-element lcars-u-1">U-1</div> </div> 
+				</div>
+				<div class="lcars-column"> <!-- If grid size specification doesn't work as you expect, try moving the class deeper down-->
+					<div class="lcars-row"> <div class="lcars-element lcars-u-2">U-2</div> </div> 
+					<div class="lcars-row"> <div class="lcars-element lcars-u-4">U-4</div> </div> 
+				</div>
 
 				<!-- COLORS  -->
 				<h2 id="colors">Colors</h2>
