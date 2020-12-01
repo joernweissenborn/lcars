@@ -599,6 +599,7 @@ HERE WE SEE JUSTIFIED TEXT, PER PARAGRAPH, AND NEWLINE CHARACTERS (IN THE SOURCE
 				<p>
 					Simple, two-dimensional tabularly structured data display.
 					<ul>
+						<li><span><pre class="lcars-rust-color">standard-header</pre>: Underlined and bold header row. Requires thead and tbody tags in table tag structure.</span></li>
 						<li><span><pre class="lcars-rust-color">scanning</pre>: apply a simple cycling animation, highlighting row-by-row. This will not be noticeable if you select white text color.</span></li>
 						<li><span><pre class="lcars-rust-color">scanning-fast</pre>: apply a simple cycling animation, highlighting row-by-row, at a faster tempo. This will not be noticeable if you select white text color.</span></li>
 					</ul>
@@ -607,11 +608,18 @@ HERE WE SEE JUSTIFIED TEXT, PER PARAGRAPH, AND NEWLINE CHARACTERS (IN THE SOURCE
 				<h3>Example</h3>
 
 				<p>
-					<table class="lcars-table lcars-periwinkle-color">
-						<tr><th>ONE</th><th>TWO</th><th>THREE</th></tr>
-						<tr><td>A1</td><td>A2</td><td>A3</td></tr>
-						<tr><td>B1</td><td>B2</td><td>B3</td></tr>
-						<tr><td>C1</td><td>C2</td><td>C3</td></tr>
+					<table class="lcars-table lcars-periwinkle-color standard-header">
+					<!-- Note that for the standard-header class to function completely, 
+	     					the thead/tbody pairing is *required*. 
+					-->
+						<thead>
+							<tr><th>ONE</th><th>TWO</th><th>THREE</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>A1</td><td>A2</td><td>A3</td></tr>
+							<tr><td>B1</td><td>B2</td><td>B3</td></tr>
+							<tr><td>C1</td><td>C2</td><td>C3</td></tr>
+						</tbody>
 					</table>
 				</p>
 				<p>
@@ -625,9 +633,9 @@ HERE WE SEE JUSTIFIED TEXT, PER PARAGRAPH, AND NEWLINE CHARACTERS (IN THE SOURCE
 					</table>
 				</p>
 				<p>
-					<!--                                            Insert your own custom CSS classes, too.
-	                                            This one was defined only at the top of this page, in a "<style>" tag. -,
-                                                                                                                            V
+					<!--                                    Insert your own custom CSS classes, too.
+	                                          This one was defined only at the top of this page, in a "<style>" tag. -,
+                                                                                                                          V
 					-->
 					<table class="lcars-table scanning lcars-chestnut-rose-color  localCustomFunWithCaptions" >
 						<caption>TABLE 3</caption>

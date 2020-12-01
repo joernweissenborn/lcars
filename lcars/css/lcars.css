@@ -4274,6 +4274,22 @@ th {
 table th {
   font-weight: bolder;
 }
+table.standard-header {
+  border-spacing: 2rem 0.25rem;
+  margin-left: -2rem;
+}
+table.standard-header th {
+  border-bottom: 0.1rem solid;
+}
+table.standard-header tbody:before {
+/* only works without border-collapse, note */
+  line-height: 0.1em;
+  content: "\00a0";
+/*i.e., &nbsp;*/
+  color: #000;
+/* bacground color */
+  display: block;
+}
 table.lcars-table.scanning tr:nth-child(1) td {
   background: transparent;
   animation-name: rowscan;
