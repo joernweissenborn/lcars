@@ -160,11 +160,13 @@
 
 				Colors can be set by adding the classes:
 				<p>
-					<li><pre class="lcars-dodger-blue-color">lcars-COLORNAME-color</pre>: Sets the text color to COLORNAME</li>
-					<li><pre class="lcars-dodger-blue-color">lcars-COLORNAME-bg</pre>: Sets the background color to COLORNAME</li>
+					<ul>
+						<li><pre class="lcars-dodger-blue-color">lcars-COLORNAME-color</pre>: Sets the text color to COLORNAME</li>
+						<li><pre class="lcars-dodger-blue-color">lcars-COLORNAME-bg</pre>: Sets the background color to COLORNAME</li>
+					</ul>
 				</p>
 
-				<a>This are the available colors:</a>
+				<a>These are the available colors:</a>
 
 				<p>
 				<div class="lcars-row">
@@ -214,6 +216,17 @@
 					</div>
 				</div>
 				</p>
+				<p>
+					There is one special class that can only be applied to the body tag for a special effect:
+					<ul>
+						<li><pre class="lcars-dodger-blue-color">red-alert</pre>: cascades emergency override color scheme over the whole interface.</li>
+					</ul>
+					A convenient one-liner of JavaScript to toggle the red-alert condition by simply toggling the class assignment:
+					<pre class="lcars-dodger-blue-color">
+						document.getElementsByTagName('body')[0].classList.toggle('red-alert');
+					</pre>
+				</p>
+
 
 
 				<!-- HYPERLINKS -->
