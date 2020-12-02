@@ -1786,6 +1786,9 @@ a:active {
   font-weight: 500;
   background-color: #0c0806;
 }
+body.red-alert p {
+  color: #e10 !important;
+}
 body.red-alert div.lcars-element,
 body.red-alert div.lcars-bracket,
 body.red-alert div.lcars-elbow,
@@ -1799,6 +1802,86 @@ body.red-alert div.lcars-element.lcars-periwinkle-bg {
 }
 body.red-alert div.lcars-element.lcars-gray-bg {
   background-color: #234 !important;
+}
+body.red-alert div.lcars-element.lcars-navy-blue-bg,
+body.red-alert div.lcars-element.lcars-blue-bg,
+body.red-alert div.lcars-element.lcars-eggplant-bg,
+body.red-alert div.lcars-element.lcars-tamarillo-bg {
+  background-color: #500500 !important;
+}
+body.red-alert div.lcars-element.lcars-rust-bg,
+body.red-alert div.lcars-element.lcars-cosmic-bg,
+body.red-alert div.lcars-element.lcars-indigo-bg,
+body.red-alert div.lcars-element.lcars-dodger-blue-alt-bg,
+body.red-alert div.lcars-element.lcars-bahama-blue-bg,
+body.red-alert div.lcars-element.lcars-mariner-bg {
+  background-color: #980a00 !important;
+}
+body.red-alert div.lcars-bracket.lcars-white-bg,
+body.red-alert div.lcars-bracket.lcars-pale-canary-bg,
+body.red-alert div.lcars-bracket.lcars-periwinkle-bg {
+  background-color: #fff !important;
+}
+body.red-alert div.lcars-bracket.lcars-gray-bg {
+  background-color: #234 !important;
+}
+body.red-alert div.lcars-bracket.lcars-navy-blue-bg,
+body.red-alert div.lcars-bracket.lcars-blue-bg,
+body.red-alert div.lcars-bracket.lcars-eggplant-bg,
+body.red-alert div.lcars-bracket.lcars-tamarillo-bg {
+  background-color: #500500 !important;
+}
+body.red-alert div.lcars-bracket.lcars-rust-bg,
+body.red-alert div.lcars-bracket.lcars-cosmic-bg,
+body.red-alert div.lcars-bracket.lcars-indigo-bg,
+body.red-alert div.lcars-bracket.lcars-dodger-blue-alt-bg,
+body.red-alert div.lcars-bracket.lcars-bahama-blue-bg,
+body.red-alert div.lcars-bracket.lcars-mariner-bg {
+  background-color: #980a00 !important;
+}
+body.red-alert div.lcars-elbow.lcars-white-bg,
+body.red-alert div.lcars-elbow.lcars-pale-canary-bg,
+body.red-alert div.lcars-elbow.lcars-periwinkle-bg {
+  background-color: #fff !important;
+}
+body.red-alert div.lcars-elbow.lcars-gray-bg {
+  background-color: #234 !important;
+}
+body.red-alert div.lcars-elbow.lcars-navy-blue-bg,
+body.red-alert div.lcars-elbow.lcars-blue-bg,
+body.red-alert div.lcars-elbow.lcars-eggplant-bg,
+body.red-alert div.lcars-elbow.lcars-tamarillo-bg {
+  background-color: #500500 !important;
+}
+body.red-alert div.lcars-elbow.lcars-rust-bg,
+body.red-alert div.lcars-elbow.lcars-cosmic-bg,
+body.red-alert div.lcars-elbow.lcars-indigo-bg,
+body.red-alert div.lcars-elbow.lcars-dodger-blue-alt-bg,
+body.red-alert div.lcars-elbow.lcars-bahama-blue-bg,
+body.red-alert div.lcars-elbow.lcars-mariner-bg {
+  background-color: #980a00 !important;
+}
+body.red-alert div.lcars-bar.lcars-white-bg,
+body.red-alert div.lcars-bar.lcars-pale-canary-bg,
+body.red-alert div.lcars-bar.lcars-periwinkle-bg {
+  background-color: #fff !important;
+}
+body.red-alert div.lcars-bar.lcars-gray-bg {
+  background-color: #234 !important;
+}
+body.red-alert div.lcars-bar.lcars-navy-blue-bg,
+body.red-alert div.lcars-bar.lcars-blue-bg,
+body.red-alert div.lcars-bar.lcars-eggplant-bg,
+body.red-alert div.lcars-bar.lcars-tamarillo-bg {
+  background-color: #500500 !important;
+}
+body.red-alert div.lcars-bar.lcars-rust-bg,
+body.red-alert div.lcars-bar.lcars-cosmic-bg,
+body.red-alert div.lcars-bar.lcars-indigo-bg,
+body.red-alert div.lcars-bar.lcars-dodger-blue-alt-bg,
+body.red-alert div.lcars-bar.lcars-bahama-blue-bg,
+body.red-alert div.lcars-bar.lcars-mariner-bg {
+  background-color: #980a00 !important;
 }
 body.red-alert div.lcars-bar.spacer {
   background-color: #000 !important;

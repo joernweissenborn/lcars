@@ -6,12 +6,10 @@
 // Note: was getting an indenting parse error withough the colons.
 
 //baseline red-ification
-/*
-body.red-alert div.lcars-element,
-body.red-alert div.lcars-bracket,
-body.red-alert div.lcars-elbow, 
-body.red-alert div.lcars-bar  
-*/
+body.red-alert 
+  & p
+    color: colors.red-alert !important
+
 body.red-alert 
   & div.lcars-element
   & div.lcars-bracket
@@ -19,22 +17,38 @@ body.red-alert
   & div.lcars-bar 
     background-color: colors.red-alert !important
 
-// A few already-lighter colors remain white accents 
-/*
-body.red-alert div.lcars-element.lcars-white-bg
-body.red-alert div.lcars-element.lcars-pale-canary-bg
-body.red-alert div.lcars-element.lcars-periwinkle-bg 
-*/
-body.red-alert 
-  & div.lcars-element.lcars-white-bg
-  & div.lcars-element.lcars-pale-canary-bg
-  & div.lcars-element.lcars-periwinkle-bg 
-    background-color: colors.white !important
 
-body.red-alert div.lcars-element.lcars-gray-bg 
-  background-color: colors.gray !important
+// Now some details and variations
+for primeGeometry in element bracket elbow bar
+  // A few already-lighter colors remain white accents 
+  body.red-alert 
+    & div.lcars-{primeGeometry}.lcars-white-bg
+    & div.lcars-{primeGeometry}.lcars-pale-canary-bg
+    & div.lcars-{primeGeometry}.lcars-periwinkle-bg 
+      background-color: colors.white !important
 
-// And now we have to "undo" a few things that got caught up in broad red-ification 
+  body.red-alert div.lcars-{primeGeometry}.lcars-gray-bg 
+    background-color: colors.gray !important
+
+  // Now a few red shade variations
+  body.red-alert
+    & div.lcars-{primeGeometry}.lcars-navy-blue-bg 
+    & div.lcars-{primeGeometry}.lcars-blue-bg 
+    & div.lcars-{primeGeometry}.lcars-eggplant-bg 
+    & div.lcars-{primeGeometry}.lcars-tamarillo-bg 
+      background-color: shade(colors.red-alert, 66%) !important
+
+  body.red-alert
+    & div.lcars-{primeGeometry}.lcars-rust-bg 
+    & div.lcars-{primeGeometry}.lcars-cosmic-bg 
+    & div.lcars-{primeGeometry}.lcars-indigo-bg 
+    & div.lcars-{primeGeometry}.lcars-dodger-blue-alt-bg 
+    & div.lcars-{primeGeometry}.lcars-bahama-blue-bg 
+    & div.lcars-{primeGeometry}.lcars-mariner-bg 
+      background-color: shade(colors.red-alert, 36%) !important
+  
+
+// And now we have to "undo" a few things that got caught up in all taht broad, aggressive red-ification 
 body.red-alert 
   & div.lcars-bar.spacer
     background-color: black !important
@@ -58,7 +72,6 @@ body.red-alert a:active
 body.red-alert th ,
 body.red-alert h3 
   color: colors.red-alert
-
 
 // NOTE: the following will only impact *INLINE* SVG. Possibly some javascript could help with img-tag imported SVG. Maybe. 
 body.red-alert svg path.button 
