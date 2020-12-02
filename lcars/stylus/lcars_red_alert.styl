@@ -1,0 +1,66 @@
+// RED ALERT 
+
+// This is an effect/behavior support style set.
+// It is designed to work exclusively by applying red-alert class to the body tag.
+// Tip: handy JS oneliner to toggle this class assignment on body:  document.getElementsByTagName('body')[0].classList.toggle('red-alert');
+// Note: was getting an indenting parse error withough the colons.
+
+//baseline red-ification
+/*
+body.red-alert div.lcars-element,
+body.red-alert div.lcars-bracket,
+body.red-alert div.lcars-elbow, 
+body.red-alert div.lcars-bar  
+*/
+body.red-alert 
+  & div.lcars-element
+  & div.lcars-bracket
+  & div.lcars-elbow
+  & div.lcars-bar 
+    background-color: colors.red-alert !important
+
+// A few already-lighter colors remain white accents 
+/*
+body.red-alert div.lcars-element.lcars-white-bg
+body.red-alert div.lcars-element.lcars-pale-canary-bg
+body.red-alert div.lcars-element.lcars-periwinkle-bg 
+*/
+body.red-alert 
+  & div.lcars-element.lcars-white-bg
+  & div.lcars-element.lcars-pale-canary-bg
+  & div.lcars-element.lcars-periwinkle-bg 
+    background-color: colors.white !important
+
+body.red-alert div.lcars-element.lcars-gray-bg 
+  background-color: colors.gray !important
+
+// And now we have to "undo" a few things that got caught up in broad red-ification 
+body.red-alert 
+  & div.lcars-bar.spacer
+    background-color: black !important
+
+body.red-alert 
+  & div.lcars-bar.double-spacer 
+    background-color: black !important
+
+body.red-alert div.lcars-bracket.hollow 
+  background-color: black !important
+  border-color: colors.white
+
+// and a few other specials.. 
+body.red-alert a:link ,
+body.red-alert a:visited ,
+body.red-alert a:focus ,
+body.red-alert a:hover ,
+body.red-alert a:active 
+  color: colors.red-alert
+
+body.red-alert th ,
+body.red-alert h3 
+  color: colors.red-alert
+
+
+// NOTE: the following will only impact *INLINE* SVG. Possibly some javascript could help with img-tag imported SVG. Maybe. 
+body.red-alert svg path.button 
+  fill: colors.red-alert
+

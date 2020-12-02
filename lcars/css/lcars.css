@@ -1786,3 +1786,41 @@ a:active {
   font-weight: 500;
   background-color: #0c0806;
 }
+body.red-alert div.lcars-element,
+body.red-alert div.lcars-bracket,
+body.red-alert div.lcars-elbow,
+body.red-alert div.lcars-bar {
+  background-color: #e10 !important;
+}
+body.red-alert div.lcars-element.lcars-white-bg,
+body.red-alert div.lcars-element.lcars-pale-canary-bg,
+body.red-alert div.lcars-element.lcars-periwinkle-bg {
+  background-color: #fff !important;
+}
+body.red-alert div.lcars-element.lcars-gray-bg {
+  background-color: #234 !important;
+}
+body.red-alert div.lcars-bar.spacer {
+  background-color: #000 !important;
+}
+body.red-alert div.lcars-bar.double-spacer {
+  background-color: #000 !important;
+}
+body.red-alert div.lcars-bracket.hollow {
+  background-color: #000 !important;
+  border-color: #fff;
+}
+body.red-alert a:link,
+body.red-alert a:visited,
+body.red-alert a:focus,
+body.red-alert a:hover,
+body.red-alert a:active {
+  color: #e10;
+}
+body.red-alert th,
+body.red-alert h3 {
+  color: #e10;
+}
+body.red-alert svg path.button {
+  fill: #e10;
+}
