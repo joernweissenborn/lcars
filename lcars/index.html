@@ -25,7 +25,7 @@
 		<div id="header" class="lcars-row header">
 
 			<!-- ELBOW -->
-			<div class="lcars-elbow left-bottom lcars-tan-bg"></div>
+			<div class="lcars-elbow left-bottom lcars-golden-tanoi-bg"></div>
 
 			<!-- BAR WITH TITLE -->
 			<div class="lcars-bar horizontal">
@@ -38,8 +38,20 @@
 
 		<!-- SIDE MENU ================================================= -->
 
-		<div id="left-menu" class="lcars-column start-space lcars-u-1">
-
+		<div id="left-menu" class="lcars-column start-space lcars-u-1" style="text-transform: uppercase;">
+			<a href="#container"><div class="lcars-element button lcars-chestnut-rose-bg">TOP</div></a>
+			<a href="#layout_section"><div class="lcars-element button">Layout</div></a>
+			<a href="#grid_section"><div class="lcars-element button">Grid</div></a>
+			<a href="#colors_section"><div class="lcars-element button">Colors</div></a>
+			<a href="#hyperlinks_section"><div class="lcars-element button">Links</div></a>
+			<a href="#bar_section"><div class="lcars-element button">Bar</div></a>
+			<a href="#textbox_section"><div class="lcars-element button">Text Box</div></a>
+			<a href="#element_section"><div class="lcars-element button">Element</div></a>
+			<a href="#elbow_section"><div class="lcars-element button">Elbow</div></a>
+			<a href="#brackets_section"><div class="lcars-element button">Brackets</div></a>
+			<a href="#audio_section"><div class="lcars-element button lcars-pale-canary-bg">Audio</div></a>
+			<a href="#svg_section"><div class="lcars-element button lcars-pale-canary-bg">SVG</div></a>
+			<a href="https://github.com/joernweissenborn/lcars" target="_blank"><div class="lcars-element button lcars-lavender-purple-bg">SRC</div></a>
 			<!-- FILLER -->
 			<div class="lcars-bar lcars-u-1"></div>
 		</div>
@@ -48,7 +60,7 @@
 
 		<div id="footer" class="lcars-row ">
 			<!-- ELBOW -->
-			<div class="lcars-elbow left-top lcars-tan-bg"></div>
+			<div class="lcars-elbow left-top lcars-golden-tanoi-bg"></div>
 			<!-- BAR -->
 			<div class="lcars-bar horizontal both-divider bottom"></div>
 			<!-- ROUNDED EDGE -->
@@ -63,12 +75,17 @@
 				<h1>LCARS</h1>
 
 				<p>
-					LCARS is a CSS framework like Bootstrap to create user interfaces similiar as in a popular sci-fi franchise. Enjoy!
+					LCARS is a purely client-side CSS and HTML framework, similar to Bootstrap, Foundation, Topcoat, Brick, or Pure to create user interfaces similiar to a certain popular sci-fi franchise. Enjoy!
+				</p>
+				<p>
+					There are a few requirements in terms of HTML element nesting and corresponding CSS classes that are necessary for the styling to apply correctly. Looking directly at the source of this demonstration/documentation page should prove instructive. You might even use a copy of this page as a sort of a template; just delete and replace the parts you do not want.
+				</p>
+				<p>
+					Each of the following sections will specify a primary CSS class name (in blue colored text) to assign to an HTML element to apply the appropriate CSS styling rules to achieve the described effect. Many primary classes will also have a list of secondary modifier class names (in red colored text) that can be appended to the class list to give additional styling options. Note that CSS classes are cumulative and cascading; i.e., you can combine them and the styling effects will (mostly) be inherited by the descendent nested-within html elements.
 				</p>
 
-
 				<!-- LAYOUT -->
-				<h2>Layout</h2>
+				<h2 id="layout_section">Layout</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-row</pre></span>
 				<p>
@@ -101,19 +118,54 @@
 				</p>
 
 				<!-- GRID -->
-				<h2 id="grid">Grid</h2>
+				<h2 id="grid_section">Grid</h2>
 
 				<p>
-				<a>LCARS has a strict grid system. Item sizes are set in multiples of unit size. </a>
+				<a>LCARS has a strict grid layout system. Item sizes are set in multiples of unit size.</a>
 				<ul>
 					<li>The <pre class="lcars-dodger-blue-color">lcars-u-X</pre> class sets the width to X * unit width (X = 0..16) </li>
 					<li>The <pre class="lcars-dodger-blue-color">lcars-vu-X</pre> class sets the height to X * unit height (X = 0..16)</li>
 					<li>The <pre class="lcars-dodger-blue-color">lcars-u-X-Y</pre> class sets the width to X * unit width and the height to Y times the unit height (X,Y = 0..16)</li>
 				</ul>
 				</p>
+				<p>
+				<div class="lcars-row" > <!--Rows of columns work easily -->
+					<div class="lcars-column lcars-u-1"> <div class="lcars-element ">U-1</div> </div> 
+					<div class="lcars-column lcars-u-1"> <div class="lcars-element ">U-1</div> </div> 
+					<div class="lcars-column lcars-u-1"> <div class="lcars-element ">U-1</div> </div> 
+					<div class="lcars-column lcars-u-1"> <div class="lcars-element ">U-1</div> </div> 
+				</div>
+				<div class="lcars-row" > <!--Default unit multiple, if no class is specified, is 1-->
+					<div class="lcars-column lcars-u-2"> <div class="lcars-element ">U-1</div> </div> 
+					<div class="lcars-column lcars-u-2"> <div class="lcars-element lcars-u-2">U-2</div> </div> 
+				</div>
+				<div class="lcars-row" > 
+					<div class="lcars-column lcars-u-3"> <div class="lcars-element lcars-u-3">U-3</div> </div>
+					<div class="lcars-column lcars-u-1"> <div class="lcars-element lcars-u-1">U-1</div> </div>
+				</div>
+				<div class="lcars-row" > 
+					<div class="lcars-column lcars-u-4">
+						<div class="lcars-element lcars-u-4">U-4</div>
+					</div>
+				</div>
+
+				</p>
+
+				<div class="lcars-column lcars-u-2" > <!--However, columns of rows might not behave the way you would expect-->
+					<div class="lcars-row lcars-u-1"> <div class="lcars-element lcars-u-1">U-1</div> </div> 
+					<div class="lcars-row lcars-u-1"> <div class="lcars-element lcars-u-1">U-1</div> </div> 
+				</div>
+				<div class="lcars-column lcars-u-2" > 
+					<div class="lcars-row"> <div class="lcars-element lcars-u-1">U-1</div> </div> 
+					<div class="lcars-row"> <div class="lcars-element lcars-u-1">U-1</div> </div> 
+				</div>
+				<div class="lcars-column"> <!-- If grid size specification doesn't work as you expect, try moving the class deeper down-->
+					<div class="lcars-row"> <div class="lcars-element lcars-u-2">U-2</div> </div> 
+					<div class="lcars-row"> <div class="lcars-element lcars-u-4">U-4</div> </div> 
+				</div>
 
 				<!-- COLORS  -->
-				<h2 id="colors">Colors</h2>
+				<h2 id="colors_section">Colors</h2>
 
 				Colors can be set by adding the classes:
 				<p>
@@ -174,7 +226,7 @@
 
 
 				<!-- HYPERLINKS -->
-				<h2 id="hyperlinks">Hyperlinks</h2>
+				<h2 id="hyperlinks_section">Hyperlinks</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">:link :hover :focus :active :visited </pre> (but note that these are pseudo-classes, automatically applied by the web browser)</span>
 				<p>
@@ -185,7 +237,8 @@
 
 
 				<!-- Bar -->
-				<h2 bar="bar">Bar</h2>
+				<h2 id="bar_section">Bar</h2>
+
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-bar</pre></span>
 				<p>
@@ -220,9 +273,8 @@
 				</ul>
 				</p>
 
-
 				<!-- TEXT BOX -->
-				<h2 id="textbox">Text Box</h2>
+				<h2 id="textbox_section">Text Box</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-text-box</pre></span>
 				<p>
@@ -251,11 +303,11 @@
 
 
 				<!-- ELEMENT -->
-				<h2 id="element">Element</h2>
+				<h2 id="element_section">Element</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-element</pre></span>
 				<p>
-				<a>Elements are the basic blocks of LCARS. They can be used as buttons and indicators. Use the grid classes to set the size.</a>
+				<a>Elements are the basic blocks of LCARS. They can be used as buttons and indicators. Use the grid classes to set the size. The html "div" is typically the preferred tag to assign the lcars-element tag to.</a>
 
 				<ul>
 					<li><span><pre class="lcars-rust-color">left-rounded</pre>: rounds the left edge</span></li>
@@ -291,7 +343,7 @@
 								<div class="lcars-row">
 									<div class="lcars-element">Simple</div>
 									<div class="lcars-element button">Button</div>
-									<div class="lcars-element lcars-red-bg">Coloured</div>
+									<div class="lcars-element lcars-red-alert-bg">Coloured</div>
 								</div>
 								<div class="lcars-row">
 									<div class="lcars-element left-rounded">left round</div>
@@ -303,7 +355,7 @@
 						</div>
 						<div class="lcars-row">
 							<div class="lcars-element lcars-u-2-1">double</div>
-							<div class="lcars-element lcars-u-2-1 lcars-red-bg">
+							<div class="lcars-element lcars-u-2-1 lcars-lilac-bg">
 								<div> with </div>
 								<div class="lcars-element-addition ">addition</div>
 							</div>
@@ -311,7 +363,7 @@
 					</div>
 				</p>
 
-				<h2 id="elbow">Elbow</h2>
+				<h2 id="elbow_section">Elbow</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-elbow</pre></span>
 				<p>
@@ -329,11 +381,11 @@
 
 				<p>
 					<div class="lcars-row">
-						<div class="lcars-elbow right-top lcars-tan-bg">
+						<div class="lcars-elbow right-top lcars-golden-tanoi-bg">
 							<a>right-top</a>
 						</div>
 						<div class="lcars-bar double-spacer"></div>
-						<div class="lcars-elbow left-top lcars-tan-bg">
+						<div class="lcars-elbow left-top lcars-golden-tanoi-bg">
 							<a>left-top</a>
 						</div>
 						<div class="lcars-bar spacer"></div>
@@ -344,21 +396,21 @@
 				</p>
 				<p>
 					<div class="lcars-row">
-						<div class="lcars-elbow right-bottom lcars-tan-bg">
+						<div class="lcars-elbow right-bottom lcars-golden-tanoi-bg">
 							<a>right-bottom</a>
 						</div>
 						<div class="lcars-bar double-spacer"></div>
-						<div class="lcars-elbow left-bottom lcars-tan-bg">
+						<div class="lcars-elbow left-bottom lcars-golden-tanoi-bg">
 							<a>left-bottom</a>
 						</div>
 						<div class="lcars-bar spacer"></div>
 						<div class="lcars-bar horizontal lcars-dodger-blue-bg right-divider"></div>
 						<div class="lcars-bar spacer"></div>
-						<div class="lcars-bar horizontal lcars-tan-bg right-end"></div>
+						<div class="lcars-bar horizontal lcars-golden-tanoi-bg right-end"></div>
 					</div>
 				</p>
 
-				<h2 id="brackets">Brackets</h2>
+				<h2 id="brackets_section">Brackets</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-bracket</pre></span>
 				<p>
