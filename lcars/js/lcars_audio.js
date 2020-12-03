@@ -79,6 +79,14 @@ var lcarsAudio = {
 			console.log("Audio-enabling button " + button.id + " " + button.innerText);
 			button.addEventListener("click", function(){ lcarsAudio.RedAlert(); }); 
 		}
+
+		//Range input a.k.a. "sliders"; does this need special behavior?
+		button_list = document.querySelectorAll("input[type='range']");
+		for (var button of button_list) {
+			console.log("Audio-enabling range slider " + button.id + " " + button.name);
+			button.addEventListener("click", function(){ lcarsAudio.TactileInputAcknowledge(); }); 
+		}
+
 	},
 	TactileInputAcknowledge: function() {
 		this.audTactInputAcknowledge.play();

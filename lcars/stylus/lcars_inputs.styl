@@ -1,0 +1,180 @@
+// LCARS - Inputs
+
+// Text based inputs first
+
+textarea, input
+  font-size 1em
+  font-family primary-font-family
+  color white
+  border none
+  background-color transparent
+
+input.{prefix}text-input
+  height 1rem
+  padding 0
+  margin 0
+  border none
+
+textarea.lcars-text-box, textarea.lcars-text-input
+  text-align  justify
+  padding  0
+  padding-right  1em
+  margin 0
+  border-top none
+  border-bottom none
+  border-left none
+  border-right none  /*.2rem solid dimgray*/
+  color white
+  /* just the resizer now */
+  background  url("data:image/svg+xml,%3csvg width='500' height='500' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23999' stroke-width='150' d='M77 83h349v339H77z'/%3e%3c/svg%3e")  no-repeat rgba(0,0,0,0) 99.9% 100%
+  background-size  16px
+
+  //Decorated modifier subclass, but just for inputs
+textarea.lcars-text-box.decorated, textarea.lcars-text-input.decorated, textarea.decorated
+  caret-color white
+  border-left   .2rem solid dimgray
+  padding-left  .5rem
+  padding-right .5rem
+  border-right  .2rem solid dimgray
+
+for colorName, colorValue in colors
+  textarea.lcars-text-box.{prefix}{colorName}-color, 
+  textarea.lcars-text-input.{prefix}{colorName}-color, 
+  textarea.{prefix}{colorName}-color
+    caret-color colorValue
+
+  input.decorated.{prefix}{colorName}-color, 
+  textarea.lcars-text-box.decorated.{prefix}{colorName}-color, 
+  textarea.decorated.{prefix}{colorName}-color, 
+  textarea.lcars-text-input.decorated.{prefix}{colorName}-color
+    border-left   .2rem solid colorValue
+    padding-left  .5rem
+    padding-right .5rem
+    border-right  .2rem solid colorValue
+
+  input.decorated.left-rounded.{prefix}{colorName}-color, 
+  textarea.lcars-text-box.decorated.left-rounded.{prefix}{colorName}-color, 
+  textarea.decorated.left-rounded.{prefix}{colorName}-color, 
+  textarea.lcars-text-input.decorated.left-rounded.{prefix}{colorName}-color
+    border-left  .8em solid colorValue
+    border-top-left-radius .5em
+    border-bottom-left-radius .5em
+
+  input.decorated.right-rounded.{prefix}{colorName}-color, 
+  textarea.lcars-text-box.decorated.right-rounded.{prefix}{colorName}-color, 
+  textarea.decorated.right-rounded.{prefix}{colorName}-color, 
+  textarea.lcars-text-input.decorated.right-rounded.{prefix}{colorName}-color
+    border-right  .8em solid colorValue
+    border-top-right-radius .5em
+    border-bottom-right-radius .5em
+
+  input.decorated.rounded.{prefix}{colorName}-color, 
+  textarea.lcars-text-box.decorated.rounded.{prefix}{colorName}-color, 
+  textarea.decorated.rounded.{prefix}{colorName}-color, 
+  textarea.lcars-text-input.decorated.rounded.{prefix}{colorName}-color
+    border-right  .8em solid colorValue
+    border-left  .8em solid colorValue
+    border-radius .5em
+
+
+// Range inputs (a.k.a. "sliders")
+// credit for a nice pure CSS solution + supplements:  
+//   https://stackoverflow.com/questions/18389224/how-to-style-html5-range-input-to-have-different-color-before-and-after-slider
+//   https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html
+//   https://css-tricks.com/sliding-nightmare-understanding-range-input/
+/*
+Chrome: Hide the overflow from input[range], and fill all the space left to thumb with shadow color.
+IE: no need to reinvent the wheel: ::-ms-fill-lower
+Firefox no need to reinvent the wheel: ::-moz-range-progress
+*/
+
+//First a default spec
+
+////Chrome
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  input[type='range']
+    overflow hidden
+    width 80px
+    -webkit-appearance none
+    background-color transparent
+    
+  input[type='range']::-webkit-slider-runnable-track 
+    height 1em
+    -webkit-appearance none
+    color default-color
+    margin-top -1px
+    
+  input[type='range']::-webkit-slider-thumb 
+    width 1em
+    -webkit-appearance none
+    height 1em
+    cursor ew-resize
+    background default-color
+    box-shadow -80px 0 0 80px default-color
+    
+
+////Firefox
+input[type="range"]  //obviously, this actually affects everyone, but was only needed for firefox...
+  margin-bottom -.2em 
+
+input[type="range"]::-moz-range-progress
+  background-color default-color
+  height 100%
+
+input[type="range"]::-moz-range-track
+  background-color transparent
+
+input[type="range"]::-moz-range-thumb
+    border none
+    height 100%
+    width 1em
+    border-radius 0%
+    background-color default-color
+
+
+////IE
+input[type="range"]::-ms-fill-lower
+  background-color default-color
+
+input[type="range"]::-ms-fill-upper
+  background-color default-color
+
+
+//Again for each canonical color:
+
+////Chrome
+for colorName, colorValue in colors
+  @media screen and (-webkit-min-device-pixel-ratio:0)
+    input[type='range'].{prefix}{colorName}-color::-webkit-slider-runnable-track 
+      -webkit-appearance none
+      color colorValue
+      margin-top -1px
+      
+    input[type='range'].{prefix}{colorName}-color::-webkit-slider-thumb 
+      -webkit-appearance none
+      background colorValue
+      box-shadow -80px 0 0 80px colorValue
+      
+  
+  ////Firefox
+  input[type="range"].{prefix}{colorName}-color::-moz-range-progress
+    background-color colorValue
+  
+  input[type="range"].{prefix}{colorName}-color::-moz-range-track
+    background-color transparent
+  
+  input[type="range"].{prefix}{colorName}-color::-moz-range-thumb
+    border none
+    border-radius 0%
+    background-color colorValue
+
+  ////IE
+  input[type="range"].{prefix}{colorName}-color::-ms-fill-lower
+    background-color colorValue
+  
+  input[type="range"].{prefix}{colorName}-color::-ms-fill-upper
+    background-color colorValue
+
+  //Some special cases 
+  .lcars-element-addition > input[type="range"]  //obviously, this actually affects everyone, but was only needed for firefox...
+    height 30%  //This is very likely to be font-family choice sensitive. TODO revisit some way to do some calcs or warnings or something.
