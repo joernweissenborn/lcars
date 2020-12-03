@@ -15,6 +15,19 @@
     word-wrap: break-word;
   }
 
+  table.localCustomFunWithCaptions caption {
+    margin-left: -.5em;
+    margin-bottom: .5em;
+    text-align: right;
+    border-right: .8em solid;
+    border-left: 32rem solid;
+    border-radius: .5em;
+    padding-right: .33em;
+    padding-bottom: -.15em;
+  }
+  #audio_class_summary {
+	  font-size:.9rem;
+  }
   </style>
 </head>
 <body>
@@ -49,6 +62,8 @@
 			<a href="#element_section"><div class="lcars-element button">Element</div></a>
 			<a href="#elbow_section"><div class="lcars-element button">Elbow</div></a>
 			<a href="#brackets_section"><div class="lcars-element button">Brackets</div></a>
+			<a href="#inputs_section"><div class="lcars-element button">INPUTS</div></a>
+			<a href="#table_section"><div class="lcars-element button">TABLE</div></a>
 			<a href="#audio_section"><div class="lcars-element button lcars-pale-canary-bg">Audio</div></a>
 			<a href="#svg_section"><div class="lcars-element button lcars-pale-canary-bg">SVG</div></a>
 			<a href="https://github.com/joernweissenborn/lcars" target="_blank"><div class="lcars-element button lcars-lavender-purple-bg">SRC</div></a>
@@ -466,7 +481,7 @@
 
 
 				<!-- INPUTS -->
-				<h2 id="inputs">Inputs</h2>
+				<h2 id="inputs_section">Inputs</h2>
 
 				<p> Basic input controls other than buttons. Text inputs and range (slider) inputs, for example.
 				</p>
@@ -579,6 +594,62 @@ HERE WE SEE JUSTIFIED TEXT, PER PARAGRAPH, AND NEWLINE CHARACTERS (IN THE SOURCE
 ===================================-->
 
 
+				<!-- DATA TABLE -->
+				<h2 id="table_section">Table</h2>
+
+				<span>Class: <pre class="lcars-dodger-blue-color">lcars-table</pre></span>
+				<p>
+					Simple, two-dimensional tabularly structured data display.
+					<ul>
+						<li><span><pre class="lcars-rust-color">standard-header</pre>: Underlined and bold header row. Requires thead and tbody tags in table tag structure.</span></li>
+						<li><span><pre class="lcars-rust-color">scanning</pre>: apply a simple cycling animation, highlighting row-by-row. This will not be noticeable if you select white text color.</span></li>
+						<li><span><pre class="lcars-rust-color">scanning-fast</pre>: apply a simple cycling animation, highlighting row-by-row, at a faster tempo. This will not be noticeable if you select white text color.</span></li>
+					</ul>
+				</p>
+
+				<h3>Example</h3>
+
+				<p>
+					<table class="lcars-table lcars-periwinkle-color standard-header">
+					<!-- Note that for the standard-header class to function completely, 
+	     					the thead/tbody pairing is *required*. 
+					-->
+						<thead>
+							<tr><th>ONE</th><th>TWO</th><th>THREE</th></tr>
+						</thead>
+						<tbody>
+							<tr><td>A1</td><td>A2</td><td>A3</td></tr>
+							<tr><td>B1</td><td>B2</td><td>B3</td></tr>
+							<tr><td>C1</td><td>C2</td><td>C3</td></tr>
+						</tbody>
+					</table>
+				</p>
+				<p>
+					<table class="lcars-table scanning-fast lcars-husk-color">
+						<tr><td>A1</td><td>A2</td><td>A3</td></tr>
+						<tr><td>B1</td><td>B2</td><td>B3</td></tr>
+						<tr><td>C1</td><td>C2</td><td>C3</td></tr>
+						<tr><td>D1</td><td>D2</td><td>D3</td></tr>
+						<tr><td>E1</td><td>E2</td><td>E3</td></tr>
+						<tr><td>F1</td><td>F2</td><td>F3</td></tr>
+					</table>
+				</p>
+				<p>
+					<!--                                    Insert your own custom CSS classes, too.
+	                                          This one was defined only at the top of this page, in a "<style>" tag. -,
+                                                                                                                          V
+					-->
+					<table class="lcars-table scanning lcars-chestnut-rose-color  localCustomFunWithCaptions" >
+						<caption>TABLE 3</caption>
+						<tr><td>ALPHA1</td><td>ALPHA2</td><td>ALPHA3</td></tr>
+						<tr><td>BETA01</td><td>BET0A2</td><td>BETA03</td></tr>
+						<tr><td>GAMMA1</td><td>GAMMA2</td><td>GAMMA3</td></tr>
+						<tr><td>DELTA1</td><td>DELTA2</td><td>DELTA3</td></tr>
+						<tr><td>EPSLN1</td><td>EPSLN2</td><td>EPSLN3</td></tr>
+						<tr><td>ZETA01</td><td>ZETA02</td><td>ZETA03</td></tr>
+					</table>
+				</p>
+
 				<h2 id="audio_section">Audio</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">button</pre></span>
@@ -635,7 +706,7 @@ HERE WE SEE JUSTIFIED TEXT, PER PARAGRAPH, AND NEWLINE CHARACTERS (IN THE SOURCE
 				</p>
 				<p>
 
-					<table class="lcars-anakiwa-color scanning">
+					<table id="audio_class_summary" class="lcars-periwinkle-color scanning lcars-u-8">
 					<thead>
 					    <tr><th>JS lcarsAudio Module Play Function</th> <th>Element Subclass</th> <th>Audio Filename Base</th> <th>Semantic Description</th>
 					<thead>
@@ -908,6 +979,16 @@ document.querySelector("#xy_ctl_up").addEventListener("click", function(){
 	document.addEventListener("DOMContentLoaded", function(event) { 
 		lcarsAudio.Ready();
 	});
+
+	//Cosmetic-ish behavior: scroll to gets hidden by top row body frame, so we need to scroll back slighly to have the actual heading element for each section visible after an in-page navigation.
+	function locationHashChanged() {
+		if (location.hash.substr(-8) == "_section") {
+			console.info("in-page nav detected.");
+			setTimeout(function(){window.scrollBy(0,-100)}, 100);
+		}
+	}
+	window.onhashchange = locationHashChanged;
+
 </script>
 
 </body>

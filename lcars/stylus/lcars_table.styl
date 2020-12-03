@@ -1,0 +1,86 @@
+// LCARS table
+
+// Baseline defaults
+table 
+  border none
+
+table td,th 
+  text-align left
+  vertical-align top
+
+table th 
+  font-weight bolder
+
+table.standard-header 
+  border-spacing 2rem .25rem
+  margin-left -2rem
+
+table.standard-header th 
+  border-bottom .1rem solid
+
+table.standard-header tbody:before 
+  /* only works without border-collapse, note */
+  line-height .1em 
+  content "\00a0"  /*i.e., &nbsp;*/
+  color black  /* bacground color */
+  display block 
+
+
+//TODO: maybe something for captions and/or tfoot?
+
+
+animationDuration   = 8s
+animationFramecount = 10
+for animationFrameIdx in (1..animationFramecount)
+  table.lcars-table.scanning tr:nth-child({animationFrameIdx}) td 
+    background transparent
+    animation-name rowscan
+    animation-duration animationDuration
+    animation-delay ((animationDuration / animationFramecount) * animationFrameIdx)
+    animation-iteration-count infinite
+
+@keyframes rowscan 
+  0% {
+    filter brightness(1.0)
+  }
+  3% {
+    filter brightness(1.65)
+  }
+  10% {
+    filter brightness(1.65)
+  }
+  14% {
+    filter brightness(1.0)
+  }
+  100% {
+    filter brightness(1.0)
+  }
+
+
+animationDuration   = 2s
+animationFramecount = 12
+for animationFrameIdx in (1..animationFramecount)
+  table.lcars-table.scanning-fast tr:nth-child({animationFrameIdx}) td 
+    background transparent
+    animation-name rowscan-fast
+    animation-duration animationDuration
+    animation-delay ((animationDuration / animationFramecount) * animationFrameIdx)
+    animation-iteration-count infinite
+
+@keyframes rowscan-fast 
+  0% {
+    filter brightness(1.0)
+  }
+  3% {
+    filter brightness(1.65)
+  }
+  10% {
+    filter brightness(1.65)
+  }
+  14% {
+    filter brightness(1.0)
+  }
+  100% {
+    filter brightness(1.0)
+  }
+
