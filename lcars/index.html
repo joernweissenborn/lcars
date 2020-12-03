@@ -62,6 +62,8 @@
 			<a href="#element_section"><div class="lcars-element button">Element</div></a>
 			<a href="#elbow_section"><div class="lcars-element button">Elbow</div></a>
 			<a href="#brackets_section"><div class="lcars-element button">Brackets</div></a>
+			<a href="#inputs_section"><div class="lcars-element button">INPUTS</div></a>
+			<a href="#table_section"><div class="lcars-element button">TABLE</div></a>
 			<a href="#audio_section"><div class="lcars-element button lcars-pale-canary-bg">Audio</div></a>
 			<a href="#svg_section"><div class="lcars-element button lcars-pale-canary-bg">SVG</div></a>
 			<a href="https://github.com/joernweissenborn/lcars" target="_blank"><div class="lcars-element button lcars-lavender-purple-bg">SRC</div></a>
@@ -479,7 +481,7 @@
 
 
 				<!-- INPUTS -->
-				<h2 id="inputs">Inputs</h2>
+				<h2 id="inputs_section">Inputs</h2>
 
 				<p> Basic input controls other than buttons. Text inputs and range (slider) inputs, for example.
 				</p>
@@ -593,7 +595,7 @@ HERE WE SEE JUSTIFIED TEXT, PER PARAGRAPH, AND NEWLINE CHARACTERS (IN THE SOURCE
 
 
 				<!-- DATA TABLE -->
-				<h2>Table</h2>
+				<h2 id="table_section">Table</h2>
 
 				<span>Class: <pre class="lcars-dodger-blue-color">lcars-table</pre></span>
 				<p>
@@ -977,6 +979,16 @@ document.querySelector("#xy_ctl_up").addEventListener("click", function(){
 	document.addEventListener("DOMContentLoaded", function(event) { 
 		lcarsAudio.Ready();
 	});
+
+	//Cosmetic-ish behavior: scroll to gets hidden by top row body frame, so we need to scroll back slighly to have the actual heading element for each section visible after an in-page navigation.
+	function locationHashChanged() {
+		if (location.hash.substr(-8) == "_section") {
+			console.info("in-page nav detected.");
+			setTimeout(function(){window.scrollBy(0,-100)}, 100);
+		}
+	}
+	window.onhashchange = locationHashChanged;
+
 </script>
 
 </body>
