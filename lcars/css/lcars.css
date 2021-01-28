@@ -647,17 +647,17 @@ body {
   background-color: #000;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 0.833333333333335rem;
-  padding-left: 0.166666666666667rem;
-  padding-right: 0.166666666666667rem;
-  padding-bottom: 0.166666666666667rem;
+  margin-left: 0.83335rem;
+  padding-left: 0.16667rem;
+  padding-right: 0.16667rem;
+  padding-bottom: 0.16667rem;
   display: inline-block;
   font-size: 150%;
   height: 100%;
 }
 .lcars-bar .lcars-title.right {
   float: right;
-  margin-right: 0.833333333333335rem;
+  margin-right: 0.83335rem;
 }
 .lcars-element {
   position: relative;
@@ -706,7 +706,7 @@ body {
   height: 100%;
   background-color: #000;
   color: #fff;
-  font-size: 2.000000000000001rem;
+  font-size: 2rem;
   margin-left: 0.25rem;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
